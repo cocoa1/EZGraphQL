@@ -1,0 +1,48 @@
+query algorithmFindVideos(
+  $page: Int
+  $pageSize: Int
+  $moduleName: algorithmFindVideos_mudelNames!
+) {
+  algorithmFindVideos(
+    page: $page
+    pageSize: $pageSize
+    moduleName: $moduleName
+  ) {
+    _id
+    coverImage
+    teaserTitle
+    video
+    viewCount
+    describe
+    likeCount
+    commentCount
+    duration
+    shareCount
+    allowComment
+    liveStartAt
+    liked
+    updatedAt
+    shareLink
+    music {
+      _id
+      title
+    }
+    user {
+      _id
+      avatar
+      username
+      followed
+      role
+    }
+    videoType
+    hasSubscribedLive
+    live {
+      _id
+      coverImage
+      title
+      status
+      scheduleStartAt
+      streamingStatus
+    }
+  }
+}

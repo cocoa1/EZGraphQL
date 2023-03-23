@@ -1,0 +1,18 @@
+query appListTicketOrders ($page:Int!,$pageSize:Int!) {
+  appListTicketOrders(page: $page, pageSize: $pageSize) {
+    pageInfo {
+      hashNextPage
+    }
+    edges {
+      _id
+      status
+      event {
+        coverImages { image key }
+        name
+        status
+      }
+      totalQuantity
+    }
+    totalCount
+  }
+}

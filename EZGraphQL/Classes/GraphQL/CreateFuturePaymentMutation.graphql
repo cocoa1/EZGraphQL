@@ -1,0 +1,10 @@
+mutation createFuturePayment($apiVersion: String!) {
+  createFuturePayment(apiVersion: $apiVersion) {
+    customer
+    ephemeralKey {
+      secret
+    }
+    setupIntentId
+    setupIntentClientSecret
+  }
+}

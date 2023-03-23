@@ -1,0 +1,15 @@
+query findFollowInterests($users:[ID]!){
+    findFollowInterests(users:$users) {
+        interest {
+            _id
+            name
+            followed
+            hashtags {
+                _id
+                name
+                userCount
+                followed
+            }
+        }
+    }
+}

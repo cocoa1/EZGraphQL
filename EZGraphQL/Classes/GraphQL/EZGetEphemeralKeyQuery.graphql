@@ -1,0 +1,14 @@
+query getEphemeralKey($apiVersion: String!) {
+	getEphemeralKey (apiVersion: $apiVersion) {
+		associated_objects {
+			id
+			type
+		}
+		id
+		object
+		created
+		expires
+		livemode
+		secret
+	}
+}

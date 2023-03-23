@@ -1,0 +1,9 @@
+query findHashtags($page: Int, $pageSize: Int, $interest: ID, $name: String) {
+	findHashtags(page: $page, pageSize: $pageSize, name: $name, interest: $interest) {
+		_id
+		name
+		userCount
+		viewCount
+	}
+}
+

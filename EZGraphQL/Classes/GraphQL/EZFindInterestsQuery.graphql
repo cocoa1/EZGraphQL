@@ -1,0 +1,9 @@
+query findInterests{
+  findInterests {
+	  _id
+	  userCount
+	  name
+	  priority
+	  followed
+  }
+}

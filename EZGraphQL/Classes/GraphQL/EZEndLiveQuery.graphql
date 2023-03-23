@@ -1,0 +1,8 @@
+query endLiveQuery($_id:ID, $userID:ID) {
+    appFindLive(_id: $_id){
+        status
+    }
+    findUsers(_id: $userID) {
+        followed
+    }
+}

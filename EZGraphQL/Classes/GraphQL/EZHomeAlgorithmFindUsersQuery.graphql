@@ -1,0 +1,11 @@
+query algorithmFindUsers($page: Int, $pageSize: Int, $moduleName: algorithmFindUsers_mudelNames) {
+	algorithmFindUsers (page: $page, pageSize: $pageSize, moduleName: $moduleName) {
+		_id
+		recentVideo {
+			coverImage
+		}
+		avatar
+		followed
+		username
+	}
+}

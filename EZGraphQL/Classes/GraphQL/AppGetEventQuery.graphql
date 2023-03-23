@@ -1,0 +1,50 @@
+query appGetEvent($_id: ID!) {
+  appGetEvent(_id: $_id) {
+	coverImages {
+	  key
+	  image
+	}
+	name
+	description
+	organizer {
+	  _id
+	  name
+	}
+	startDate
+	endDate
+	openTime
+	closeTime
+	placeId
+	placeName
+	placeAddress
+	location
+	timezone
+	timezoneAbbr
+    shareLink
+	tickets {
+	  _id
+	  name
+	  price
+	  serviceFeePrice
+	  quantity
+	  payType
+	  timezone
+	  description
+	  timezone
+	  timezoneAbbr
+	  saleDate {
+		startDate
+		endDate
+	  }
+	  activateDates {
+		startDate
+		endDate
+	  }
+	}
+	refundPolicy
+	refundPolicyNotice
+	about
+	status
+  }
+}
+

@@ -1,0 +1,6 @@
+framework module Pods_EZGraphQL_Example {
+  umbrella header "Pods-EZGraphQL_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

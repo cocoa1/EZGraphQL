@@ -1,0 +1,7 @@
+# 验证验证码
+query verifyCode($phoneNumber: String!, $code: String!, $action: enum__msmAction!){
+  verifyCode (phoneNumber: $phoneNumber, code: $code, action: $action) {
+    result
+    token
+  }
+}

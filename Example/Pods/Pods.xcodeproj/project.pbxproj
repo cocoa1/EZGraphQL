@@ -1,0 +1,1774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00319B3BB32B9DE4AE07092786D99554 /* GraphQLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59897E502B5B65093EEDA4C2FD6D95 /* GraphQLResponse.swift */; };
+		009EE50BF37BF7FA60C3FCA5FAFF4648 /* DeletePaymentMethodMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = A603DCBCB7E2501054639E6DB5BDC457 /* DeletePaymentMethodMutation.graphql */; };
+		01A075DD505E1726A735B011F53501BA /* FindCardsQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 949293A3B33C2415C14D92AC6310930D /* FindCardsQuery.graphql */; };
+		02DC7EDE83DB0C441786D8A08172CD55 /* FindPaymentMethodsQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 7C317ED3D3EF6EF22FF9B395ACE8AFE2 /* FindPaymentMethodsQuery.graphql */; };
+		03FE1F30628A7AC776CF6874989890B3 /* EZAppChangePhoneNumberMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 0C75536C1E984546F8847320DE0C67EE /* EZAppChangePhoneNumberMutation.graphql */; };
+		04C64576E42AA9E584F797C9302E374E /* Apollo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBC98B4C8F0DB0B61647241CFE8222A /* Apollo-dummy.m */; };
+		06E04C816997325AA2851940FE12E550 /* AppListSelectedLiveProductsQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 67B1A7A1221B87D40729699DB2D12B36 /* AppListSelectedLiveProductsQuery.graphql */; };
+		0A20CD960728955A266759892ECF3A66 /* EZAppListLiveProductsQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 7C087BD1FEC2F6D75360D3E5BF29CD13 /* EZAppListLiveProductsQuery.graphql */; };
+		0AD4B4556CD4A445CAAD013BD39F8981 /* EZShareMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 2FF88F23B42389AD11AC9B5A1FDADD81 /* EZShareMutation.graphql */; };
+		0B33D0BE557EBA7803DDB016D2040C8B /* EZAppCreateLiveProductMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 55F6A7B00B895730137DA43D0FFCA757 /* EZAppCreateLiveProductMutation.graphql */; };
+		0B7CEE6DDBC4D4F1B02EBA8E7E6FB0DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0D839525B85CE3B1D5FC57000B94524F /* EZMeLikeVideosQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 01E55D9EE8404F62ED0BBA9C73CC9B51 /* EZMeLikeVideosQuery.graphql */; };
+		110D35F84D35629C0C158BE2769AAA32 /* GetUploadURLQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 4C8BC4E5A12E9F709D02B3A418A6074E /* GetUploadURLQuery.graphql */; };
+		11FF1734985E7DDBCE4CAB8AB7E02B41 /* ResultOrPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD8CE24A8173659DD97EDCEA9385AD9 /* ResultOrPromise.swift */; };
+		130394A8DE452796986CF9FD190A015B /* ApolloStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A740DDBF6910B90C5E5299F9C692B891 /* ApolloStore.swift */; };
+		13663E0873FD31187A752ABE39E2A900 /* JSONSerialziation+Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D119DC528DC39AFA86F8DB1FBE17DB5 /* JSONSerialziation+Sorting.swift */; };
+		1415A076170990E683B86FA8FD6EF8D3 /* EZSendCodeMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 0F79C641A582D8A3C262EDCC4FC05807 /* EZSendCodeMutation.graphql */; };
+		16410877C8377A6F043939931E6DEC1F /* EZAppMusicsQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 7BC1F923EB1E76E5510FBC6E674F34BA /* EZAppMusicsQuery.graphql */; };
+		1709CDB7DBED06AF7C751D96B04F4544 /* FindRecommendInterestsQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 1A7289258BD06FB836A0F868346ECAEC /* FindRecommendInterestsQuery.graphql */; };
+		172CEFD4BF62383432C41C7C7901FD31 /* Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297E9F6FA85F7998FE16FC35C3A6F85 /* Decoding.swift */; };
+		18EACDA9F0126F29E31F7CD396167C3A /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02E6CC72ECE0C89B25F0E22282C70C7 /* Cancellable.swift */; };
+		1939687D3C0E3C970EADD1A9F65AB71B /* EZWalletQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 6EC6178797E753271A6E2D114539FCE0 /* EZWalletQuery.graphql */; };
+		19C7FC4589DB43EAE1A6D2DB4F25ACFC /* GroupedSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72CA3B3D4767F4D4AD4954E5657D1FC /* GroupedSequence.swift */; };
+		2160CF7D431F752FB01D0FBB59151E5D /* EZAppFindProductQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = F2127C2D48E33DC8DE0C232BD708BA9D /* EZAppFindProductQuery.graphql */; };
+		226CA181D75C2C8CF49B10F45B5BFA24 /* EZFindProductsQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = B50035A48BE99D90BDDC8A1BCE3413FB /* EZFindProductsQuery.graphql */; };
+		25F426B87F19902EB98B291BF3276CD2 /* EZCreateVideoMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = D3E7514A33280FFD5EEF7E28802C5AC4 /* EZCreateVideoMutation.graphql */; };
+		2986657612F6D039359DE1FB8C8D63C7 /* FindKeywords.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 57FE58D4A7A4DC36188E0D643F901E0F /* FindKeywords.graphql */; };
+		2A01A8F548F2B8EA6BE761E76AC37D9B /* EZUpdateOrderMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = A01B964AEB4EE38559AE34BA248032C8 /* EZUpdateOrderMutation.graphql */; };
+		2A0CC5C986247D22ECA94609768D2D51 /* GraphQLExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CA2A84E6CE14FCD110436E12E9546A /* GraphQLExecutor.swift */; };
+		2C2C1C78BEAB99606AB1BCB99BD1653F /* EZSelfQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 11F07FC1D42756E5764CA7CC3A306FF5 /* EZSelfQuery.graphql */; };
+		2D4317720AF85609BFCC0C7A25C62114 /* EZFindShippingOptionsQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 860214CED0D3B7946C113A4333C51A2A /* EZFindShippingOptionsQuery.graphql */; };
+		2F7606DEA5843E0E0A52F5E3BB7DC655 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980BB1F4EDF267B2611BA31F8850E97 /* JSON.swift */; };
+		34F693190A281F2E36A0B002F7693584 /* Pods-EZGraphQL_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B7D7B0450FCEC80538EC4919EA9E72 /* Pods-EZGraphQL_Example-dummy.m */; };
+		35578131742282396198810F510FF3A0 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9127DB3237873E11374A128B298B5A1C /* DataLoader.swift */; };
+		35A44EB79E2E319248AC25751091FC79 /* GraphQLGETTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4CF87F4DB75352E84F42D66E9E942 /* GraphQLGETTransformer.swift */; };
+		360AF0BEB459AC422C24C696D2681CAB /* AppFindLiveQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 0C91F187FC27E844D8FAD25A6A148B7F /* AppFindLiveQuery.graphql */; };
+		3658F831BA1EAA32C949A69C50ACE1FB /* EZAppDeleteLiveProductMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = BEF9AF21C2817D7BC41D86BE728EEFF1 /* EZAppDeleteLiveProductMutation.graphql */; };
+		36C21DAAE04D797814B85A50186FC848 /* EZHomeFindChatroomUsersQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 40A7555148A08315CCAA191039030287 /* EZHomeFindChatroomUsersQuery.graphql */; };
+		37AB9AA0744668C522E21692C195ADA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		37CB52BE336947D728F8079A99C3666F /* FindFollowInterestsQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = D32196EB39F016DF266E464AE7EB6AA6 /* FindFollowInterestsQuery.graphql */; };
+		395ED21ABA474418E82CF3535E3D6A71 /* LikeLiveMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 41826491658C09B2EB8467618A7E5E07 /* LikeLiveMutation.graphql */; };
+		399F34CCFCC1C17DCC7F1867B3D8AD23 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442255A9D02D0D81F692AC37892DC7AF /* API.swift */; };
+		39B7809B7E5CC1A7DC109545799A6E36 /* UserFollowHashtagMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = EBE89D2FD96395F339A3DA657C0DCFF2 /* UserFollowHashtagMutation.graphql */; };
+		3A0AE79FF79E811F9A54ECE619899D45 /* AppTrackerByOrderQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 4B8618E4C956A5B2C0DEA9E25F050638 /* AppTrackerByOrderQuery.graphql */; };
+		3A6AB7ED68DFA6F538740293D8442978 /* EZGraphQL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E832B410627DD6B66DC2A9F94EB30E /* EZGraphQL-dummy.m */; };
+		3AB2799E526FAC79C5E8F19F65E04F20 /* EZAppBatchCreateLiveProductsMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 46D38B29BA41465F2DB3AA7DE075CB2B /* EZAppBatchCreateLiveProductsMutation.graphql */; };
+		3C7DD98F59A0DB11903815E7B02AE5FD /* AppChangeLiveWatchListMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 0D969950510A7D2E3EB60E24C85B486C /* AppChangeLiveWatchListMutation.graphql */; };
+		3E3B54A5C38B337DE5042FD0C5BF35E0 /* GraphQLHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED6EFEF779EED7B6BFC2AD570D7B3C /* GraphQLHTTPMethod.swift */; };
+		3ECD244D55DA76B0DFCEE7C88FD4631C /* DispatchQueue+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883BBE4E71293B9478F4A0B32B126D07 /* DispatchQueue+Optional.swift */; };
+		40C8D1A348485FFE169F326DA3BDE867 /* EZFindInterestsWithNameQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = CEF8895C5C07C4A4A2BFF06CDE6676EA /* EZFindInterestsWithNameQuery.graphql */; };
+		41848B35B3574EB8AE74BE8DE07DB1B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		42ABE41AE11AEE7043127D96F9DA68F0 /* ValidateAddressQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 1264FC808ED5B97C054232A18E3A01DC /* ValidateAddressQuery.graphql */; };
+		45639654E4CCE27EE6BB6A262D8CE3C5 /* UpdateAddressMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = AC93434587D9EDB5E6B0015FD567C583 /* UpdateAddressMutation.graphql */; };
+		46006D0FC73D1DADE2B2828D0DE9A105 /* AppPlaceBidMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = E08CCC9C694C407617F9F44A18D3E9EE /* AppPlaceBidMutation.graphql */; };
+		47C5957035C2659B52672729E411CCFC /* ResetPassword.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 39FA1599D41B92D7B319C64B3351BFD1 /* ResetPassword.graphql */; };
+		493863E9077781BEC8562280E86F364E /* RecordSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9206BD0FD4403D775CDF323C0FFA647 /* RecordSet.swift */; };
+		4969EB5CB7909DE9666C68B676347053 /* CreateOrderMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = ED08A3574EDD04205035394078DEC166 /* CreateOrderMutation.graphql */; };
+		49DCD00FFA3634E218F4C5C715D4C007 /* CreatePaymentMethodMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B9CEDC87F67E2B00339B497C208B4 /* CreatePaymentMethodMutation.graphql */; };
+		49DFBA1E030D65BB1FE1074AAFDF9EB5 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F9B2761F35D7E6F376F30E0C42A7DB /* MultipartFormData.swift */; };
+		4A865E184D4BD403DD9EB0E40FE25631 /* AppSetAuctionPaymentInfoMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = E56AD9723D394BC659BFFA7944B87018 /* AppSetAuctionPaymentInfoMutation.graphql */; };
+		4B29D9F509D0D373F1EFA732D2D1BB55 /* CreateAddressMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 2B68DDF2B5294D1D5C3253611CE1B1E9 /* CreateAddressMutation.graphql */; };
+		4C24202EB7CF14B56B300ED86309FA58 /* EZFollowUserMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = CF8EBE7113094F12990F658AE44A48D8 /* EZFollowUserMutation.graphql */; };
+		4D8081C8E68AAB1177D0BA413271416F /* EZLogoffUserMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = AE8FDF37B1CC609E8463C240D9CF19C9 /* EZLogoffUserMutation.graphql */; };
+		4DC41032FF17BC0F2FADB21C08863AB3 /* GraphQLResultNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0ED5F587BBF2F7AFA208E69101A195 /* GraphQLResultNormalizer.swift */; };
+		4EC2813470C2AE66A287DFD6767E7BA7 /* EZStartLiveRecordingQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 7F7A2DC9B65A27B8EC99972DA8E10C14 /* EZStartLiveRecordingQuery.graphql */; };
+		4FDC7E52CC2CA72CC23068096C4925CA /* EZMeUserInfoQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 943F76F5773D35C6BC0C8B8521ED4847 /* EZMeUserInfoQuery.graphql */; };
+		504EFD85972B6B8ED00FF00B01BB8657 /* EZGetUserOfflineMsgCountQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 7139AA71EDE1D55418D8AF676FFD9141 /* EZGetUserOfflineMsgCountQuery.graphql */; };
+		50D67759F75B08A0E460A0962BBE800B /* CreateCardMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = F2C2D680D3C4FB55AE6518A314021D79 /* CreateCardMutation.graphql */; };
+		51C142B134B806492EE9FA759B885758 /* CreateTicketOrderMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 1011D5B9832A1E072914D8F76417DCB6 /* CreateTicketOrderMutation.graphql */; };
+		540CC5F9E67E960581FC195389ADFA48 /* AppGetTicketOrderQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 9E921A4D06BD0F9E7D37D435555F0299 /* AppGetTicketOrderQuery.graphql */; };
+		55F31C3C9239CF3BE7690A23F45A74F0 /* GetServerTimeQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = F4AD32C502068E8802EA30401567CFF1 /* GetServerTimeQuery.graphql */; };
+		5775D5C464E1429D04C06790A862ACB9 /* CalculateOrderQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 13290988BDA3A97CB69A44E85CC139F9 /* CalculateOrderQuery.graphql */; };
+		58028480AA257EE12A8F1DA9AE7C40D2 /* Pods-EZGraphQL_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88322C31CFAA08C4140C8FFCC72EDDA3 /* Pods-EZGraphQL_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		592CFF6BDE738F4C6E6164DB718BEE5E /* RegisterMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = B274DAF4895C0868E8CE22601B0C9290 /* RegisterMutation.graphql */; };
+		593C1021AE227694DF13BE942A875F6D /* AppUpdateStoreMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = EE2DC82BEB8A79B0AE360B7ACACC8364 /* AppUpdateStoreMutation.graphql */; };
+		59F3E8721DEA928033DB139666F68874 /* Matchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DB5C0DA8169C7E2C28946F262AAA49 /* Matchable.swift */; };
+		5AACA14C08E6A7ADA5E09C6BD3D91350 /* EZLoginMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = A40A14B9100E238530C0679CA2A2007B /* EZLoginMutation.graphql */; };
+		5CFBE8792D23ECFE7E53AACCE8E52109 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8A93F891AAFD17E31CCF4AF300112B /* Record.swift */; };
+		5D33B7F11D2CAF3CD106D26414D97CA4 /* GetLiveTokenQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = EA9D89740DB93D910D0BE987340308FA /* GetLiveTokenQuery.graphql */; };
+		632ADA9B193E5343B10C9740D4B43397 /* AppGetEventQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 9553199691C5DBC381346796BC425D21 /* AppGetEventQuery.graphql */; };
+		6354EDDE6F9B63EB65136C04CCDD87FA /* schema.json in Sources */ = {isa = PBXBuildFile; fileRef = 0ACB0F21A614973DFBB6E6BA45741757 /* schema.json */; };
+		6447DB1DD7F19FCC9DD7517B599E9D2C /* HTTPURLResponse+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F7F34B17AC96D668318F1EB67D83D1 /* HTTPURLResponse+Helpers.swift */; };
+		6661A16F5F6419E8DACF1A7DC133C486 /* EZGetOrderQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 1946F7E91BABF2B73CE0B832E102809F /* EZGetOrderQuery.graphql */; };
+		6868587AAED250F6C815026D04514AEA /* FindCommentsQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 367A2B4A25F01FB19FAC8FC769BDE537 /* FindCommentsQuery.graphql */; };
+		69B403863A6A1C32B3FFEBE7106472F5 /* EZCreateReportMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = CFBC1ACAF3438B1AA8599BD157B17F45 /* EZCreateReportMutation.graphql */; };
+		6E864EB37804DCFE3FECD3C5C6F88EFC /* EZFindUsersQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = AFE808E3B8BE022863D789A79AC251AD /* EZFindUsersQuery.graphql */; };
+		6ED9471E4E822142A82540FB461F28F8 /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F95904565810DA03893698675CD62BD /* AsynchronousOperation.swift */; };
+		6EFA4BCF235708D5DA0AC1D4F308E722 /* Locking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B28225030A7374A1A58B658EE99753 /* Locking.swift */; };
+		706AE6E67DF160B16DF4BC4C17CB8DE2 /* EZHomeLiveQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 8561BC7C411718958B19A597665685E4 /* EZHomeLiveQuery.graphql */; };
+		713832D3A1E34E27F7147650E0B99889 /* CreateCommentMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 8EFFD226C31FD69852ACE8656C0B21E0 /* CreateCommentMutation.graphql */; };
+		724AE2A46BABE3B2D6E258BDD9F9D514 /* AppGetLiveProductQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 6A09BCDAB9C9E77FBDBF0CF93AB99B46 /* AppGetLiveProductQuery.graphql */; };
+		73290780A64B650B311D5EAB24C42116 /* CheckSessionTokenQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = FBC03716F356B6271D6F2D22C8A4AFC0 /* CheckSessionTokenQuery.graphql */; };
+		7471B16702BAC57B939E1D9CC49EC322 /* EZHomeAlgorithmFindUsersQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 1981302EFE57B53F92723AD4E0D679BB /* EZHomeAlgorithmFindUsersQuery.graphql */; };
+		7493C371B1C6075C4292FC35F0958490 /* DeleteCardMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = E354E29974350E928ADD02A3C3E70DA8 /* DeleteCardMutation.graphql */; };
+		75B6FCEFE957012887D71E6A0557FEB4 /* Apollo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F1DF37A1A7B58B780FFBDDCC0420F3 /* Apollo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76A4F5B74294D3BCD07F00FBD7279943 /* AppReadAllInboxNotificationsMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 54541940AAC814A38AD201A3CE0ED786 /* AppReadAllInboxNotificationsMutation.graphql */; };
+		76A67BD0066B41EE1A98F0E2B8A07463 /* EZCheckPhoneNumberQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 2260596136A25FE4D38497D97EC046F9 /* EZCheckPhoneNumberQuery.graphql */; };
+		794562C0971B1CFEADD392D7BDD443B0 /* FindVideoByVideoTypeQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 5CBBD2C1B96BEEEFFE0C559013FA32DA /* FindVideoByVideoTypeQuery.graphql */; };
+		7EADA14E275162FCE906DEF1AFECC3BA /* GraphQLSelectionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E815CBA9B3C65740498E3F67340BCC /* GraphQLSelectionSet.swift */; };
+		7F44BB8AFFC73BFB2223475693BCEAAE /* FollowHashtagMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = CF9B40671452B16303D27520A7A174B1 /* FollowHashtagMutation.graphql */; };
+		7F49C5BC79412AF7D0AD7087F6D56EB1 /* Pods-EZGraphQL_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54EF41766881DD12C9B75E971631965F /* Pods-EZGraphQL_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FDCB270FD428D705F43B1DE85651288 /* DeleteAddressMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = BA890A05B1FD69857154970962B3D39B /* DeleteAddressMutation.graphql */; };
+		81FFE54380305319BD95D93BA1D51B28 /* EZCreateLiveMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = B45EB99E125CF21148E723BBBAA15CC0 /* EZCreateLiveMutation.graphql */; };
+		84E395B657D515FEB541A5FB208446B6 /* UpdateCardMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 60744D8156541FD129EFFA4105E150D0 /* UpdateCardMutation.graphql */; };
+		86822AA2EFEAAC78301D4DBD0BFEE8AA /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720928FC7E254541B8C2F997E62A7E6F /* Promise.swift */; };
+		869AF9F459A0CE50ABFEA4ED04F42C9C /* Collection+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD6D9A26F9962BAA38559A3595A48BD /* Collection+Helpers.swift */; };
+		87794A1C49EDCA1E1258778D92B9D652 /* VerifyOAuthTokenMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = D9022A36DCE885D982CF0EC535FF05ED /* VerifyOAuthTokenMutation.graphql */; };
+		87A8EC837C5D55EE347F82D79791D2C9 /* ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09654C5BE1E187425911E0B601F8B33 /* ApolloClient.swift */; };
+		89B5D4BEAA5A28C8A6FF809AD7457424 /* FindChatRoomUsersQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = A6B2C3C0EEDD9A3719B9F3EAF404A7C5 /* FindChatRoomUsersQuery.graphql */; };
+		8AA222AB64FF40630C04B140B7AD0BE6 /* LikeVideoMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 01F94D8BFA2E19B37D70FF550321FD5A /* LikeVideoMutation.graphql */; };
+		8BBCE2528336E759BCF432B4DF1C0890 /* EZNearBySearchQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 5AC3ED9315FA46B25B82996C26038126 /* EZNearBySearchQuery.graphql */; };
+		8FEF4AB3813EB4D566FC361BE9CEAEBB /* GraphQLQueryWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A780803075608DD58AC09E5197D6D7E /* GraphQLQueryWatcher.swift */; };
+		900991D56C23F1B77D2D304E978087F1 /* CreateUserCoupon.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 7436B950CDD1ED7C38FFE867013C6297 /* CreateUserCoupon.graphql */; };
+		901973FE49FE8D0AB2A504983D1E89B0 /* AppAcceptUserAgreement.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 70679388C2A17D2D5BBF91D9F09903EF /* AppAcceptUserAgreement.graphql */; };
+		902BCFF2A2A74CABB99D838128F7520D /* AppSetupLiveResourcesMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 5EB7918AB95F2F241552996971A3E67B /* AppSetupLiveResourcesMutation.graphql */; };
+		942CEB033AD59FD7640D055E2FDAC6A8 /* HomePageQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 35514A7D9FC03EE0788FFCAE5BEF3B83 /* HomePageQuery.graphql */; };
+		946F61015E367987A8049510D4A87E6E /* GraphQLHTTPRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659EABC95A583459A1D4BD40E85E9C85 /* GraphQLHTTPRequestError.swift */; };
+		94ED218DE2923CD5CAEB2D2AC8496DA2 /* JSONSerializationFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5024796D02259EECCE22BB66C5E1EB /* JSONSerializationFormat.swift */; };
+		95194B4F41F89C6FBE8D359A256D4163 /* AlgorithmFindLives.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 3D3D79AA0DA9C2483F0A2834A590A7F4 /* AlgorithmFindLives.graphql */; };
+		961A688BBD788D07F68C33166D6AD328 /* CreateIVSChannelMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 10FB9029CA53021B1B3537DA444C8C14 /* CreateIVSChannelMutation.graphql */; };
+		9BC32325FA23C98FB01250A665E203CD /* GraphQLInputValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1BAA5D91EA98BE1CC3DE7D38AEC40 /* GraphQLInputValue.swift */; };
+		9BD2B1E72FA7E7B708204C3DACF8C8E2 /* EZCheckUsernameQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 8ABCC583EECB4FD7395DE43AE24EAE98 /* EZCheckUsernameQuery.graphql */; };
+		9DAE287DDA16CC7C2406ABDFF1FD7ECD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9DFC24D2AC8DF1DD6E821798ECB90D6C /* AppGetFeatureHashtagQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 68040D2E4E03ACFAC3AEA5B74BC55784 /* AppGetFeatureHashtagQuery.graphql */; };
+		9EF30FAF9EE02F19AA9C18965315AC95 /* AppExpressDashboardLogin.graphql in Sources */ = {isa = PBXBuildFile; fileRef = C062F605451A2E09111BA9F4E93C33EE /* AppExpressDashboardLogin.graphql */; };
+		9F5A20D66B17B84A6C42246F962102BF /* EZAppUpdateLiveProductMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 841DB44B50C1E845B3A4D62BDA737A0C /* EZAppUpdateLiveProductMutation.graphql */; };
+		9F7D0F6DC1F281EA17FD7788195705F1 /* EZCreateClientLogMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = AAD67D1832B024FFC252CD515814EE91 /* EZCreateClientLogMutation.graphql */; };
+		A0C3DED9772EF3404384A46A4D8830C9 /* GraphQLOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327A189AF49F78C47817B1C5FEFB6C6 /* GraphQLOperation.swift */; };
+		A448AA2D663879BEA3547D63EF181D55 /* AppListEvents.graphql in Sources */ = {isa = PBXBuildFile; fileRef = F942C3EDD6FE5432E57ED28E7BC6CE04 /* AppListEvents.graphql */; };
+		A57918EF3BA96028212F9B5DE0272B5B /* EZPlaceDetailQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 6A6D40A64F4C6C275C396B998A10C130 /* EZPlaceDetailQuery.graphql */; };
+		A6ABE788F39C907EADFF682D49A155C7 /* EZGetUnreadNotificationCountQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 5AE9C4B7D29951DF7717336D7D2BFBD2 /* EZGetUnreadNotificationCountQuery.graphql */; };
+		A74094ED7B034EAED60768A055BC54F5 /* FindAddressQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = A4FCF2E6213D23F74AFE35D0BFF7B4EB /* FindAddressQuery.graphql */; };
+		A8D41F9F500B886D837A59A2DCDC04D1 /* ViewLiveMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 61D9EB4A3F82EF13F1FF196ED9C08FA5 /* ViewLiveMutation.graphql */; };
+		AA1086DD61C621543466931EA30ADA3D /* FindVideosQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = DD821AE18EF1A250EE9F723D83B757E5 /* FindVideosQuery.graphql */; };
+		AEDD6E9261130CC8C7E0CF2B9F41DF0E /* AppDeleteLiveScheduleMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = C4597D5128676624C7E81358787F0956 /* AppDeleteLiveScheduleMutation.graphql */; };
+		AEF2BAEBACED2F02665417C0C037202B /* EZLinkUserInstagramInfoMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 16890ED3FB54E8827F4C468E80DC8B4C /* EZLinkUserInstagramInfoMutation.graphql */; };
+		AFA10556DD328E4EAC832EB6BA9CE7C4 /* AppSearchMediaResourceQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 7A683AE55DAE4ADB78E42C81A9E160B3 /* AppSearchMediaResourceQuery.graphql */; };
+		AFFB2129F373807803AFCB4279D1E891 /* LiveInfoSubscription.graphql in Sources */ = {isa = PBXBuildFile; fileRef = DEE267A2D008E39A582BCC977F6EA026 /* LiveInfoSubscription.graphql */; };
+		B043256EC203FC46C628CADFEBC19D74 /* ResponsePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03995A7F0802FB41999BDD426602D5A8 /* ResponsePath.swift */; };
+		B1012A612D0326F2F53A99A4F0945422 /* AppListInboxNotificationsQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 86A40A513DF9DF6F7E90A0A45DEEE17D /* AppListInboxNotificationsQuery.graphql */; };
+		B32BDC83EA709E4913D061434F6D2EF5 /* UpdateCommentMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = DE3A5205300C60D5D949E5C47743701D /* UpdateCommentMutation.graphql */; };
+		B5CFAAE1671D572F463CBE2D82E70B98 /* ViewKeyword.graphql in Sources */ = {isa = PBXBuildFile; fileRef = CA2784A184FCC534E11A0F418BF42051 /* ViewKeyword.graphql */; };
+		B7E0E1E55A036DD8355EB83AA7929D91 /* EZCreateCouponMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 5C27A10D99D700768E7C9E78A623483F /* EZCreateCouponMutation.graphql */; };
+		B7F760BFE4C0000C8F3D8BEBB97CBB28 /* EZLogouMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 5D21FDDFB80E6E1FEFE798AAABB379B3 /* EZLogouMutation.graphql */; };
+		B95FE984C3C798E6E2668B19F2DBEB72 /* EZViewHashTagMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = D385E0F7308D4077645D387BF7737183 /* EZViewHashTagMutation.graphql */; };
+		BAC72BB82C291AE1AC7D6115F9F4E8F7 /* EZUpdateCoupon.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 0FF48F1C8434074A3C9FC1FCD379C66F /* EZUpdateCoupon.graphql */; };
+		BB084BCF68BF840E60DE41BFC07A0D66 /* Dictionary+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD90AB14D6BEDFA6726DBFCA14E9766 /* Dictionary+Helpers.swift */; };
+		BB889940E466FE4D2DB178145C20C98D /* EZGetEphemeralKeyQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = BB82353BCB65D8BC8C5E639AA24C066D /* EZGetEphemeralKeyQuery.graphql */; };
+		BC62D8D5C2F1A50AB7498B445A083E78 /* InMemoryNormalizedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D6A54ED5FF46D7B58CDDFB9905D2D4 /* InMemoryNormalizedCache.swift */; };
+		BF0B4D49EBEFC6D56987C537BCB7EDB3 /* MePageAllQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 884BDDB0E9B6F378E949BB30708F6820 /* MePageAllQuery.graphql */; };
+		BF67F5BE638CDD782F83B78407F05380 /* UpdateUserMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = AB354EC8DC278A4380F88A186C733758 /* UpdateUserMutation.graphql */; };
+		C2D3ACBEB5CDCECE8442CCF374A9810A /* CreatePaymentMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 23E5C66520513745E887CF9E5D2E9F21 /* CreatePaymentMutation.graphql */; };
+		C41929654FCAE87F0EFD4DE59AAE7421 /* HTTPNetworkTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70E4086C4662921EF4D016F7EF1DC2B /* HTTPNetworkTransport.swift */; };
+		C526BD0B0894785F914652547E6F813B /* NetworkTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EB259F2D512AEC95AFF9C0009C0CA2 /* NetworkTransport.swift */; };
+		C5CB9C118A83F3A5BEBA25A7495745B3 /* UpdateLiveMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 8913CCB9341934B577E86B8105D3A5CB /* UpdateLiveMutation.graphql */; };
+		C6CE6F6B6D6FF5AE86EF4D0EB2D664CC /* JSONStandardTypeConversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D4BBF1761FD1D2095E4FE01416FA5B /* JSONStandardTypeConversions.swift */; };
+		C864AC56A0865352B5EA9A2D7DFECEDE /* GraphQLDependencyTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85032AB71AFEE76E26A0D4CA16408C8D /* GraphQLDependencyTracker.swift */; };
+		C98DEC29E0837C55849FF028CA306814 /* Bundle+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F46B742FF37297EA352B5BBCCE09AB /* Bundle+Helpers.swift */; };
+		C9B1F80AF01C361BFE6BBC92F73C78B5 /* EZUpdateProductMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 00F7711F76331AA19945647B338C30F1 /* EZUpdateProductMutation.graphql */; };
+		CA4B24B9F5A464A07C8ABED2826236E8 /* CalculateTicketOrderQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 9519881EB9F247964AF47FE5C2B88BCE /* CalculateTicketOrderQuery.graphql */; };
+		CAEADB00FE5F20AD6B9F6DFDB9695087 /* EZLoginByOAuthMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = A9FD239FB09C3168F83B03EB6A770EBA /* EZLoginByOAuthMutation.graphql */; };
+		CD0C77F1B9FAC6EBDE5B429EB8CF5493 /* EZGraphQL-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30F69CD29773CC17F5203446CF4C6224 /* EZGraphQL-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD6B651F5D6BC2C01F1F56DCF5CE4CAC /* EZFindFollowUsersQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = BBE096847629C48E92EFB5557E2B2CAB /* EZFindFollowUsersQuery.graphql */; };
+		D0452914982EED1793D57FCFB7E3451B /* EZAppBlockUserMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = A0A7B61AEEBA9E96293079591A2E37F4 /* EZAppBlockUserMutation.graphql */; };
+		D1F272375B1320A4A0F9FC75B5DD71A3 /* ScoreLiveMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 9C05176AAFE101C18CC4F07A21AEC1C0 /* ScoreLiveMutation.graphql */; };
+		D3612ACA63154EF80954EB4897DC791F /* AppGetMultiUploadURLQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = AC5040709FA57C89A025E10B422A8BC5 /* AppGetMultiUploadURLQuery.graphql */; };
+		D3C046D013EA3E884444B8C47E62D87D /* EZAppGetVersionQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 2F56701E1BF876EBFAF3424C2A4D4442 /* EZAppGetVersionQuery.graphql */; };
+		D4339CA4906D60992C8BA8ED334B9F60 /* AppListLiveWatchListQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 408FCD72A8AA8CAC704DC0E839BC8681 /* AppListLiveWatchListQuery.graphql */; };
+		D6A058D3FAC139CD98D9E3977A733472 /* RequestCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7D29DA2859E8316DB2E452D5974BF4 /* RequestCreator.swift */; };
+		D729C0A85A746B272214D51B4D51681B /* EZEndLiveQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 61ED326039E58BFEE73A8C5389098A5B /* EZEndLiveQuery.graphql */; };
+		D8E7E8284A42D9669DF32BCDA32163E4 /* EZFindLivesQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = DF6931D0F9EA2C68A008068044CEAAE6 /* EZFindLivesQuery.graphql */; };
+		DA961E6AB8140C09BE16EF5730E08F24 /* GraphQLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF541348015AC216473D8A5D80A3A2A /* GraphQLError.swift */; };
+		DCAB0DD4E930D7335A7A20CA034421E9 /* GraphQLHTTPResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C751ACD0FB7F4EEA17082F676C3BE25 /* GraphQLHTTPResponseError.swift */; };
+		DD25C7DF8F9F607DFDB65EEEAFEC2943 /* BindPhoneNumberMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 708D4E1D686BE5396702D27C39DA78BC /* BindPhoneNumberMutation.graphql */; };
+		DDFB39E1671681D4B21A703289EBB7DC /* AppStoreQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 0966EDE37F0A9EBBFFA033195725E32F /* AppStoreQuery.graphql */; };
+		DE8F5F7647AB7B82919176FD22D80BCC /* AppListAuctionBidRecords.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 05075808DB0FD6D5F6F12BB301EA7C80 /* AppListAuctionBidRecords.graphql */; };
+		E012E3AF206F3F77EE8E07EC77B1F3A2 /* EZViewVideoMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 7E840D7A080FFD62A091954E02A977F6 /* EZViewVideoMutation.graphql */; };
+		E10C540E14512B024A649B875B4B7DFC /* GraphQLResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E655DD7ED805F7920D096A968625BD0 /* GraphQLResult.swift */; };
+		E299B607DCC4E330481B002D0B6A15F8 /* EZCreateProductMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 3A0A16F3DA55D5D99D1018C68DE96A7A /* EZCreateProductMutation.graphql */; };
+		E3410D359A9229959E93A80FCFD499AB /* GraphQLSelectionSetMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824AA34C31B958B97824AB6CB0F23270 /* GraphQLSelectionSetMapper.swift */; };
+		E380FD9989B0B08B98A0CF1780A24A54 /* LikeCommentMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 43EC95291FDFC56E6A1881DA20952E6E /* LikeCommentMutation.graphql */; };
+		E3C5F7494155D415767FCFE69F163517 /* ApolloClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C173681BD8AA7FCA1AD6730C09532 /* ApolloClientProtocol.swift */; };
+		E47E040B84833D53D840F1D1C1442798 /* AppFindFriends.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 448E95AB410046594AC757F1BDC3FB52 /* AppFindFriends.graphql */; };
+		E6AA1732F66C249124FEF3B2EB00EC78 /* AppLastPaymentMethod.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1B9C1EA6A285FE81A72C6FEEEF458 /* AppLastPaymentMethod.graphql */; };
+		E92886196C684CBFED6B965A20034509 /* EZAlgorithmFindVideosQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAE71AA04A92EBEC390BE08A8EDFEC /* EZAlgorithmFindVideosQuery.graphql */; };
+		E9D3E7D34D9861E3E429A1B8A56FAD62 /* GraphQLResultAccumulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D9B1797207EAC104710D2292370F49 /* GraphQLResultAccumulator.swift */; };
+		EA45ED1F99C0F2810C41BB8771AC83DC /* EZVerifyCodeQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = B84572BAD93788479BCE28FEE18DBE73 /* EZVerifyCodeQuery.graphql */; };
+		ECBD2800F958CCCC4A744512D52EA850 /* GraphQLResponseGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AA4BE5609270DCF50B60931D511724 /* GraphQLResponseGenerator.swift */; };
+		EE107948895A4762A79EB46C800D91B5 /* Result+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ABB9421199DEF7BD496D2FA7E28DC9 /* Result+Helpers.swift */; };
+		EF8418485C43A7BB3B5C8673AE8201FE /* GraphQLFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646657269C2B7D290E45DE41761FCE5 /* GraphQLFile.swift */; };
+		F01898B074C2E2DA8632A73F3ED578E5 /* CreateKeyword.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 9168A23F1FD3849B3321D828E991F335 /* CreateKeyword.graphql */; };
+		F0E503B74D0D25E82DCF9FA640246CF0 /* Pods-EZGraphQL_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE85FE3FF4616A2DDA4BE69775AD3E45 /* Pods-EZGraphQL_Tests-dummy.m */; };
+		F25121A15CD2D9B8B676E4C6656F5792 /* CreateFuturePaymentMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 7F827F693A311BED4CDB113A30B3494E /* CreateFuturePaymentMutation.graphql */; };
+		F40DA5BD23F232DADD3E73C08CFB4794 /* AppFindVideoQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = E5EFA0D54D31E67E0012644F462D505D /* AppFindVideoQuery.graphql */; };
+		F45B901D5E44BA4B1641B4DA112017EF /* GetAppConfigQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 4CA93790D29DB3AC4ABE1CAA9790C4E9 /* GetAppConfigQuery.graphql */; };
+		F82A3FA9C20DC27B745ED8C891FAD00D /* EZFindInterestsQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 251BE4AD038B2C75D5B6B00F52038141 /* EZFindInterestsQuery.graphql */; };
+		F8D84AD1DEDA10297AC9EBB35CACFE98 /* FindFollowUserQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 3BDDCD3032E7AE38A70A660F158FDDF4 /* FindFollowUserQuery.graphql */; };
+		F9DA2FBF4974101DCA7B744C255A5AFA /* AppReportCollaborationEvent.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 49FCDDCD8F402C2C47D54BFE4D23ED50 /* AppReportCollaborationEvent.graphql */; };
+		FA6BF193536BC5DD38B9681DA9627047 /* AppListScheduleLivesQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 8E04D5E0B75C9B19E3A3097BBEB70ABF /* AppListScheduleLivesQuery.graphql */; };
+		FB31A4F6546B3718DB68F0D042686192 /* EZFindHashtagsQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 66C5B4EEF2CF66C739F915B0DA34C089 /* EZFindHashtagsQuery.graphql */; };
+		FB9D43CAD4481C94F99D682930BAFCF3 /* NormalizedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0C87FDCD138FCF53A28E831C8ACDA /* NormalizedCache.swift */; };
+		FBCEF7F08920848A156A9440C4D33E04 /* EZAppUnblockUserMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 715E5A9AD5472E19EC8485524B2FBB44 /* EZAppUnblockUserMutation.graphql */; };
+		FC2F0A0741258C6C8040B1954DFA1934 /* String+SHA.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B8F02A2186719E75D63D35AB16E6EC /* String+SHA.swift */; };
+		FC64D76F43474B701579422EC622DFA1 /* EZListOrderQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 8C3C2B22AE97F4498E3B9E5379D88450 /* EZListOrderQuery.graphql */; };
+		FD9DAF65B4696FFA5417DD5E4C5CA2FC /* AppUpdateVideoMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = A7EDBD917C6A94BD2892A25679247A6F /* AppUpdateVideoMutation.graphql */; };
+		FDAB5FD6616DFBD0702576EE7654E352 /* FollowInterestMutation.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 92AB2FDBFCE458E6DEB125496D45BB3E /* FollowInterestMutation.graphql */; };
+		FE1E8FDE693EB6B4743604E31023CB95 /* AppViewStoreQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 3F581AFAA2ABE45542D86B9BDFE4E947 /* AppViewStoreQuery.graphql */; };
+		FFAF9C8304F9632A018A3A49310DFF46 /* EZListTicketOrdersQuery.graphql in Sources */ = {isa = PBXBuildFile; fileRef = B9738ABF82A8B134099A0F9C953E4F98 /* EZListTicketOrdersQuery.graphql */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E24AF2BD70918C3007F1230A079EB7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7143250EE296CA41D4EB76D25F3B578C;
+			remoteInfo = EZGraphQL;
+		};
+		27B947299B9D3B78259E3BF6A59330C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3120415F22AD96C257F2164F508F6810;
+			remoteInfo = "Pods-EZGraphQL_Example";
+		};
+		9F843598E98EFD8ACB0BA6F0D067CECC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30EE3CABB612307A688C40B61BFA74CC;
+			remoteInfo = Apollo;
+		};
+		F16B306AD0C0E39042AD36725A59AD93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30EE3CABB612307A688C40B61BFA74CC;
+			remoteInfo = Apollo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00F7711F76331AA19945647B338C30F1 /* EZUpdateProductMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZUpdateProductMutation.graphql; sourceTree = "<group>"; };
+		01E55D9EE8404F62ED0BBA9C73CC9B51 /* EZMeLikeVideosQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZMeLikeVideosQuery.graphql; sourceTree = "<group>"; };
+		01F94D8BFA2E19B37D70FF550321FD5A /* LikeVideoMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = LikeVideoMutation.graphql; sourceTree = "<group>"; };
+		03995A7F0802FB41999BDD426602D5A8 /* ResponsePath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponsePath.swift; path = Sources/Apollo/ResponsePath.swift; sourceTree = "<group>"; };
+		05075808DB0FD6D5F6F12BB301EA7C80 /* AppListAuctionBidRecords.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppListAuctionBidRecords.graphql; sourceTree = "<group>"; };
+		0966EDE37F0A9EBBFFA033195725E32F /* AppStoreQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppStoreQuery.graphql; sourceTree = "<group>"; };
+		0ACB0F21A614973DFBB6E6BA45741757 /* schema.json */ = {isa = PBXFileReference; includeInIndex = 1; name = schema.json; path = EZGraphQL/Classes/schema.json; sourceTree = "<group>"; };
+		0C75536C1E984546F8847320DE0C67EE /* EZAppChangePhoneNumberMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZAppChangePhoneNumberMutation.graphql; sourceTree = "<group>"; };
+		0C91F187FC27E844D8FAD25A6A148B7F /* AppFindLiveQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppFindLiveQuery.graphql; sourceTree = "<group>"; };
+		0D59897E502B5B65093EEDA4C2FD6D95 /* GraphQLResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResponse.swift; path = Sources/Apollo/GraphQLResponse.swift; sourceTree = "<group>"; };
+		0D969950510A7D2E3EB60E24C85B486C /* AppChangeLiveWatchListMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppChangeLiveWatchListMutation.graphql; sourceTree = "<group>"; };
+		0F79C641A582D8A3C262EDCC4FC05807 /* EZSendCodeMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZSendCodeMutation.graphql; sourceTree = "<group>"; };
+		0FF48F1C8434074A3C9FC1FCD379C66F /* EZUpdateCoupon.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZUpdateCoupon.graphql; sourceTree = "<group>"; };
+		1011D5B9832A1E072914D8F76417DCB6 /* CreateTicketOrderMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = CreateTicketOrderMutation.graphql; sourceTree = "<group>"; };
+		10FB9029CA53021B1B3537DA444C8C14 /* CreateIVSChannelMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = CreateIVSChannelMutation.graphql; sourceTree = "<group>"; };
+		11ED6EFEF779EED7B6BFC2AD570D7B3C /* GraphQLHTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLHTTPMethod.swift; path = Sources/Apollo/GraphQLHTTPMethod.swift; sourceTree = "<group>"; };
+		11F07FC1D42756E5764CA7CC3A306FF5 /* EZSelfQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZSelfQuery.graphql; sourceTree = "<group>"; };
+		1264FC808ED5B97C054232A18E3A01DC /* ValidateAddressQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = ValidateAddressQuery.graphql; sourceTree = "<group>"; };
+		1327A189AF49F78C47817B1C5FEFB6C6 /* GraphQLOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLOperation.swift; path = Sources/Apollo/GraphQLOperation.swift; sourceTree = "<group>"; };
+		13290988BDA3A97CB69A44E85CC139F9 /* CalculateOrderQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = CalculateOrderQuery.graphql; sourceTree = "<group>"; };
+		16890ED3FB54E8827F4C468E80DC8B4C /* EZLinkUserInstagramInfoMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZLinkUserInstagramInfoMutation.graphql; sourceTree = "<group>"; };
+		18E0C87FDCD138FCF53A28E831C8ACDA /* NormalizedCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NormalizedCache.swift; path = Sources/Apollo/NormalizedCache.swift; sourceTree = "<group>"; };
+		1946F7E91BABF2B73CE0B832E102809F /* EZGetOrderQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZGetOrderQuery.graphql; sourceTree = "<group>"; };
+		1981302EFE57B53F92723AD4E0D679BB /* EZHomeAlgorithmFindUsersQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZHomeAlgorithmFindUsersQuery.graphql; sourceTree = "<group>"; };
+		19EB98EB55012BB87634B151337A591D /* Pods-EZGraphQL_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EZGraphQL_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A7289258BD06FB836A0F868346ECAEC /* FindRecommendInterestsQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = FindRecommendInterestsQuery.graphql; sourceTree = "<group>"; };
+		1D04D38D63654907734EA389061A3835 /* Pods-EZGraphQL_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EZGraphQL_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1E78FF6E44C6ED899EE9350EED11C344 /* Pods-EZGraphQL_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EZGraphQL_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		1EACE49E228775DA21B5A017B144C31A /* Pods-EZGraphQL_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EZGraphQL_Tests.modulemap"; sourceTree = "<group>"; };
+		1ECAE71AA04A92EBEC390BE08A8EDFEC /* EZAlgorithmFindVideosQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZAlgorithmFindVideosQuery.graphql; sourceTree = "<group>"; };
+		1FE1B9C1EA6A285FE81A72C6FEEEF458 /* AppLastPaymentMethod.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppLastPaymentMethod.graphql; sourceTree = "<group>"; };
+		2260596136A25FE4D38497D97EC046F9 /* EZCheckPhoneNumberQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZCheckPhoneNumberQuery.graphql; sourceTree = "<group>"; };
+		234B58888DEDB2B943A3B344A89D769C /* Pods-EZGraphQL_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EZGraphQL_Example.modulemap"; sourceTree = "<group>"; };
+		23E5C66520513745E887CF9E5D2E9F21 /* CreatePaymentMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = CreatePaymentMutation.graphql; sourceTree = "<group>"; };
+		24D4BBF1761FD1D2095E4FE01416FA5B /* JSONStandardTypeConversions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONStandardTypeConversions.swift; path = Sources/Apollo/JSONStandardTypeConversions.swift; sourceTree = "<group>"; };
+		251BE4AD038B2C75D5B6B00F52038141 /* EZFindInterestsQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZFindInterestsQuery.graphql; sourceTree = "<group>"; };
+		28996A8AB704467797E97C0283EE1529 /* Pods-EZGraphQL_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EZGraphQL_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2A780803075608DD58AC09E5197D6D7E /* GraphQLQueryWatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLQueryWatcher.swift; path = Sources/Apollo/GraphQLQueryWatcher.swift; sourceTree = "<group>"; };
+		2A8A93F891AAFD17E31CCF4AF300112B /* Record.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Record.swift; path = Sources/Apollo/Record.swift; sourceTree = "<group>"; };
+		2B68DDF2B5294D1D5C3253611CE1B1E9 /* CreateAddressMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = CreateAddressMutation.graphql; sourceTree = "<group>"; };
+		2EBC98B4C8F0DB0B61647241CFE8222A /* Apollo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Apollo-dummy.m"; sourceTree = "<group>"; };
+		2EE3EEC8B59F6BA3B1D684E0A9E05BAA /* Apollo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Apollo.debug.xcconfig; sourceTree = "<group>"; };
+		2F56701E1BF876EBFAF3424C2A4D4442 /* EZAppGetVersionQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZAppGetVersionQuery.graphql; sourceTree = "<group>"; };
+		2FF88F23B42389AD11AC9B5A1FDADD81 /* EZShareMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZShareMutation.graphql; sourceTree = "<group>"; };
+		30B2825329745EEDA9CD583082DF75B9 /* Pods-EZGraphQL_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EZGraphQL_Example-frameworks.sh"; sourceTree = "<group>"; };
+		30F69CD29773CC17F5203446CF4C6224 /* EZGraphQL-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EZGraphQL-umbrella.h"; sourceTree = "<group>"; };
+		31ABB9421199DEF7BD496D2FA7E28DC9 /* Result+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Helpers.swift"; path = "Sources/Apollo/Result+Helpers.swift"; sourceTree = "<group>"; };
+		33741FC82A97742100CDA5182E4D65D3 /* Pods-EZGraphQL_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EZGraphQL_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		34EB259F2D512AEC95AFF9C0009C0CA2 /* NetworkTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkTransport.swift; path = Sources/Apollo/NetworkTransport.swift; sourceTree = "<group>"; };
+		35514A7D9FC03EE0788FFCAE5BEF3B83 /* HomePageQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = HomePageQuery.graphql; sourceTree = "<group>"; };
+		3646657269C2B7D290E45DE41761FCE5 /* GraphQLFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLFile.swift; path = Sources/Apollo/GraphQLFile.swift; sourceTree = "<group>"; };
+		367A2B4A25F01FB19FAC8FC769BDE537 /* FindCommentsQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = FindCommentsQuery.graphql; sourceTree = "<group>"; };
+		38D426377BD7CE0BAAE61C12FC54B06E /* EZGraphQL.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EZGraphQL.modulemap; sourceTree = "<group>"; };
+		39FA1599D41B92D7B319C64B3351BFD1 /* ResetPassword.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = ResetPassword.graphql; sourceTree = "<group>"; };
+		3A0A16F3DA55D5D99D1018C68DE96A7A /* EZCreateProductMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZCreateProductMutation.graphql; sourceTree = "<group>"; };
+		3BDDCD3032E7AE38A70A660F158FDDF4 /* FindFollowUserQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = FindFollowUserQuery.graphql; sourceTree = "<group>"; };
+		3D3D79AA0DA9C2483F0A2834A590A7F4 /* AlgorithmFindLives.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AlgorithmFindLives.graphql; sourceTree = "<group>"; };
+		3F581AFAA2ABE45542D86B9BDFE4E947 /* AppViewStoreQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppViewStoreQuery.graphql; sourceTree = "<group>"; };
+		408FCD72A8AA8CAC704DC0E839BC8681 /* AppListLiveWatchListQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppListLiveWatchListQuery.graphql; sourceTree = "<group>"; };
+		40A7555148A08315CCAA191039030287 /* EZHomeFindChatroomUsersQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZHomeFindChatroomUsersQuery.graphql; sourceTree = "<group>"; };
+		41826491658C09B2EB8467618A7E5E07 /* LikeLiveMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = LikeLiveMutation.graphql; sourceTree = "<group>"; };
+		43EC95291FDFC56E6A1881DA20952E6E /* LikeCommentMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = LikeCommentMutation.graphql; sourceTree = "<group>"; };
+		442255A9D02D0D81F692AC37892DC7AF /* API.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = API.swift; path = EZGraphQL/Classes/API.swift; sourceTree = "<group>"; };
+		448E95AB410046594AC757F1BDC3FB52 /* AppFindFriends.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppFindFriends.graphql; sourceTree = "<group>"; };
+		4580A4F7A34AC0FD3C40922E45A79CFC /* Pods-EZGraphQL_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EZGraphQL_Example.release.xcconfig"; sourceTree = "<group>"; };
+		46D38B29BA41465F2DB3AA7DE075CB2B /* EZAppBatchCreateLiveProductsMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZAppBatchCreateLiveProductsMutation.graphql; sourceTree = "<group>"; };
+		49FCDDCD8F402C2C47D54BFE4D23ED50 /* AppReportCollaborationEvent.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppReportCollaborationEvent.graphql; sourceTree = "<group>"; };
+		4A317B4CAAD37413EFBE25ED25E3CD66 /* Apollo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apollo-prefix.pch"; sourceTree = "<group>"; };
+		4B8618E4C956A5B2C0DEA9E25F050638 /* AppTrackerByOrderQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppTrackerByOrderQuery.graphql; sourceTree = "<group>"; };
+		4BD90AB14D6BEDFA6726DBFCA14E9766 /* Dictionary+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+Helpers.swift"; path = "Sources/Apollo/Dictionary+Helpers.swift"; sourceTree = "<group>"; };
+		4C8BC4E5A12E9F709D02B3A418A6074E /* GetUploadURLQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = GetUploadURLQuery.graphql; sourceTree = "<group>"; };
+		4CA93790D29DB3AC4ABE1CAA9790C4E9 /* GetAppConfigQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = GetAppConfigQuery.graphql; sourceTree = "<group>"; };
+		4F95904565810DA03893698675CD62BD /* AsynchronousOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsynchronousOperation.swift; path = Sources/Apollo/AsynchronousOperation.swift; sourceTree = "<group>"; };
+		533C173681BD8AA7FCA1AD6730C09532 /* ApolloClientProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApolloClientProtocol.swift; path = Sources/Apollo/ApolloClientProtocol.swift; sourceTree = "<group>"; };
+		54541940AAC814A38AD201A3CE0ED786 /* AppReadAllInboxNotificationsMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppReadAllInboxNotificationsMutation.graphql; sourceTree = "<group>"; };
+		54EF41766881DD12C9B75E971631965F /* Pods-EZGraphQL_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EZGraphQL_Tests-umbrella.h"; sourceTree = "<group>"; };
+		55AA4BE5609270DCF50B60931D511724 /* GraphQLResponseGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResponseGenerator.swift; path = Sources/Apollo/GraphQLResponseGenerator.swift; sourceTree = "<group>"; };
+		55F46B742FF37297EA352B5BBCCE09AB /* Bundle+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Helpers.swift"; path = "Sources/Apollo/Bundle+Helpers.swift"; sourceTree = "<group>"; };
+		55F6A7B00B895730137DA43D0FFCA757 /* EZAppCreateLiveProductMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZAppCreateLiveProductMutation.graphql; sourceTree = "<group>"; };
+		57FE58D4A7A4DC36188E0D643F901E0F /* FindKeywords.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = FindKeywords.graphql; sourceTree = "<group>"; };
+		5AC3ED9315FA46B25B82996C26038126 /* EZNearBySearchQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZNearBySearchQuery.graphql; sourceTree = "<group>"; };
+		5AE9C4B7D29951DF7717336D7D2BFBD2 /* EZGetUnreadNotificationCountQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZGetUnreadNotificationCountQuery.graphql; sourceTree = "<group>"; };
+		5C27A10D99D700768E7C9E78A623483F /* EZCreateCouponMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZCreateCouponMutation.graphql; sourceTree = "<group>"; };
+		5C8304AEA15B8820052415D34B58CE95 /* EZGraphQL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EZGraphQL.debug.xcconfig; sourceTree = "<group>"; };
+		5CBBD2C1B96BEEEFFE0C559013FA32DA /* FindVideoByVideoTypeQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = FindVideoByVideoTypeQuery.graphql; sourceTree = "<group>"; };
+		5D21FDDFB80E6E1FEFE798AAABB379B3 /* EZLogouMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZLogouMutation.graphql; sourceTree = "<group>"; };
+		5DD8CE24A8173659DD97EDCEA9385AD9 /* ResultOrPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultOrPromise.swift; path = Sources/Apollo/ResultOrPromise.swift; sourceTree = "<group>"; };
+		5EB7918AB95F2F241552996971A3E67B /* AppSetupLiveResourcesMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppSetupLiveResourcesMutation.graphql; sourceTree = "<group>"; };
+		60744D8156541FD129EFFA4105E150D0 /* UpdateCardMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = UpdateCardMutation.graphql; sourceTree = "<group>"; };
+		61D9EB4A3F82EF13F1FF196ED9C08FA5 /* ViewLiveMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = ViewLiveMutation.graphql; sourceTree = "<group>"; };
+		61ED326039E58BFEE73A8C5389098A5B /* EZEndLiveQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZEndLiveQuery.graphql; sourceTree = "<group>"; };
+		62E832B410627DD6B66DC2A9F94EB30E /* EZGraphQL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EZGraphQL-dummy.m"; sourceTree = "<group>"; };
+		6379BA097C1343BCF39A25610D870D46 /* Pods-EZGraphQL_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-EZGraphQL_Example"; path = Pods_EZGraphQL_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E815CBA9B3C65740498E3F67340BCC /* GraphQLSelectionSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLSelectionSet.swift; path = Sources/Apollo/GraphQLSelectionSet.swift; sourceTree = "<group>"; };
+		659EABC95A583459A1D4BD40E85E9C85 /* GraphQLHTTPRequestError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLHTTPRequestError.swift; path = Sources/Apollo/GraphQLHTTPRequestError.swift; sourceTree = "<group>"; };
+		66C5B4EEF2CF66C739F915B0DA34C089 /* EZFindHashtagsQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZFindHashtagsQuery.graphql; sourceTree = "<group>"; };
+		66D9B1797207EAC104710D2292370F49 /* GraphQLResultAccumulator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResultAccumulator.swift; path = Sources/Apollo/GraphQLResultAccumulator.swift; sourceTree = "<group>"; };
+		67918AD94E7174E061949718912611FE /* Apollo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Apollo.release.xcconfig; sourceTree = "<group>"; };
+		67B1A7A1221B87D40729699DB2D12B36 /* AppListSelectedLiveProductsQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppListSelectedLiveProductsQuery.graphql; sourceTree = "<group>"; };
+		68040D2E4E03ACFAC3AEA5B74BC55784 /* AppGetFeatureHashtagQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppGetFeatureHashtagQuery.graphql; sourceTree = "<group>"; };
+		6A09BCDAB9C9E77FBDBF0CF93AB99B46 /* AppGetLiveProductQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppGetLiveProductQuery.graphql; sourceTree = "<group>"; };
+		6A6D40A64F4C6C275C396B998A10C130 /* EZPlaceDetailQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZPlaceDetailQuery.graphql; sourceTree = "<group>"; };
+		6B7D29DA2859E8316DB2E452D5974BF4 /* RequestCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestCreator.swift; path = Sources/Apollo/RequestCreator.swift; sourceTree = "<group>"; };
+		6D119DC528DC39AFA86F8DB1FBE17DB5 /* JSONSerialziation+Sorting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JSONSerialziation+Sorting.swift"; path = "Sources/Apollo/JSONSerialziation+Sorting.swift"; sourceTree = "<group>"; };
+		6E0ED5F587BBF2F7AFA208E69101A195 /* GraphQLResultNormalizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResultNormalizer.swift; path = Sources/Apollo/GraphQLResultNormalizer.swift; sourceTree = "<group>"; };
+		6EC6178797E753271A6E2D114539FCE0 /* EZWalletQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZWalletQuery.graphql; sourceTree = "<group>"; };
+		6F748584D64485387D3F498B49969399 /* Pods-EZGraphQL_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EZGraphQL_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6FF541348015AC216473D8A5D80A3A2A /* GraphQLError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLError.swift; path = Sources/Apollo/GraphQLError.swift; sourceTree = "<group>"; };
+		70679388C2A17D2D5BBF91D9F09903EF /* AppAcceptUserAgreement.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppAcceptUserAgreement.graphql; sourceTree = "<group>"; };
+		708D4E1D686BE5396702D27C39DA78BC /* BindPhoneNumberMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = BindPhoneNumberMutation.graphql; sourceTree = "<group>"; };
+		7139AA71EDE1D55418D8AF676FFD9141 /* EZGetUserOfflineMsgCountQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZGetUserOfflineMsgCountQuery.graphql; sourceTree = "<group>"; };
+		715E5A9AD5472E19EC8485524B2FBB44 /* EZAppUnblockUserMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZAppUnblockUserMutation.graphql; sourceTree = "<group>"; };
+		720928FC7E254541B8C2F997E62A7E6F /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Apollo/Promise.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		731919422FAE3D206CA9B0C17583CF2C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7436B950CDD1ED7C38FFE867013C6297 /* CreateUserCoupon.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = CreateUserCoupon.graphql; sourceTree = "<group>"; };
+		7A683AE55DAE4ADB78E42C81A9E160B3 /* AppSearchMediaResourceQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppSearchMediaResourceQuery.graphql; sourceTree = "<group>"; };
+		7AB728C1D34D6C694117FEB1CCB88ED7 /* EZGraphQL-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EZGraphQL-Info.plist"; sourceTree = "<group>"; };
+		7BC1F923EB1E76E5510FBC6E674F34BA /* EZAppMusicsQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZAppMusicsQuery.graphql; sourceTree = "<group>"; };
+		7C087BD1FEC2F6D75360D3E5BF29CD13 /* EZAppListLiveProductsQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZAppListLiveProductsQuery.graphql; sourceTree = "<group>"; };
+		7C317ED3D3EF6EF22FF9B395ACE8AFE2 /* FindPaymentMethodsQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = FindPaymentMethodsQuery.graphql; sourceTree = "<group>"; };
+		7C751ACD0FB7F4EEA17082F676C3BE25 /* GraphQLHTTPResponseError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLHTTPResponseError.swift; path = Sources/Apollo/GraphQLHTTPResponseError.swift; sourceTree = "<group>"; };
+		7E655DD7ED805F7920D096A968625BD0 /* GraphQLResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResult.swift; path = Sources/Apollo/GraphQLResult.swift; sourceTree = "<group>"; };
+		7E840D7A080FFD62A091954E02A977F6 /* EZViewVideoMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZViewVideoMutation.graphql; sourceTree = "<group>"; };
+		7F7A2DC9B65A27B8EC99972DA8E10C14 /* EZStartLiveRecordingQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZStartLiveRecordingQuery.graphql; sourceTree = "<group>"; };
+		7F827F693A311BED4CDB113A30B3494E /* CreateFuturePaymentMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = CreateFuturePaymentMutation.graphql; sourceTree = "<group>"; };
+		824AA34C31B958B97824AB6CB0F23270 /* GraphQLSelectionSetMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLSelectionSetMapper.swift; path = Sources/Apollo/GraphQLSelectionSetMapper.swift; sourceTree = "<group>"; };
+		83F9B2761F35D7E6F376F30E0C42A7DB /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Sources/Apollo/MultipartFormData.swift; sourceTree = "<group>"; };
+		841DB44B50C1E845B3A4D62BDA737A0C /* EZAppUpdateLiveProductMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZAppUpdateLiveProductMutation.graphql; sourceTree = "<group>"; };
+		85032AB71AFEE76E26A0D4CA16408C8D /* GraphQLDependencyTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLDependencyTracker.swift; path = Sources/Apollo/GraphQLDependencyTracker.swift; sourceTree = "<group>"; };
+		8561BC7C411718958B19A597665685E4 /* EZHomeLiveQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZHomeLiveQuery.graphql; sourceTree = "<group>"; };
+		85CA2A84E6CE14FCD110436E12E9546A /* GraphQLExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLExecutor.swift; path = Sources/Apollo/GraphQLExecutor.swift; sourceTree = "<group>"; };
+		860214CED0D3B7946C113A4333C51A2A /* EZFindShippingOptionsQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZFindShippingOptionsQuery.graphql; sourceTree = "<group>"; };
+		86A40A513DF9DF6F7E90A0A45DEEE17D /* AppListInboxNotificationsQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppListInboxNotificationsQuery.graphql; sourceTree = "<group>"; };
+		88322C31CFAA08C4140C8FFCC72EDDA3 /* Pods-EZGraphQL_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EZGraphQL_Example-umbrella.h"; sourceTree = "<group>"; };
+		883BBE4E71293B9478F4A0B32B126D07 /* DispatchQueue+Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Optional.swift"; path = "Sources/Apollo/DispatchQueue+Optional.swift"; sourceTree = "<group>"; };
+		884BDDB0E9B6F378E949BB30708F6820 /* MePageAllQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = MePageAllQuery.graphql; sourceTree = "<group>"; };
+		8913CCB9341934B577E86B8105D3A5CB /* UpdateLiveMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = UpdateLiveMutation.graphql; sourceTree = "<group>"; };
+		8ABCC583EECB4FD7395DE43AE24EAE98 /* EZCheckUsernameQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZCheckUsernameQuery.graphql; sourceTree = "<group>"; };
+		8C3C2B22AE97F4498E3B9E5379D88450 /* EZListOrderQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZListOrderQuery.graphql; sourceTree = "<group>"; };
+		8D4610D400AD1EE6CB49071B994744D7 /* Pods-EZGraphQL_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EZGraphQL_Example-Info.plist"; sourceTree = "<group>"; };
+		8E04D5E0B75C9B19E3A3097BBEB70ABF /* AppListScheduleLivesQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppListScheduleLivesQuery.graphql; sourceTree = "<group>"; };
+		8EFFD226C31FD69852ACE8656C0B21E0 /* CreateCommentMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = CreateCommentMutation.graphql; sourceTree = "<group>"; };
+		8F1FA46A3C7AA9081BA3650A49BDE9FE /* Apollo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Apollo; path = Apollo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9127DB3237873E11374A128B298B5A1C /* DataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataLoader.swift; path = Sources/Apollo/DataLoader.swift; sourceTree = "<group>"; };
+		9168A23F1FD3849B3321D828E991F335 /* CreateKeyword.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = CreateKeyword.graphql; sourceTree = "<group>"; };
+		92AB2FDBFCE458E6DEB125496D45BB3E /* FollowInterestMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = FollowInterestMutation.graphql; sourceTree = "<group>"; };
+		92B28225030A7374A1A58B658EE99753 /* Locking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Locking.swift; path = Sources/Apollo/Locking.swift; sourceTree = "<group>"; };
+		943F76F5773D35C6BC0C8B8521ED4847 /* EZMeUserInfoQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZMeUserInfoQuery.graphql; sourceTree = "<group>"; };
+		949293A3B33C2415C14D92AC6310930D /* FindCardsQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = FindCardsQuery.graphql; sourceTree = "<group>"; };
+		9519881EB9F247964AF47FE5C2B88BCE /* CalculateTicketOrderQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = CalculateTicketOrderQuery.graphql; sourceTree = "<group>"; };
+		953C141C64D6848FC5729A955CD64757 /* Pods-EZGraphQL_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EZGraphQL_Tests-Info.plist"; sourceTree = "<group>"; };
+		9553199691C5DBC381346796BC425D21 /* AppGetEventQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppGetEventQuery.graphql; sourceTree = "<group>"; };
+		95DB5C0DA8169C7E2C28946F262AAA49 /* Matchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Matchable.swift; path = Sources/Apollo/Matchable.swift; sourceTree = "<group>"; };
+		9980BB1F4EDF267B2611BA31F8850E97 /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Sources/Apollo/JSON.swift; sourceTree = "<group>"; };
+		9AD6D9A26F9962BAA38559A3595A48BD /* Collection+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+Helpers.swift"; path = "Sources/Apollo/Collection+Helpers.swift"; sourceTree = "<group>"; };
+		9B8B9CEDC87F67E2B00339B497C208B4 /* CreatePaymentMethodMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = CreatePaymentMethodMutation.graphql; sourceTree = "<group>"; };
+		9C05176AAFE101C18CC4F07A21AEC1C0 /* ScoreLiveMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = ScoreLiveMutation.graphql; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E921A4D06BD0F9E7D37D435555F0299 /* AppGetTicketOrderQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppGetTicketOrderQuery.graphql; sourceTree = "<group>"; };
+		A01B964AEB4EE38559AE34BA248032C8 /* EZUpdateOrderMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZUpdateOrderMutation.graphql; sourceTree = "<group>"; };
+		A0A7B61AEEBA9E96293079591A2E37F4 /* EZAppBlockUserMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZAppBlockUserMutation.graphql; sourceTree = "<group>"; };
+		A40A14B9100E238530C0679CA2A2007B /* EZLoginMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZLoginMutation.graphql; sourceTree = "<group>"; };
+		A4D6A54ED5FF46D7B58CDDFB9905D2D4 /* InMemoryNormalizedCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InMemoryNormalizedCache.swift; path = Sources/Apollo/InMemoryNormalizedCache.swift; sourceTree = "<group>"; };
+		A4FCF2E6213D23F74AFE35D0BFF7B4EB /* FindAddressQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = FindAddressQuery.graphql; sourceTree = "<group>"; };
+		A603DCBCB7E2501054639E6DB5BDC457 /* DeletePaymentMethodMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = DeletePaymentMethodMutation.graphql; sourceTree = "<group>"; };
+		A6B2C3C0EEDD9A3719B9F3EAF404A7C5 /* FindChatRoomUsersQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = FindChatRoomUsersQuery.graphql; sourceTree = "<group>"; };
+		A740DDBF6910B90C5E5299F9C692B891 /* ApolloStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApolloStore.swift; path = Sources/Apollo/ApolloStore.swift; sourceTree = "<group>"; };
+		A7EDBD917C6A94BD2892A25679247A6F /* AppUpdateVideoMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppUpdateVideoMutation.graphql; sourceTree = "<group>"; };
+		A9F7F34B17AC96D668318F1EB67D83D1 /* HTTPURLResponse+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HTTPURLResponse+Helpers.swift"; path = "Sources/Apollo/HTTPURLResponse+Helpers.swift"; sourceTree = "<group>"; };
+		A9FD239FB09C3168F83B03EB6A770EBA /* EZLoginByOAuthMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZLoginByOAuthMutation.graphql; sourceTree = "<group>"; };
+		AAD67D1832B024FFC252CD515814EE91 /* EZCreateClientLogMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZCreateClientLogMutation.graphql; sourceTree = "<group>"; };
+		AB354EC8DC278A4380F88A186C733758 /* UpdateUserMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = UpdateUserMutation.graphql; sourceTree = "<group>"; };
+		AC5040709FA57C89A025E10B422A8BC5 /* AppGetMultiUploadURLQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppGetMultiUploadURLQuery.graphql; sourceTree = "<group>"; };
+		AC8143A5875D84390E370EE30DF496F6 /* Pods-EZGraphQL_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EZGraphQL_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		AC93434587D9EDB5E6B0015FD567C583 /* UpdateAddressMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = UpdateAddressMutation.graphql; sourceTree = "<group>"; };
+		AE8FDF37B1CC609E8463C240D9CF19C9 /* EZLogoffUserMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZLogoffUserMutation.graphql; sourceTree = "<group>"; };
+		AFE808E3B8BE022863D789A79AC251AD /* EZFindUsersQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZFindUsersQuery.graphql; sourceTree = "<group>"; };
+		B17D06E9F25DCB4C95276729D61A09BB /* Apollo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Apollo-Info.plist"; sourceTree = "<group>"; };
+		B274DAF4895C0868E8CE22601B0C9290 /* RegisterMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = RegisterMutation.graphql; sourceTree = "<group>"; };
+		B45EB99E125CF21148E723BBBAA15CC0 /* EZCreateLiveMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZCreateLiveMutation.graphql; sourceTree = "<group>"; };
+		B50035A48BE99D90BDDC8A1BCE3413FB /* EZFindProductsQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZFindProductsQuery.graphql; sourceTree = "<group>"; };
+		B84572BAD93788479BCE28FEE18DBE73 /* EZVerifyCodeQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZVerifyCodeQuery.graphql; sourceTree = "<group>"; };
+		B9738ABF82A8B134099A0F9C953E4F98 /* EZListTicketOrdersQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZListTicketOrdersQuery.graphql; sourceTree = "<group>"; };
+		BA890A05B1FD69857154970962B3D39B /* DeleteAddressMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = DeleteAddressMutation.graphql; sourceTree = "<group>"; };
+		BB82353BCB65D8BC8C5E639AA24C066D /* EZGetEphemeralKeyQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZGetEphemeralKeyQuery.graphql; sourceTree = "<group>"; };
+		BBE096847629C48E92EFB5557E2B2CAB /* EZFindFollowUsersQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZFindFollowUsersQuery.graphql; sourceTree = "<group>"; };
+		BEF9AF21C2817D7BC41D86BE728EEFF1 /* EZAppDeleteLiveProductMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZAppDeleteLiveProductMutation.graphql; sourceTree = "<group>"; };
+		C062F605451A2E09111BA9F4E93C33EE /* AppExpressDashboardLogin.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppExpressDashboardLogin.graphql; sourceTree = "<group>"; };
+		C3B7D7B0450FCEC80538EC4919EA9E72 /* Pods-EZGraphQL_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EZGraphQL_Example-dummy.m"; sourceTree = "<group>"; };
+		C4597D5128676624C7E81358787F0956 /* AppDeleteLiveScheduleMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppDeleteLiveScheduleMutation.graphql; sourceTree = "<group>"; };
+		C6362B6B8E8B6AB1EB2577E054E993E3 /* EZGraphQL */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EZGraphQL; path = EZGraphQL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8B8F02A2186719E75D63D35AB16E6EC /* String+SHA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+SHA.swift"; path = "Sources/Apollo/String+SHA.swift"; sourceTree = "<group>"; };
+		C9206BD0FD4403D775CDF323C0FFA647 /* RecordSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordSet.swift; path = Sources/Apollo/RecordSet.swift; sourceTree = "<group>"; };
+		CA2784A184FCC534E11A0F418BF42051 /* ViewKeyword.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = ViewKeyword.graphql; sourceTree = "<group>"; };
+		CB5024796D02259EECCE22BB66C5E1EB /* JSONSerializationFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONSerializationFormat.swift; path = Sources/Apollo/JSONSerializationFormat.swift; sourceTree = "<group>"; };
+		CEF8895C5C07C4A4A2BFF06CDE6676EA /* EZFindInterestsWithNameQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZFindInterestsWithNameQuery.graphql; sourceTree = "<group>"; };
+		CF8EBE7113094F12990F658AE44A48D8 /* EZFollowUserMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZFollowUserMutation.graphql; sourceTree = "<group>"; };
+		CF9B40671452B16303D27520A7A174B1 /* FollowHashtagMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = FollowHashtagMutation.graphql; sourceTree = "<group>"; };
+		CFBC1ACAF3438B1AA8599BD157B17F45 /* EZCreateReportMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZCreateReportMutation.graphql; sourceTree = "<group>"; };
+		D020DB915419288C50323889DADCBDB9 /* Apollo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Apollo.modulemap; sourceTree = "<group>"; };
+		D32196EB39F016DF266E464AE7EB6AA6 /* FindFollowInterestsQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = FindFollowInterestsQuery.graphql; sourceTree = "<group>"; };
+		D385E0F7308D4077645D387BF7737183 /* EZViewHashTagMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZViewHashTagMutation.graphql; sourceTree = "<group>"; };
+		D3E7514A33280FFD5EEF7E28802C5AC4 /* EZCreateVideoMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZCreateVideoMutation.graphql; sourceTree = "<group>"; };
+		D470D02DD5617000DD63ED1C0D0909EE /* EZGraphQL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EZGraphQL.release.xcconfig; sourceTree = "<group>"; };
+		D70E4086C4662921EF4D016F7EF1DC2B /* HTTPNetworkTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPNetworkTransport.swift; path = Sources/Apollo/HTTPNetworkTransport.swift; sourceTree = "<group>"; };
+		D9022A36DCE885D982CF0EC535FF05ED /* VerifyOAuthTokenMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = VerifyOAuthTokenMutation.graphql; sourceTree = "<group>"; };
+		D9D1BAA5D91EA98BE1CC3DE7D38AEC40 /* GraphQLInputValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLInputValue.swift; path = Sources/Apollo/GraphQLInputValue.swift; sourceTree = "<group>"; };
+		DD821AE18EF1A250EE9F723D83B757E5 /* FindVideosQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = FindVideosQuery.graphql; sourceTree = "<group>"; };
+		DE3A5205300C60D5D949E5C47743701D /* UpdateCommentMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = UpdateCommentMutation.graphql; sourceTree = "<group>"; };
+		DEE267A2D008E39A582BCC977F6EA026 /* LiveInfoSubscription.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = LiveInfoSubscription.graphql; sourceTree = "<group>"; };
+		DF6931D0F9EA2C68A008068044CEAAE6 /* EZFindLivesQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZFindLivesQuery.graphql; sourceTree = "<group>"; };
+		E08CCC9C694C407617F9F44A18D3E9EE /* AppPlaceBidMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppPlaceBidMutation.graphql; sourceTree = "<group>"; };
+		E09654C5BE1E187425911E0B601F8B33 /* ApolloClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApolloClient.swift; path = Sources/Apollo/ApolloClient.swift; sourceTree = "<group>"; };
+		E297E9F6FA85F7998FE16FC35C3A6F85 /* Decoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoding.swift; path = Sources/Apollo/Decoding.swift; sourceTree = "<group>"; };
+		E354E29974350E928ADD02A3C3E70DA8 /* DeleteCardMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = DeleteCardMutation.graphql; sourceTree = "<group>"; };
+		E56AD9723D394BC659BFFA7944B87018 /* AppSetAuctionPaymentInfoMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppSetAuctionPaymentInfoMutation.graphql; sourceTree = "<group>"; };
+		E5EFA0D54D31E67E0012644F462D505D /* AppFindVideoQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppFindVideoQuery.graphql; sourceTree = "<group>"; };
+		E72CA3B3D4767F4D4AD4954E5657D1FC /* GroupedSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupedSequence.swift; path = Sources/Apollo/GroupedSequence.swift; sourceTree = "<group>"; };
+		EA9D89740DB93D910D0BE987340308FA /* GetLiveTokenQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = GetLiveTokenQuery.graphql; sourceTree = "<group>"; };
+		EBE89D2FD96395F339A3DA657C0DCFF2 /* UserFollowHashtagMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = UserFollowHashtagMutation.graphql; sourceTree = "<group>"; };
+		ED08A3574EDD04205035394078DEC166 /* CreateOrderMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = CreateOrderMutation.graphql; sourceTree = "<group>"; };
+		EDB877A93A94569F82A5B35548EE6C6F /* EZGraphQL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EZGraphQL-prefix.pch"; sourceTree = "<group>"; };
+		EE2DC82BEB8A79B0AE360B7ACACC8364 /* AppUpdateStoreMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppUpdateStoreMutation.graphql; sourceTree = "<group>"; };
+		F02E6CC72ECE0C89B25F0E22282C70C7 /* Cancellable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cancellable.swift; path = Sources/Apollo/Cancellable.swift; sourceTree = "<group>"; };
+		F044F5796C925432FE45CE4F3D12C83E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F1F1DF37A1A7B58B780FFBDDCC0420F3 /* Apollo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apollo-umbrella.h"; sourceTree = "<group>"; };
+		F2127C2D48E33DC8DE0C232BD708BA9D /* EZAppFindProductQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = EZAppFindProductQuery.graphql; sourceTree = "<group>"; };
+		F2C2D680D3C4FB55AE6518A314021D79 /* CreateCardMutation.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = CreateCardMutation.graphql; sourceTree = "<group>"; };
+		F4AD32C502068E8802EA30401567CFF1 /* GetServerTimeQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = GetServerTimeQuery.graphql; sourceTree = "<group>"; };
+		F942C3EDD6FE5432E57ED28E7BC6CE04 /* AppListEvents.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = AppListEvents.graphql; sourceTree = "<group>"; };
+		FBA4CF87F4DB75352E84F42D66E9E942 /* GraphQLGETTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLGETTransformer.swift; path = Sources/Apollo/GraphQLGETTransformer.swift; sourceTree = "<group>"; };
+		FBBBF70BBCCF38906BF648454A538203 /* EZGraphQL.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = EZGraphQL.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FBC03716F356B6271D6F2D22C8A4AFC0 /* CheckSessionTokenQuery.graphql */ = {isa = PBXFileReference; includeInIndex = 1; path = CheckSessionTokenQuery.graphql; sourceTree = "<group>"; };
+		FE85FE3FF4616A2DDA4BE69775AD3E45 /* Pods-EZGraphQL_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EZGraphQL_Tests-dummy.m"; sourceTree = "<group>"; };
+		FEB357A0585A7DE0A8A61291116506E9 /* Pods-EZGraphQL_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-EZGraphQL_Tests"; path = Pods_EZGraphQL_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2814CDD1D3A277765A06963DD6B29D63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DAE287DDA16CC7C2406ABDFF1FD7ECD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B56454DAF4156DA11D2BB059A3EBA097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37AB9AA0744668C522E21692C195ADA8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF9F17134E63400DF9B6C3C02919C5C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B7CEE6DDBC4D4F1B02EBA8E7E6FB0DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7559C74587D42C01FEAF419FDD326F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41848B35B3574EB8AE74BE8DE07DB1B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		147A2010CD3A05F1BC5938DBAC7B4D9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9B08605EDC22B9EF755AF4C43F966B6 /* Apollo */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1668071D6BE6E63B51976060A0FE65CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F1FA46A3C7AA9081BA3650A49BDE9FE /* Apollo */,
+				C6362B6B8E8B6AB1EB2577E054E993E3 /* EZGraphQL */,
+				6379BA097C1343BCF39A25610D870D46 /* Pods-EZGraphQL_Example */,
+				FEB357A0585A7DE0A8A61291116506E9 /* Pods-EZGraphQL_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23DBB58A61BD0B633E92BD4DDDF78F93 /* Pods-EZGraphQL_Example */ = {
+			isa = PBXGroup;
+			children = (
+				234B58888DEDB2B943A3B344A89D769C /* Pods-EZGraphQL_Example.modulemap */,
+				1D04D38D63654907734EA389061A3835 /* Pods-EZGraphQL_Example-acknowledgements.markdown */,
+				1E78FF6E44C6ED899EE9350EED11C344 /* Pods-EZGraphQL_Example-acknowledgements.plist */,
+				C3B7D7B0450FCEC80538EC4919EA9E72 /* Pods-EZGraphQL_Example-dummy.m */,
+				30B2825329745EEDA9CD583082DF75B9 /* Pods-EZGraphQL_Example-frameworks.sh */,
+				8D4610D400AD1EE6CB49071B994744D7 /* Pods-EZGraphQL_Example-Info.plist */,
+				88322C31CFAA08C4140C8FFCC72EDDA3 /* Pods-EZGraphQL_Example-umbrella.h */,
+				AC8143A5875D84390E370EE30DF496F6 /* Pods-EZGraphQL_Example.debug.xcconfig */,
+				4580A4F7A34AC0FD3C40922E45A79CFC /* Pods-EZGraphQL_Example.release.xcconfig */,
+			);
+			name = "Pods-EZGraphQL_Example";
+			path = "Target Support Files/Pods-EZGraphQL_Example";
+			sourceTree = "<group>";
+		};
+		3B42CD6F081FD7426254BAC98C66FEA2 /* EZGraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				442255A9D02D0D81F692AC37892DC7AF /* API.swift */,
+				0ACB0F21A614973DFBB6E6BA45741757 /* schema.json */,
+				ADCF0C1698A631287C59CC2A499187A3 /* GraphQL */,
+				8130AA9F23DD647BC0B7424C8C8975B7 /* Pod */,
+				CCFCDC8D52293695DDC8F8BC01F5D9BC /* Support Files */,
+			);
+			name = EZGraphQL;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5F6D1456C6F0AF15AA0BCBF808BBD5AB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B42CD6F081FD7426254BAC98C66FEA2 /* EZGraphQL */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		8130AA9F23DD647BC0B7424C8C8975B7 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FBBBF70BBCCF38906BF648454A538203 /* EZGraphQL.podspec */,
+				731919422FAE3D206CA9B0C17583CF2C /* LICENSE */,
+				F044F5796C925432FE45CE4F3D12C83E /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		989E1026514A2374DD80EC5ED854D0A3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D020DB915419288C50323889DADCBDB9 /* Apollo.modulemap */,
+				2EBC98B4C8F0DB0B61647241CFE8222A /* Apollo-dummy.m */,
+				B17D06E9F25DCB4C95276729D61A09BB /* Apollo-Info.plist */,
+				4A317B4CAAD37413EFBE25ED25E3CD66 /* Apollo-prefix.pch */,
+				F1F1DF37A1A7B58B780FFBDDCC0420F3 /* Apollo-umbrella.h */,
+				2EE3EEC8B59F6BA3B1D684E0A9E05BAA /* Apollo.debug.xcconfig */,
+				67918AD94E7174E061949718912611FE /* Apollo.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Apollo";
+			sourceTree = "<group>";
+		};
+		9C20A90CE14CDD258FE188CD06A67845 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E09654C5BE1E187425911E0B601F8B33 /* ApolloClient.swift */,
+				533C173681BD8AA7FCA1AD6730C09532 /* ApolloClientProtocol.swift */,
+				A740DDBF6910B90C5E5299F9C692B891 /* ApolloStore.swift */,
+				4F95904565810DA03893698675CD62BD /* AsynchronousOperation.swift */,
+				55F46B742FF37297EA352B5BBCCE09AB /* Bundle+Helpers.swift */,
+				F02E6CC72ECE0C89B25F0E22282C70C7 /* Cancellable.swift */,
+				9AD6D9A26F9962BAA38559A3595A48BD /* Collection+Helpers.swift */,
+				9127DB3237873E11374A128B298B5A1C /* DataLoader.swift */,
+				E297E9F6FA85F7998FE16FC35C3A6F85 /* Decoding.swift */,
+				4BD90AB14D6BEDFA6726DBFCA14E9766 /* Dictionary+Helpers.swift */,
+				883BBE4E71293B9478F4A0B32B126D07 /* DispatchQueue+Optional.swift */,
+				85032AB71AFEE76E26A0D4CA16408C8D /* GraphQLDependencyTracker.swift */,
+				6FF541348015AC216473D8A5D80A3A2A /* GraphQLError.swift */,
+				85CA2A84E6CE14FCD110436E12E9546A /* GraphQLExecutor.swift */,
+				3646657269C2B7D290E45DE41761FCE5 /* GraphQLFile.swift */,
+				FBA4CF87F4DB75352E84F42D66E9E942 /* GraphQLGETTransformer.swift */,
+				11ED6EFEF779EED7B6BFC2AD570D7B3C /* GraphQLHTTPMethod.swift */,
+				659EABC95A583459A1D4BD40E85E9C85 /* GraphQLHTTPRequestError.swift */,
+				7C751ACD0FB7F4EEA17082F676C3BE25 /* GraphQLHTTPResponseError.swift */,
+				D9D1BAA5D91EA98BE1CC3DE7D38AEC40 /* GraphQLInputValue.swift */,
+				1327A189AF49F78C47817B1C5FEFB6C6 /* GraphQLOperation.swift */,
+				2A780803075608DD58AC09E5197D6D7E /* GraphQLQueryWatcher.swift */,
+				0D59897E502B5B65093EEDA4C2FD6D95 /* GraphQLResponse.swift */,
+				55AA4BE5609270DCF50B60931D511724 /* GraphQLResponseGenerator.swift */,
+				7E655DD7ED805F7920D096A968625BD0 /* GraphQLResult.swift */,
+				66D9B1797207EAC104710D2292370F49 /* GraphQLResultAccumulator.swift */,
+				6E0ED5F587BBF2F7AFA208E69101A195 /* GraphQLResultNormalizer.swift */,
+				63E815CBA9B3C65740498E3F67340BCC /* GraphQLSelectionSet.swift */,
+				824AA34C31B958B97824AB6CB0F23270 /* GraphQLSelectionSetMapper.swift */,
+				E72CA3B3D4767F4D4AD4954E5657D1FC /* GroupedSequence.swift */,
+				D70E4086C4662921EF4D016F7EF1DC2B /* HTTPNetworkTransport.swift */,
+				A9F7F34B17AC96D668318F1EB67D83D1 /* HTTPURLResponse+Helpers.swift */,
+				A4D6A54ED5FF46D7B58CDDFB9905D2D4 /* InMemoryNormalizedCache.swift */,
+				9980BB1F4EDF267B2611BA31F8850E97 /* JSON.swift */,
+				CB5024796D02259EECCE22BB66C5E1EB /* JSONSerializationFormat.swift */,
+				6D119DC528DC39AFA86F8DB1FBE17DB5 /* JSONSerialziation+Sorting.swift */,
+				24D4BBF1761FD1D2095E4FE01416FA5B /* JSONStandardTypeConversions.swift */,
+				92B28225030A7374A1A58B658EE99753 /* Locking.swift */,
+				95DB5C0DA8169C7E2C28946F262AAA49 /* Matchable.swift */,
+				83F9B2761F35D7E6F376F30E0C42A7DB /* MultipartFormData.swift */,
+				34EB259F2D512AEC95AFF9C0009C0CA2 /* NetworkTransport.swift */,
+				18E0C87FDCD138FCF53A28E831C8ACDA /* NormalizedCache.swift */,
+				720928FC7E254541B8C2F997E62A7E6F /* Promise.swift */,
+				2A8A93F891AAFD17E31CCF4AF300112B /* Record.swift */,
+				C9206BD0FD4403D775CDF323C0FFA647 /* RecordSet.swift */,
+				6B7D29DA2859E8316DB2E452D5974BF4 /* RequestCreator.swift */,
+				03995A7F0802FB41999BDD426602D5A8 /* ResponsePath.swift */,
+				31ABB9421199DEF7BD496D2FA7E28DC9 /* Result+Helpers.swift */,
+				5DD8CE24A8173659DD97EDCEA9385AD9 /* ResultOrPromise.swift */,
+				C8B8F02A2186719E75D63D35AB16E6EC /* String+SHA.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		A9B08605EDC22B9EF755AF4C43F966B6 /* Apollo */ = {
+			isa = PBXGroup;
+			children = (
+				9C20A90CE14CDD258FE188CD06A67845 /* Core */,
+				989E1026514A2374DD80EC5ED854D0A3 /* Support Files */,
+			);
+			name = Apollo;
+			path = Apollo;
+			sourceTree = "<group>";
+		};
+		ADCF0C1698A631287C59CC2A499187A3 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				3D3D79AA0DA9C2483F0A2834A590A7F4 /* AlgorithmFindLives.graphql */,
+				70679388C2A17D2D5BBF91D9F09903EF /* AppAcceptUserAgreement.graphql */,
+				0D969950510A7D2E3EB60E24C85B486C /* AppChangeLiveWatchListMutation.graphql */,
+				C4597D5128676624C7E81358787F0956 /* AppDeleteLiveScheduleMutation.graphql */,
+				C062F605451A2E09111BA9F4E93C33EE /* AppExpressDashboardLogin.graphql */,
+				448E95AB410046594AC757F1BDC3FB52 /* AppFindFriends.graphql */,
+				0C91F187FC27E844D8FAD25A6A148B7F /* AppFindLiveQuery.graphql */,
+				E5EFA0D54D31E67E0012644F462D505D /* AppFindVideoQuery.graphql */,
+				9553199691C5DBC381346796BC425D21 /* AppGetEventQuery.graphql */,
+				68040D2E4E03ACFAC3AEA5B74BC55784 /* AppGetFeatureHashtagQuery.graphql */,
+				6A09BCDAB9C9E77FBDBF0CF93AB99B46 /* AppGetLiveProductQuery.graphql */,
+				AC5040709FA57C89A025E10B422A8BC5 /* AppGetMultiUploadURLQuery.graphql */,
+				9E921A4D06BD0F9E7D37D435555F0299 /* AppGetTicketOrderQuery.graphql */,
+				1FE1B9C1EA6A285FE81A72C6FEEEF458 /* AppLastPaymentMethod.graphql */,
+				05075808DB0FD6D5F6F12BB301EA7C80 /* AppListAuctionBidRecords.graphql */,
+				F942C3EDD6FE5432E57ED28E7BC6CE04 /* AppListEvents.graphql */,
+				86A40A513DF9DF6F7E90A0A45DEEE17D /* AppListInboxNotificationsQuery.graphql */,
+				408FCD72A8AA8CAC704DC0E839BC8681 /* AppListLiveWatchListQuery.graphql */,
+				8E04D5E0B75C9B19E3A3097BBEB70ABF /* AppListScheduleLivesQuery.graphql */,
+				67B1A7A1221B87D40729699DB2D12B36 /* AppListSelectedLiveProductsQuery.graphql */,
+				E08CCC9C694C407617F9F44A18D3E9EE /* AppPlaceBidMutation.graphql */,
+				54541940AAC814A38AD201A3CE0ED786 /* AppReadAllInboxNotificationsMutation.graphql */,
+				49FCDDCD8F402C2C47D54BFE4D23ED50 /* AppReportCollaborationEvent.graphql */,
+				7A683AE55DAE4ADB78E42C81A9E160B3 /* AppSearchMediaResourceQuery.graphql */,
+				E56AD9723D394BC659BFFA7944B87018 /* AppSetAuctionPaymentInfoMutation.graphql */,
+				5EB7918AB95F2F241552996971A3E67B /* AppSetupLiveResourcesMutation.graphql */,
+				0966EDE37F0A9EBBFFA033195725E32F /* AppStoreQuery.graphql */,
+				4B8618E4C956A5B2C0DEA9E25F050638 /* AppTrackerByOrderQuery.graphql */,
+				EE2DC82BEB8A79B0AE360B7ACACC8364 /* AppUpdateStoreMutation.graphql */,
+				A7EDBD917C6A94BD2892A25679247A6F /* AppUpdateVideoMutation.graphql */,
+				3F581AFAA2ABE45542D86B9BDFE4E947 /* AppViewStoreQuery.graphql */,
+				708D4E1D686BE5396702D27C39DA78BC /* BindPhoneNumberMutation.graphql */,
+				13290988BDA3A97CB69A44E85CC139F9 /* CalculateOrderQuery.graphql */,
+				9519881EB9F247964AF47FE5C2B88BCE /* CalculateTicketOrderQuery.graphql */,
+				FBC03716F356B6271D6F2D22C8A4AFC0 /* CheckSessionTokenQuery.graphql */,
+				2B68DDF2B5294D1D5C3253611CE1B1E9 /* CreateAddressMutation.graphql */,
+				F2C2D680D3C4FB55AE6518A314021D79 /* CreateCardMutation.graphql */,
+				8EFFD226C31FD69852ACE8656C0B21E0 /* CreateCommentMutation.graphql */,
+				7F827F693A311BED4CDB113A30B3494E /* CreateFuturePaymentMutation.graphql */,
+				10FB9029CA53021B1B3537DA444C8C14 /* CreateIVSChannelMutation.graphql */,
+				9168A23F1FD3849B3321D828E991F335 /* CreateKeyword.graphql */,
+				ED08A3574EDD04205035394078DEC166 /* CreateOrderMutation.graphql */,
+				9B8B9CEDC87F67E2B00339B497C208B4 /* CreatePaymentMethodMutation.graphql */,
+				23E5C66520513745E887CF9E5D2E9F21 /* CreatePaymentMutation.graphql */,
+				1011D5B9832A1E072914D8F76417DCB6 /* CreateTicketOrderMutation.graphql */,
+				7436B950CDD1ED7C38FFE867013C6297 /* CreateUserCoupon.graphql */,
+				BA890A05B1FD69857154970962B3D39B /* DeleteAddressMutation.graphql */,
+				E354E29974350E928ADD02A3C3E70DA8 /* DeleteCardMutation.graphql */,
+				A603DCBCB7E2501054639E6DB5BDC457 /* DeletePaymentMethodMutation.graphql */,
+				1ECAE71AA04A92EBEC390BE08A8EDFEC /* EZAlgorithmFindVideosQuery.graphql */,
+				46D38B29BA41465F2DB3AA7DE075CB2B /* EZAppBatchCreateLiveProductsMutation.graphql */,
+				A0A7B61AEEBA9E96293079591A2E37F4 /* EZAppBlockUserMutation.graphql */,
+				0C75536C1E984546F8847320DE0C67EE /* EZAppChangePhoneNumberMutation.graphql */,
+				55F6A7B00B895730137DA43D0FFCA757 /* EZAppCreateLiveProductMutation.graphql */,
+				BEF9AF21C2817D7BC41D86BE728EEFF1 /* EZAppDeleteLiveProductMutation.graphql */,
+				F2127C2D48E33DC8DE0C232BD708BA9D /* EZAppFindProductQuery.graphql */,
+				2F56701E1BF876EBFAF3424C2A4D4442 /* EZAppGetVersionQuery.graphql */,
+				7C087BD1FEC2F6D75360D3E5BF29CD13 /* EZAppListLiveProductsQuery.graphql */,
+				7BC1F923EB1E76E5510FBC6E674F34BA /* EZAppMusicsQuery.graphql */,
+				715E5A9AD5472E19EC8485524B2FBB44 /* EZAppUnblockUserMutation.graphql */,
+				841DB44B50C1E845B3A4D62BDA737A0C /* EZAppUpdateLiveProductMutation.graphql */,
+				2260596136A25FE4D38497D97EC046F9 /* EZCheckPhoneNumberQuery.graphql */,
+				8ABCC583EECB4FD7395DE43AE24EAE98 /* EZCheckUsernameQuery.graphql */,
+				AAD67D1832B024FFC252CD515814EE91 /* EZCreateClientLogMutation.graphql */,
+				5C27A10D99D700768E7C9E78A623483F /* EZCreateCouponMutation.graphql */,
+				B45EB99E125CF21148E723BBBAA15CC0 /* EZCreateLiveMutation.graphql */,
+				3A0A16F3DA55D5D99D1018C68DE96A7A /* EZCreateProductMutation.graphql */,
+				CFBC1ACAF3438B1AA8599BD157B17F45 /* EZCreateReportMutation.graphql */,
+				D3E7514A33280FFD5EEF7E28802C5AC4 /* EZCreateVideoMutation.graphql */,
+				61ED326039E58BFEE73A8C5389098A5B /* EZEndLiveQuery.graphql */,
+				BBE096847629C48E92EFB5557E2B2CAB /* EZFindFollowUsersQuery.graphql */,
+				66C5B4EEF2CF66C739F915B0DA34C089 /* EZFindHashtagsQuery.graphql */,
+				251BE4AD038B2C75D5B6B00F52038141 /* EZFindInterestsQuery.graphql */,
+				CEF8895C5C07C4A4A2BFF06CDE6676EA /* EZFindInterestsWithNameQuery.graphql */,
+				DF6931D0F9EA2C68A008068044CEAAE6 /* EZFindLivesQuery.graphql */,
+				B50035A48BE99D90BDDC8A1BCE3413FB /* EZFindProductsQuery.graphql */,
+				860214CED0D3B7946C113A4333C51A2A /* EZFindShippingOptionsQuery.graphql */,
+				AFE808E3B8BE022863D789A79AC251AD /* EZFindUsersQuery.graphql */,
+				CF8EBE7113094F12990F658AE44A48D8 /* EZFollowUserMutation.graphql */,
+				BB82353BCB65D8BC8C5E639AA24C066D /* EZGetEphemeralKeyQuery.graphql */,
+				1946F7E91BABF2B73CE0B832E102809F /* EZGetOrderQuery.graphql */,
+				5AE9C4B7D29951DF7717336D7D2BFBD2 /* EZGetUnreadNotificationCountQuery.graphql */,
+				7139AA71EDE1D55418D8AF676FFD9141 /* EZGetUserOfflineMsgCountQuery.graphql */,
+				1981302EFE57B53F92723AD4E0D679BB /* EZHomeAlgorithmFindUsersQuery.graphql */,
+				40A7555148A08315CCAA191039030287 /* EZHomeFindChatroomUsersQuery.graphql */,
+				8561BC7C411718958B19A597665685E4 /* EZHomeLiveQuery.graphql */,
+				16890ED3FB54E8827F4C468E80DC8B4C /* EZLinkUserInstagramInfoMutation.graphql */,
+				8C3C2B22AE97F4498E3B9E5379D88450 /* EZListOrderQuery.graphql */,
+				B9738ABF82A8B134099A0F9C953E4F98 /* EZListTicketOrdersQuery.graphql */,
+				A9FD239FB09C3168F83B03EB6A770EBA /* EZLoginByOAuthMutation.graphql */,
+				A40A14B9100E238530C0679CA2A2007B /* EZLoginMutation.graphql */,
+				AE8FDF37B1CC609E8463C240D9CF19C9 /* EZLogoffUserMutation.graphql */,
+				5D21FDDFB80E6E1FEFE798AAABB379B3 /* EZLogouMutation.graphql */,
+				01E55D9EE8404F62ED0BBA9C73CC9B51 /* EZMeLikeVideosQuery.graphql */,
+				943F76F5773D35C6BC0C8B8521ED4847 /* EZMeUserInfoQuery.graphql */,
+				5AC3ED9315FA46B25B82996C26038126 /* EZNearBySearchQuery.graphql */,
+				6A6D40A64F4C6C275C396B998A10C130 /* EZPlaceDetailQuery.graphql */,
+				11F07FC1D42756E5764CA7CC3A306FF5 /* EZSelfQuery.graphql */,
+				0F79C641A582D8A3C262EDCC4FC05807 /* EZSendCodeMutation.graphql */,
+				2FF88F23B42389AD11AC9B5A1FDADD81 /* EZShareMutation.graphql */,
+				7F7A2DC9B65A27B8EC99972DA8E10C14 /* EZStartLiveRecordingQuery.graphql */,
+				0FF48F1C8434074A3C9FC1FCD379C66F /* EZUpdateCoupon.graphql */,
+				A01B964AEB4EE38559AE34BA248032C8 /* EZUpdateOrderMutation.graphql */,
+				00F7711F76331AA19945647B338C30F1 /* EZUpdateProductMutation.graphql */,
+				B84572BAD93788479BCE28FEE18DBE73 /* EZVerifyCodeQuery.graphql */,
+				D385E0F7308D4077645D387BF7737183 /* EZViewHashTagMutation.graphql */,
+				7E840D7A080FFD62A091954E02A977F6 /* EZViewVideoMutation.graphql */,
+				6EC6178797E753271A6E2D114539FCE0 /* EZWalletQuery.graphql */,
+				A4FCF2E6213D23F74AFE35D0BFF7B4EB /* FindAddressQuery.graphql */,
+				949293A3B33C2415C14D92AC6310930D /* FindCardsQuery.graphql */,
+				A6B2C3C0EEDD9A3719B9F3EAF404A7C5 /* FindChatRoomUsersQuery.graphql */,
+				367A2B4A25F01FB19FAC8FC769BDE537 /* FindCommentsQuery.graphql */,
+				D32196EB39F016DF266E464AE7EB6AA6 /* FindFollowInterestsQuery.graphql */,
+				3BDDCD3032E7AE38A70A660F158FDDF4 /* FindFollowUserQuery.graphql */,
+				57FE58D4A7A4DC36188E0D643F901E0F /* FindKeywords.graphql */,
+				7C317ED3D3EF6EF22FF9B395ACE8AFE2 /* FindPaymentMethodsQuery.graphql */,
+				1A7289258BD06FB836A0F868346ECAEC /* FindRecommendInterestsQuery.graphql */,
+				5CBBD2C1B96BEEEFFE0C559013FA32DA /* FindVideoByVideoTypeQuery.graphql */,
+				DD821AE18EF1A250EE9F723D83B757E5 /* FindVideosQuery.graphql */,
+				CF9B40671452B16303D27520A7A174B1 /* FollowHashtagMutation.graphql */,
+				92AB2FDBFCE458E6DEB125496D45BB3E /* FollowInterestMutation.graphql */,
+				4CA93790D29DB3AC4ABE1CAA9790C4E9 /* GetAppConfigQuery.graphql */,
+				EA9D89740DB93D910D0BE987340308FA /* GetLiveTokenQuery.graphql */,
+				F4AD32C502068E8802EA30401567CFF1 /* GetServerTimeQuery.graphql */,
+				4C8BC4E5A12E9F709D02B3A418A6074E /* GetUploadURLQuery.graphql */,
+				35514A7D9FC03EE0788FFCAE5BEF3B83 /* HomePageQuery.graphql */,
+				43EC95291FDFC56E6A1881DA20952E6E /* LikeCommentMutation.graphql */,
+				41826491658C09B2EB8467618A7E5E07 /* LikeLiveMutation.graphql */,
+				01F94D8BFA2E19B37D70FF550321FD5A /* LikeVideoMutation.graphql */,
+				DEE267A2D008E39A582BCC977F6EA026 /* LiveInfoSubscription.graphql */,
+				884BDDB0E9B6F378E949BB30708F6820 /* MePageAllQuery.graphql */,
+				B274DAF4895C0868E8CE22601B0C9290 /* RegisterMutation.graphql */,
+				39FA1599D41B92D7B319C64B3351BFD1 /* ResetPassword.graphql */,
+				9C05176AAFE101C18CC4F07A21AEC1C0 /* ScoreLiveMutation.graphql */,
+				AC93434587D9EDB5E6B0015FD567C583 /* UpdateAddressMutation.graphql */,
+				60744D8156541FD129EFFA4105E150D0 /* UpdateCardMutation.graphql */,
+				DE3A5205300C60D5D949E5C47743701D /* UpdateCommentMutation.graphql */,
+				8913CCB9341934B577E86B8105D3A5CB /* UpdateLiveMutation.graphql */,
+				AB354EC8DC278A4380F88A186C733758 /* UpdateUserMutation.graphql */,
+				EBE89D2FD96395F339A3DA657C0DCFF2 /* UserFollowHashtagMutation.graphql */,
+				1264FC808ED5B97C054232A18E3A01DC /* ValidateAddressQuery.graphql */,
+				D9022A36DCE885D982CF0EC535FF05ED /* VerifyOAuthTokenMutation.graphql */,
+				CA2784A184FCC534E11A0F418BF42051 /* ViewKeyword.graphql */,
+				61D9EB4A3F82EF13F1FF196ED9C08FA5 /* ViewLiveMutation.graphql */,
+			);
+			name = GraphQL;
+			path = EZGraphQL/Classes/GraphQL;
+			sourceTree = "<group>";
+		};
+		CCFCDC8D52293695DDC8F8BC01F5D9BC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				38D426377BD7CE0BAAE61C12FC54B06E /* EZGraphQL.modulemap */,
+				62E832B410627DD6B66DC2A9F94EB30E /* EZGraphQL-dummy.m */,
+				7AB728C1D34D6C694117FEB1CCB88ED7 /* EZGraphQL-Info.plist */,
+				EDB877A93A94569F82A5B35548EE6C6F /* EZGraphQL-prefix.pch */,
+				30F69CD29773CC17F5203446CF4C6224 /* EZGraphQL-umbrella.h */,
+				5C8304AEA15B8820052415D34B58CE95 /* EZGraphQL.debug.xcconfig */,
+				D470D02DD5617000DD63ED1C0D0909EE /* EZGraphQL.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/EZGraphQL";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				5F6D1456C6F0AF15AA0BCBF808BBD5AB /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				147A2010CD3A05F1BC5938DBAC7B4D9C /* Pods */,
+				1668071D6BE6E63B51976060A0FE65CC /* Products */,
+				DF11E3DE2AC43E04BEADA0FC45E541EA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF11E3DE2AC43E04BEADA0FC45E541EA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				23DBB58A61BD0B633E92BD4DDDF78F93 /* Pods-EZGraphQL_Example */,
+				E6FDB6B5183BFDC9A8007146D4C1B165 /* Pods-EZGraphQL_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E6FDB6B5183BFDC9A8007146D4C1B165 /* Pods-EZGraphQL_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1EACE49E228775DA21B5A017B144C31A /* Pods-EZGraphQL_Tests.modulemap */,
+				19EB98EB55012BB87634B151337A591D /* Pods-EZGraphQL_Tests-acknowledgements.markdown */,
+				28996A8AB704467797E97C0283EE1529 /* Pods-EZGraphQL_Tests-acknowledgements.plist */,
+				FE85FE3FF4616A2DDA4BE69775AD3E45 /* Pods-EZGraphQL_Tests-dummy.m */,
+				953C141C64D6848FC5729A955CD64757 /* Pods-EZGraphQL_Tests-Info.plist */,
+				54EF41766881DD12C9B75E971631965F /* Pods-EZGraphQL_Tests-umbrella.h */,
+				33741FC82A97742100CDA5182E4D65D3 /* Pods-EZGraphQL_Tests.debug.xcconfig */,
+				6F748584D64485387D3F498B49969399 /* Pods-EZGraphQL_Tests.release.xcconfig */,
+			);
+			name = "Pods-EZGraphQL_Tests";
+			path = "Target Support Files/Pods-EZGraphQL_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5B0C05F56D2172E2D440D757EC0F685A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F49C5BC79412AF7D0AD7087F6D56EB1 /* Pods-EZGraphQL_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76F24189C5DD9849315F4E6EAE1EDA6E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58028480AA257EE12A8F1DA9AE7C40D2 /* Pods-EZGraphQL_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B581A4603FDF2A88F1CBFC6587767AD1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B6FCEFE957012887D71E6A0557FEB4 /* Apollo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04BB068AD4BDBB0608DC92E83739833 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0C77F1B9FAC6EBDE5B429EB8CF5493 /* EZGraphQL-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		30EE3CABB612307A688C40B61BFA74CC /* Apollo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AA932DBA3D3091E7A998FF50000277C /* Build configuration list for PBXNativeTarget "Apollo" */;
+			buildPhases = (
+				B581A4603FDF2A88F1CBFC6587767AD1 /* Headers */,
+				47AD71C6DF5EE9D6CA60341F6B6E7DB0 /* Sources */,
+				B56454DAF4156DA11D2BB059A3EBA097 /* Frameworks */,
+				586482B0671EDCD736C68E38414E0075 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Apollo;
+			productName = Apollo;
+			productReference = 8F1FA46A3C7AA9081BA3650A49BDE9FE /* Apollo */;
+			productType = "com.apple.product-type.framework";
+		};
+		3120415F22AD96C257F2164F508F6810 /* Pods-EZGraphQL_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EE2F3E9DB6660F083296CA34986630D /* Build configuration list for PBXNativeTarget "Pods-EZGraphQL_Example" */;
+			buildPhases = (
+				76F24189C5DD9849315F4E6EAE1EDA6E /* Headers */,
+				90ADB3CF4426F3F6CEAB97D172E89E66 /* Sources */,
+				CF9F17134E63400DF9B6C3C02919C5C5 /* Frameworks */,
+				715477239DFB74ADB7E8436C87B16AA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56EB73F5B5D9E562A1D34B8C2C459868 /* PBXTargetDependency */,
+				99B1D32C91D3E849F806A61782E3F9A6 /* PBXTargetDependency */,
+			);
+			name = "Pods-EZGraphQL_Example";
+			productName = Pods_EZGraphQL_Example;
+			productReference = 6379BA097C1343BCF39A25610D870D46 /* Pods-EZGraphQL_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		7143250EE296CA41D4EB76D25F3B578C /* EZGraphQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0FC5A6080235A5BC61C40F4EB010540 /* Build configuration list for PBXNativeTarget "EZGraphQL" */;
+			buildPhases = (
+				E04BB068AD4BDBB0608DC92E83739833 /* Headers */,
+				263863EECE99B1C7FF5135BF139B9BB3 /* Sources */,
+				2814CDD1D3A277765A06963DD6B29D63 /* Frameworks */,
+				372C0EE5F89651B313EE5D2D1EA3CF30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D776109FECDF8D0867B71F377C00290 /* PBXTargetDependency */,
+			);
+			name = EZGraphQL;
+			productName = EZGraphQL;
+			productReference = C6362B6B8E8B6AB1EB2577E054E993E3 /* EZGraphQL */;
+			productType = "com.apple.product-type.framework";
+		};
+		91CEFB2F6EEDDA2E3F14EAD7757FE332 /* Pods-EZGraphQL_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6513F4B2AE198D18DAC84585B66AEF5 /* Build configuration list for PBXNativeTarget "Pods-EZGraphQL_Tests" */;
+			buildPhases = (
+				5B0C05F56D2172E2D440D757EC0F685A /* Headers */,
+				DB4A4C83F98AC947BC20BA28AC88E00D /* Sources */,
+				E7559C74587D42C01FEAF419FDD326F6 /* Frameworks */,
+				F115E92858D071D346D4C55F61FA27EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9ED004C4BD200DF70C27C5FD8CB6B6A2 /* PBXTargetDependency */,
+			);
+			name = "Pods-EZGraphQL_Tests";
+			productName = Pods_EZGraphQL_Tests;
+			productReference = FEB357A0585A7DE0A8A61291116506E9 /* Pods-EZGraphQL_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1668071D6BE6E63B51976060A0FE65CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30EE3CABB612307A688C40B61BFA74CC /* Apollo */,
+				7143250EE296CA41D4EB76D25F3B578C /* EZGraphQL */,
+				3120415F22AD96C257F2164F508F6810 /* Pods-EZGraphQL_Example */,
+				91CEFB2F6EEDDA2E3F14EAD7757FE332 /* Pods-EZGraphQL_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		372C0EE5F89651B313EE5D2D1EA3CF30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		586482B0671EDCD736C68E38414E0075 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		715477239DFB74ADB7E8436C87B16AA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F115E92858D071D346D4C55F61FA27EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		263863EECE99B1C7FF5135BF139B9BB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95194B4F41F89C6FBE8D359A256D4163 /* AlgorithmFindLives.graphql in Sources */,
+				399F34CCFCC1C17DCC7F1867B3D8AD23 /* API.swift in Sources */,
+				901973FE49FE8D0AB2A504983D1E89B0 /* AppAcceptUserAgreement.graphql in Sources */,
+				3C7DD98F59A0DB11903815E7B02AE5FD /* AppChangeLiveWatchListMutation.graphql in Sources */,
+				AEDD6E9261130CC8C7E0CF2B9F41DF0E /* AppDeleteLiveScheduleMutation.graphql in Sources */,
+				9EF30FAF9EE02F19AA9C18965315AC95 /* AppExpressDashboardLogin.graphql in Sources */,
+				E47E040B84833D53D840F1D1C1442798 /* AppFindFriends.graphql in Sources */,
+				360AF0BEB459AC422C24C696D2681CAB /* AppFindLiveQuery.graphql in Sources */,
+				F40DA5BD23F232DADD3E73C08CFB4794 /* AppFindVideoQuery.graphql in Sources */,
+				632ADA9B193E5343B10C9740D4B43397 /* AppGetEventQuery.graphql in Sources */,
+				9DFC24D2AC8DF1DD6E821798ECB90D6C /* AppGetFeatureHashtagQuery.graphql in Sources */,
+				724AE2A46BABE3B2D6E258BDD9F9D514 /* AppGetLiveProductQuery.graphql in Sources */,
+				D3612ACA63154EF80954EB4897DC791F /* AppGetMultiUploadURLQuery.graphql in Sources */,
+				540CC5F9E67E960581FC195389ADFA48 /* AppGetTicketOrderQuery.graphql in Sources */,
+				E6AA1732F66C249124FEF3B2EB00EC78 /* AppLastPaymentMethod.graphql in Sources */,
+				DE8F5F7647AB7B82919176FD22D80BCC /* AppListAuctionBidRecords.graphql in Sources */,
+				A448AA2D663879BEA3547D63EF181D55 /* AppListEvents.graphql in Sources */,
+				B1012A612D0326F2F53A99A4F0945422 /* AppListInboxNotificationsQuery.graphql in Sources */,
+				D4339CA4906D60992C8BA8ED334B9F60 /* AppListLiveWatchListQuery.graphql in Sources */,
+				FA6BF193536BC5DD38B9681DA9627047 /* AppListScheduleLivesQuery.graphql in Sources */,
+				06E04C816997325AA2851940FE12E550 /* AppListSelectedLiveProductsQuery.graphql in Sources */,
+				46006D0FC73D1DADE2B2828D0DE9A105 /* AppPlaceBidMutation.graphql in Sources */,
+				76A4F5B74294D3BCD07F00FBD7279943 /* AppReadAllInboxNotificationsMutation.graphql in Sources */,
+				F9DA2FBF4974101DCA7B744C255A5AFA /* AppReportCollaborationEvent.graphql in Sources */,
+				AFA10556DD328E4EAC832EB6BA9CE7C4 /* AppSearchMediaResourceQuery.graphql in Sources */,
+				4A865E184D4BD403DD9EB0E40FE25631 /* AppSetAuctionPaymentInfoMutation.graphql in Sources */,
+				902BCFF2A2A74CABB99D838128F7520D /* AppSetupLiveResourcesMutation.graphql in Sources */,
+				DDFB39E1671681D4B21A703289EBB7DC /* AppStoreQuery.graphql in Sources */,
+				3A0AE79FF79E811F9A54ECE619899D45 /* AppTrackerByOrderQuery.graphql in Sources */,
+				593C1021AE227694DF13BE942A875F6D /* AppUpdateStoreMutation.graphql in Sources */,
+				FD9DAF65B4696FFA5417DD5E4C5CA2FC /* AppUpdateVideoMutation.graphql in Sources */,
+				FE1E8FDE693EB6B4743604E31023CB95 /* AppViewStoreQuery.graphql in Sources */,
+				DD25C7DF8F9F607DFDB65EEEAFEC2943 /* BindPhoneNumberMutation.graphql in Sources */,
+				5775D5C464E1429D04C06790A862ACB9 /* CalculateOrderQuery.graphql in Sources */,
+				CA4B24B9F5A464A07C8ABED2826236E8 /* CalculateTicketOrderQuery.graphql in Sources */,
+				73290780A64B650B311D5EAB24C42116 /* CheckSessionTokenQuery.graphql in Sources */,
+				4B29D9F509D0D373F1EFA732D2D1BB55 /* CreateAddressMutation.graphql in Sources */,
+				50D67759F75B08A0E460A0962BBE800B /* CreateCardMutation.graphql in Sources */,
+				713832D3A1E34E27F7147650E0B99889 /* CreateCommentMutation.graphql in Sources */,
+				F25121A15CD2D9B8B676E4C6656F5792 /* CreateFuturePaymentMutation.graphql in Sources */,
+				961A688BBD788D07F68C33166D6AD328 /* CreateIVSChannelMutation.graphql in Sources */,
+				F01898B074C2E2DA8632A73F3ED578E5 /* CreateKeyword.graphql in Sources */,
+				4969EB5CB7909DE9666C68B676347053 /* CreateOrderMutation.graphql in Sources */,
+				49DCD00FFA3634E218F4C5C715D4C007 /* CreatePaymentMethodMutation.graphql in Sources */,
+				C2D3ACBEB5CDCECE8442CCF374A9810A /* CreatePaymentMutation.graphql in Sources */,
+				51C142B134B806492EE9FA759B885758 /* CreateTicketOrderMutation.graphql in Sources */,
+				900991D56C23F1B77D2D304E978087F1 /* CreateUserCoupon.graphql in Sources */,
+				7FDCB270FD428D705F43B1DE85651288 /* DeleteAddressMutation.graphql in Sources */,
+				7493C371B1C6075C4292FC35F0958490 /* DeleteCardMutation.graphql in Sources */,
+				009EE50BF37BF7FA60C3FCA5FAFF4648 /* DeletePaymentMethodMutation.graphql in Sources */,
+				E92886196C684CBFED6B965A20034509 /* EZAlgorithmFindVideosQuery.graphql in Sources */,
+				3AB2799E526FAC79C5E8F19F65E04F20 /* EZAppBatchCreateLiveProductsMutation.graphql in Sources */,
+				D0452914982EED1793D57FCFB7E3451B /* EZAppBlockUserMutation.graphql in Sources */,
+				03FE1F30628A7AC776CF6874989890B3 /* EZAppChangePhoneNumberMutation.graphql in Sources */,
+				0B33D0BE557EBA7803DDB016D2040C8B /* EZAppCreateLiveProductMutation.graphql in Sources */,
+				3658F831BA1EAA32C949A69C50ACE1FB /* EZAppDeleteLiveProductMutation.graphql in Sources */,
+				2160CF7D431F752FB01D0FBB59151E5D /* EZAppFindProductQuery.graphql in Sources */,
+				D3C046D013EA3E884444B8C47E62D87D /* EZAppGetVersionQuery.graphql in Sources */,
+				0A20CD960728955A266759892ECF3A66 /* EZAppListLiveProductsQuery.graphql in Sources */,
+				16410877C8377A6F043939931E6DEC1F /* EZAppMusicsQuery.graphql in Sources */,
+				FBCEF7F08920848A156A9440C4D33E04 /* EZAppUnblockUserMutation.graphql in Sources */,
+				9F5A20D66B17B84A6C42246F962102BF /* EZAppUpdateLiveProductMutation.graphql in Sources */,
+				76A67BD0066B41EE1A98F0E2B8A07463 /* EZCheckPhoneNumberQuery.graphql in Sources */,
+				9BD2B1E72FA7E7B708204C3DACF8C8E2 /* EZCheckUsernameQuery.graphql in Sources */,
+				9F7D0F6DC1F281EA17FD7788195705F1 /* EZCreateClientLogMutation.graphql in Sources */,
+				B7E0E1E55A036DD8355EB83AA7929D91 /* EZCreateCouponMutation.graphql in Sources */,
+				81FFE54380305319BD95D93BA1D51B28 /* EZCreateLiveMutation.graphql in Sources */,
+				E299B607DCC4E330481B002D0B6A15F8 /* EZCreateProductMutation.graphql in Sources */,
+				69B403863A6A1C32B3FFEBE7106472F5 /* EZCreateReportMutation.graphql in Sources */,
+				25F426B87F19902EB98B291BF3276CD2 /* EZCreateVideoMutation.graphql in Sources */,
+				D729C0A85A746B272214D51B4D51681B /* EZEndLiveQuery.graphql in Sources */,
+				CD6B651F5D6BC2C01F1F56DCF5CE4CAC /* EZFindFollowUsersQuery.graphql in Sources */,
+				FB31A4F6546B3718DB68F0D042686192 /* EZFindHashtagsQuery.graphql in Sources */,
+				F82A3FA9C20DC27B745ED8C891FAD00D /* EZFindInterestsQuery.graphql in Sources */,
+				40C8D1A348485FFE169F326DA3BDE867 /* EZFindInterestsWithNameQuery.graphql in Sources */,
+				D8E7E8284A42D9669DF32BCDA32163E4 /* EZFindLivesQuery.graphql in Sources */,
+				226CA181D75C2C8CF49B10F45B5BFA24 /* EZFindProductsQuery.graphql in Sources */,
+				2D4317720AF85609BFCC0C7A25C62114 /* EZFindShippingOptionsQuery.graphql in Sources */,
+				6E864EB37804DCFE3FECD3C5C6F88EFC /* EZFindUsersQuery.graphql in Sources */,
+				4C24202EB7CF14B56B300ED86309FA58 /* EZFollowUserMutation.graphql in Sources */,
+				BB889940E466FE4D2DB178145C20C98D /* EZGetEphemeralKeyQuery.graphql in Sources */,
+				6661A16F5F6419E8DACF1A7DC133C486 /* EZGetOrderQuery.graphql in Sources */,
+				A6ABE788F39C907EADFF682D49A155C7 /* EZGetUnreadNotificationCountQuery.graphql in Sources */,
+				504EFD85972B6B8ED00FF00B01BB8657 /* EZGetUserOfflineMsgCountQuery.graphql in Sources */,
+				3A6AB7ED68DFA6F538740293D8442978 /* EZGraphQL-dummy.m in Sources */,
+				7471B16702BAC57B939E1D9CC49EC322 /* EZHomeAlgorithmFindUsersQuery.graphql in Sources */,
+				36C21DAAE04D797814B85A50186FC848 /* EZHomeFindChatroomUsersQuery.graphql in Sources */,
+				706AE6E67DF160B16DF4BC4C17CB8DE2 /* EZHomeLiveQuery.graphql in Sources */,
+				AEF2BAEBACED2F02665417C0C037202B /* EZLinkUserInstagramInfoMutation.graphql in Sources */,
+				FC64D76F43474B701579422EC622DFA1 /* EZListOrderQuery.graphql in Sources */,
+				FFAF9C8304F9632A018A3A49310DFF46 /* EZListTicketOrdersQuery.graphql in Sources */,
+				CAEADB00FE5F20AD6B9F6DFDB9695087 /* EZLoginByOAuthMutation.graphql in Sources */,
+				5AACA14C08E6A7ADA5E09C6BD3D91350 /* EZLoginMutation.graphql in Sources */,
+				4D8081C8E68AAB1177D0BA413271416F /* EZLogoffUserMutation.graphql in Sources */,
+				B7F760BFE4C0000C8F3D8BEBB97CBB28 /* EZLogouMutation.graphql in Sources */,
+				0D839525B85CE3B1D5FC57000B94524F /* EZMeLikeVideosQuery.graphql in Sources */,
+				4FDC7E52CC2CA72CC23068096C4925CA /* EZMeUserInfoQuery.graphql in Sources */,
+				8BBCE2528336E759BCF432B4DF1C0890 /* EZNearBySearchQuery.graphql in Sources */,
+				A57918EF3BA96028212F9B5DE0272B5B /* EZPlaceDetailQuery.graphql in Sources */,
+				2C2C1C78BEAB99606AB1BCB99BD1653F /* EZSelfQuery.graphql in Sources */,
+				1415A076170990E683B86FA8FD6EF8D3 /* EZSendCodeMutation.graphql in Sources */,
+				0AD4B4556CD4A445CAAD013BD39F8981 /* EZShareMutation.graphql in Sources */,
+				4EC2813470C2AE66A287DFD6767E7BA7 /* EZStartLiveRecordingQuery.graphql in Sources */,
+				BAC72BB82C291AE1AC7D6115F9F4E8F7 /* EZUpdateCoupon.graphql in Sources */,
+				2A01A8F548F2B8EA6BE761E76AC37D9B /* EZUpdateOrderMutation.graphql in Sources */,
+				C9B1F80AF01C361BFE6BBC92F73C78B5 /* EZUpdateProductMutation.graphql in Sources */,
+				EA45ED1F99C0F2810C41BB8771AC83DC /* EZVerifyCodeQuery.graphql in Sources */,
+				B95FE984C3C798E6E2668B19F2DBEB72 /* EZViewHashTagMutation.graphql in Sources */,
+				E012E3AF206F3F77EE8E07EC77B1F3A2 /* EZViewVideoMutation.graphql in Sources */,
+				1939687D3C0E3C970EADD1A9F65AB71B /* EZWalletQuery.graphql in Sources */,
+				A74094ED7B034EAED60768A055BC54F5 /* FindAddressQuery.graphql in Sources */,
+				01A075DD505E1726A735B011F53501BA /* FindCardsQuery.graphql in Sources */,
+				89B5D4BEAA5A28C8A6FF809AD7457424 /* FindChatRoomUsersQuery.graphql in Sources */,
+				6868587AAED250F6C815026D04514AEA /* FindCommentsQuery.graphql in Sources */,
+				37CB52BE336947D728F8079A99C3666F /* FindFollowInterestsQuery.graphql in Sources */,
+				F8D84AD1DEDA10297AC9EBB35CACFE98 /* FindFollowUserQuery.graphql in Sources */,
+				2986657612F6D039359DE1FB8C8D63C7 /* FindKeywords.graphql in Sources */,
+				02DC7EDE83DB0C441786D8A08172CD55 /* FindPaymentMethodsQuery.graphql in Sources */,
+				1709CDB7DBED06AF7C751D96B04F4544 /* FindRecommendInterestsQuery.graphql in Sources */,
+				794562C0971B1CFEADD392D7BDD443B0 /* FindVideoByVideoTypeQuery.graphql in Sources */,
+				AA1086DD61C621543466931EA30ADA3D /* FindVideosQuery.graphql in Sources */,
+				7F44BB8AFFC73BFB2223475693BCEAAE /* FollowHashtagMutation.graphql in Sources */,
+				FDAB5FD6616DFBD0702576EE7654E352 /* FollowInterestMutation.graphql in Sources */,
+				F45B901D5E44BA4B1641B4DA112017EF /* GetAppConfigQuery.graphql in Sources */,
+				5D33B7F11D2CAF3CD106D26414D97CA4 /* GetLiveTokenQuery.graphql in Sources */,
+				55F31C3C9239CF3BE7690A23F45A74F0 /* GetServerTimeQuery.graphql in Sources */,
+				110D35F84D35629C0C158BE2769AAA32 /* GetUploadURLQuery.graphql in Sources */,
+				942CEB033AD59FD7640D055E2FDAC6A8 /* HomePageQuery.graphql in Sources */,
+				E380FD9989B0B08B98A0CF1780A24A54 /* LikeCommentMutation.graphql in Sources */,
+				395ED21ABA474418E82CF3535E3D6A71 /* LikeLiveMutation.graphql in Sources */,
+				8AA222AB64FF40630C04B140B7AD0BE6 /* LikeVideoMutation.graphql in Sources */,
+				AFFB2129F373807803AFCB4279D1E891 /* LiveInfoSubscription.graphql in Sources */,
+				BF0B4D49EBEFC6D56987C537BCB7EDB3 /* MePageAllQuery.graphql in Sources */,
+				592CFF6BDE738F4C6E6164DB718BEE5E /* RegisterMutation.graphql in Sources */,
+				47C5957035C2659B52672729E411CCFC /* ResetPassword.graphql in Sources */,
+				6354EDDE6F9B63EB65136C04CCDD87FA /* schema.json in Sources */,
+				D1F272375B1320A4A0F9FC75B5DD71A3 /* ScoreLiveMutation.graphql in Sources */,
+				45639654E4CCE27EE6BB6A262D8CE3C5 /* UpdateAddressMutation.graphql in Sources */,
+				84E395B657D515FEB541A5FB208446B6 /* UpdateCardMutation.graphql in Sources */,
+				B32BDC83EA709E4913D061434F6D2EF5 /* UpdateCommentMutation.graphql in Sources */,
+				C5CB9C118A83F3A5BEBA25A7495745B3 /* UpdateLiveMutation.graphql in Sources */,
+				BF67F5BE638CDD782F83B78407F05380 /* UpdateUserMutation.graphql in Sources */,
+				39B7809B7E5CC1A7DC109545799A6E36 /* UserFollowHashtagMutation.graphql in Sources */,
+				42ABE41AE11AEE7043127D96F9DA68F0 /* ValidateAddressQuery.graphql in Sources */,
+				87794A1C49EDCA1E1258778D92B9D652 /* VerifyOAuthTokenMutation.graphql in Sources */,
+				B5CFAAE1671D572F463CBE2D82E70B98 /* ViewKeyword.graphql in Sources */,
+				A8D41F9F500B886D837A59A2DCDC04D1 /* ViewLiveMutation.graphql in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47AD71C6DF5EE9D6CA60341F6B6E7DB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C64576E42AA9E584F797C9302E374E /* Apollo-dummy.m in Sources */,
+				87A8EC837C5D55EE347F82D79791D2C9 /* ApolloClient.swift in Sources */,
+				E3C5F7494155D415767FCFE69F163517 /* ApolloClientProtocol.swift in Sources */,
+				130394A8DE452796986CF9FD190A015B /* ApolloStore.swift in Sources */,
+				6ED9471E4E822142A82540FB461F28F8 /* AsynchronousOperation.swift in Sources */,
+				C98DEC29E0837C55849FF028CA306814 /* Bundle+Helpers.swift in Sources */,
+				18EACDA9F0126F29E31F7CD396167C3A /* Cancellable.swift in Sources */,
+				869AF9F459A0CE50ABFEA4ED04F42C9C /* Collection+Helpers.swift in Sources */,
+				35578131742282396198810F510FF3A0 /* DataLoader.swift in Sources */,
+				172CEFD4BF62383432C41C7C7901FD31 /* Decoding.swift in Sources */,
+				BB084BCF68BF840E60DE41BFC07A0D66 /* Dictionary+Helpers.swift in Sources */,
+				3ECD244D55DA76B0DFCEE7C88FD4631C /* DispatchQueue+Optional.swift in Sources */,
+				C864AC56A0865352B5EA9A2D7DFECEDE /* GraphQLDependencyTracker.swift in Sources */,
+				DA961E6AB8140C09BE16EF5730E08F24 /* GraphQLError.swift in Sources */,
+				2A0CC5C986247D22ECA94609768D2D51 /* GraphQLExecutor.swift in Sources */,
+				EF8418485C43A7BB3B5C8673AE8201FE /* GraphQLFile.swift in Sources */,
+				35A44EB79E2E319248AC25751091FC79 /* GraphQLGETTransformer.swift in Sources */,
+				3E3B54A5C38B337DE5042FD0C5BF35E0 /* GraphQLHTTPMethod.swift in Sources */,
+				946F61015E367987A8049510D4A87E6E /* GraphQLHTTPRequestError.swift in Sources */,
+				DCAB0DD4E930D7335A7A20CA034421E9 /* GraphQLHTTPResponseError.swift in Sources */,
+				9BC32325FA23C98FB01250A665E203CD /* GraphQLInputValue.swift in Sources */,
+				A0C3DED9772EF3404384A46A4D8830C9 /* GraphQLOperation.swift in Sources */,
+				8FEF4AB3813EB4D566FC361BE9CEAEBB /* GraphQLQueryWatcher.swift in Sources */,
+				00319B3BB32B9DE4AE07092786D99554 /* GraphQLResponse.swift in Sources */,
+				ECBD2800F958CCCC4A744512D52EA850 /* GraphQLResponseGenerator.swift in Sources */,
+				E10C540E14512B024A649B875B4B7DFC /* GraphQLResult.swift in Sources */,
+				E9D3E7D34D9861E3E429A1B8A56FAD62 /* GraphQLResultAccumulator.swift in Sources */,
+				4DC41032FF17BC0F2FADB21C08863AB3 /* GraphQLResultNormalizer.swift in Sources */,
+				7EADA14E275162FCE906DEF1AFECC3BA /* GraphQLSelectionSet.swift in Sources */,
+				E3410D359A9229959E93A80FCFD499AB /* GraphQLSelectionSetMapper.swift in Sources */,
+				19C7FC4589DB43EAE1A6D2DB4F25ACFC /* GroupedSequence.swift in Sources */,
+				C41929654FCAE87F0EFD4DE59AAE7421 /* HTTPNetworkTransport.swift in Sources */,
+				6447DB1DD7F19FCC9DD7517B599E9D2C /* HTTPURLResponse+Helpers.swift in Sources */,
+				BC62D8D5C2F1A50AB7498B445A083E78 /* InMemoryNormalizedCache.swift in Sources */,
+				2F7606DEA5843E0E0A52F5E3BB7DC655 /* JSON.swift in Sources */,
+				94ED218DE2923CD5CAEB2D2AC8496DA2 /* JSONSerializationFormat.swift in Sources */,
+				13663E0873FD31187A752ABE39E2A900 /* JSONSerialziation+Sorting.swift in Sources */,
+				C6CE6F6B6D6FF5AE86EF4D0EB2D664CC /* JSONStandardTypeConversions.swift in Sources */,
+				6EFA4BCF235708D5DA0AC1D4F308E722 /* Locking.swift in Sources */,
+				59F3E8721DEA928033DB139666F68874 /* Matchable.swift in Sources */,
+				49DFBA1E030D65BB1FE1074AAFDF9EB5 /* MultipartFormData.swift in Sources */,
+				C526BD0B0894785F914652547E6F813B /* NetworkTransport.swift in Sources */,
+				FB9D43CAD4481C94F99D682930BAFCF3 /* NormalizedCache.swift in Sources */,
+				86822AA2EFEAAC78301D4DBD0BFEE8AA /* Promise.swift in Sources */,
+				5CFBE8792D23ECFE7E53AACCE8E52109 /* Record.swift in Sources */,
+				493863E9077781BEC8562280E86F364E /* RecordSet.swift in Sources */,
+				D6A058D3FAC139CD98D9E3977A733472 /* RequestCreator.swift in Sources */,
+				B043256EC203FC46C628CADFEBC19D74 /* ResponsePath.swift in Sources */,
+				EE107948895A4762A79EB46C800D91B5 /* Result+Helpers.swift in Sources */,
+				11FF1734985E7DDBCE4CAB8AB7E02B41 /* ResultOrPromise.swift in Sources */,
+				FC2F0A0741258C6C8040B1954DFA1934 /* String+SHA.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90ADB3CF4426F3F6CEAB97D172E89E66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F693190A281F2E36A0B002F7693584 /* Pods-EZGraphQL_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB4A4C83F98AC947BC20BA28AC88E00D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E503B74D0D25E82DCF9FA640246CF0 /* Pods-EZGraphQL_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56EB73F5B5D9E562A1D34B8C2C459868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Apollo;
+			target = 30EE3CABB612307A688C40B61BFA74CC /* Apollo */;
+			targetProxy = F16B306AD0C0E39042AD36725A59AD93 /* PBXContainerItemProxy */;
+		};
+		6D776109FECDF8D0867B71F377C00290 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Apollo;
+			target = 30EE3CABB612307A688C40B61BFA74CC /* Apollo */;
+			targetProxy = 9F843598E98EFD8ACB0BA6F0D067CECC /* PBXContainerItemProxy */;
+		};
+		99B1D32C91D3E849F806A61782E3F9A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EZGraphQL;
+			target = 7143250EE296CA41D4EB76D25F3B578C /* EZGraphQL */;
+			targetProxy = 1E24AF2BD70918C3007F1230A079EB7A /* PBXContainerItemProxy */;
+		};
+		9ED004C4BD200DF70C27C5FD8CB6B6A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EZGraphQL_Example";
+			target = 3120415F22AD96C257F2164F508F6810 /* Pods-EZGraphQL_Example */;
+			targetProxy = 27B947299B9D3B78259E3BF6A59330C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08E0E9A4DFA72336E5F1A93B01FD409D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4580A4F7A34AC0FD3C40922E45A79CFC /* Pods-EZGraphQL_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EZGraphQL_Example/Pods-EZGraphQL_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EZGraphQL_Example/Pods-EZGraphQL_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		29A7C80AAEED23F9D05E22A1022C2486 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE3EEC8B59F6BA3B1D684E0A9E05BAA /* Apollo.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Apollo/Apollo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apollo/Apollo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Apollo/Apollo.modulemap";
+				PRODUCT_MODULE_NAME = Apollo;
+				PRODUCT_NAME = Apollo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2CD5C862369A613C5D02B0BC67C1A27D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C8304AEA15B8820052415D34B58CE95 /* EZGraphQL.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EZGraphQL/EZGraphQL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EZGraphQL/EZGraphQL-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/EZGraphQL/EZGraphQL.modulemap";
+				PRODUCT_MODULE_NAME = EZGraphQL;
+				PRODUCT_NAME = EZGraphQL;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		36196D4D714600AAF270C02F8570BDE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D470D02DD5617000DD63ED1C0D0909EE /* EZGraphQL.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EZGraphQL/EZGraphQL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EZGraphQL/EZGraphQL-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/EZGraphQL/EZGraphQL.modulemap";
+				PRODUCT_MODULE_NAME = EZGraphQL;
+				PRODUCT_NAME = EZGraphQL;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4B5A51F14F56D8169D9FDE417D4A1B76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F748584D64485387D3F498B49969399 /* Pods-EZGraphQL_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EZGraphQL_Tests/Pods-EZGraphQL_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EZGraphQL_Tests/Pods-EZGraphQL_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		64ADE58A0539CC63DEBDED883B182AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33741FC82A97742100CDA5182E4D65D3 /* Pods-EZGraphQL_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EZGraphQL_Tests/Pods-EZGraphQL_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EZGraphQL_Tests/Pods-EZGraphQL_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		793B937E1307355D05272A217A9DE77E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC8143A5875D84390E370EE30DF496F6 /* Pods-EZGraphQL_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EZGraphQL_Example/Pods-EZGraphQL_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EZGraphQL_Example/Pods-EZGraphQL_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CCE2DE79ADDDC460817BD3682C6BFB20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67918AD94E7174E061949718912611FE /* Apollo.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Apollo/Apollo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apollo/Apollo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Apollo/Apollo.modulemap";
+				PRODUCT_MODULE_NAME = Apollo;
+				PRODUCT_NAME = Apollo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AA932DBA3D3091E7A998FF50000277C /* Build configuration list for PBXNativeTarget "Apollo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29A7C80AAEED23F9D05E22A1022C2486 /* Debug */,
+				CCE2DE79ADDDC460817BD3682C6BFB20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EE2F3E9DB6660F083296CA34986630D /* Build configuration list for PBXNativeTarget "Pods-EZGraphQL_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				793B937E1307355D05272A217A9DE77E /* Debug */,
+				08E0E9A4DFA72336E5F1A93B01FD409D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6513F4B2AE198D18DAC84585B66AEF5 /* Build configuration list for PBXNativeTarget "Pods-EZGraphQL_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64ADE58A0539CC63DEBDED883B182AD1 /* Debug */,
+				4B5A51F14F56D8169D9FDE417D4A1B76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0FC5A6080235A5BC61C40F4EB010540 /* Build configuration list for PBXNativeTarget "EZGraphQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CD5C862369A613C5D02B0BC67C1A27D /* Debug */,
+				36196D4D714600AAF270C02F8570BDE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

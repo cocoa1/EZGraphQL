@@ -1,0 +1,15 @@
+mutation createUserCoupon($coupon:ID!) {
+    createUserCoupon(coupon:$coupon) {
+        _id
+        coupon {
+            _id
+            quantity
+        }
+        discountType
+        value
+        used
+        usedAt
+        createdAt
+        deleted
+    }
+}

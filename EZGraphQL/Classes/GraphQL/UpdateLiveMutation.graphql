@@ -1,0 +1,5 @@
+mutation updateLive($_id: ID!, $update: inputUpdateLive!) {
+	updateLive(_id: $_id, update: $update) {
+		success
+	}
+}

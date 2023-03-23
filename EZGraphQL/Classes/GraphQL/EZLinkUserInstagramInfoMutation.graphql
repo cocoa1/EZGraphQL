@@ -1,0 +1,7 @@
+mutation linkUserInstagramInfo($code: String!) {
+	linkUserInstagramInfo (code: $code) {
+		id
+		username
+		homePage
+	}
+}

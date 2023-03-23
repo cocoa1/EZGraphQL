@@ -1,0 +1,5 @@
+mutation updateOrder($_id: ID!, $update: inputUpdateOrder!) {
+    updateOrder(_id: $_id, update: $update) {
+        success
+    }
+}

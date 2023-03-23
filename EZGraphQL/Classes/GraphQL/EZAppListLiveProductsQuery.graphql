@@ -1,0 +1,65 @@
+#客户端查询直播商品列表。开播后主播端和用户端要查询商品列表，可以从这个接口获取
+query AppListLiveProducts($live: ID!, $page: Int, $pageSize: Int) {
+  appListLiveProducts(live: $live, page: $page, pageSize: $pageSize) {
+	totalCount
+	edges {
+	  _id
+	  name
+	  description
+	  images {
+		image
+		key
+	  }
+	  stock
+      labels
+	  regularPrice
+	  livePrice
+	  variants {
+		_id
+		name
+		quantity
+		shopifyProductVariantId
+	  }
+	  status
+	  productType
+	  isFreeShipping
+	  shippingInfo {
+		companyName
+		method
+		price
+	  }
+	  shopifyProductId
+	  auctionPrice
+	  auctionSetting {
+		duration
+		extendTime
+		auctionStartedAt
+	  }
+	  auctionStatus
+	  auctionBidInfo {
+		productId
+		auctionStatus
+		endBidTime
+		extendBidTime
+		latestBidPrice
+		recommendBidPrice
+		bidsCount
+		latestBidder {
+		  _id
+		  avatar
+		  username
+		  name
+		  uid
+		  role
+		  userType
+		  phoneNumber
+		  email
+		}
+	  }
+	}
+	pageInfo {
+	  hashNextPage
+	}
+  }
+}
+

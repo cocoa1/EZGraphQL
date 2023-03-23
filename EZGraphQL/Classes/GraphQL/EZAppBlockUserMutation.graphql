@@ -1,0 +1,5 @@
+mutation appBlockUser($blockUser: ID!) {
+    appBlockUser (blockUser: $blockUser) {
+        success
+    }
+}

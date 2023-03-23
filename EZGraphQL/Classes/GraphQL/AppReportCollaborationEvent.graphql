@@ -1,0 +1,5 @@
+mutation appReportCollaborationEvent($event: CollaborationEvent!, $live: ID!,$user: ID,$reportTime: Float!) {
+    appReportCollaborationEvent(event: $event, live: $live,user: $user,reportTime: $reportTime) {
+        success
+    }
+}

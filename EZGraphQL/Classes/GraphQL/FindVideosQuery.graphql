@@ -1,0 +1,94 @@
+query FindVideos(
+  $page: Int
+  $pageSize: Int
+  $users: [ID]
+  $describe: String
+  $videoTypes: [VideoType]
+) {
+  findVideos(
+    page: $page
+    pageSize: $pageSize
+    users: $users
+    describe: $describe
+    sort: [{ field: createdAt, value: DESC }]
+    videoTypes: $videoTypes
+  ) {
+    _id
+    videoType
+    user {
+      username
+      _id
+      avatar
+      followed
+      role
+    }
+    coverImage
+    video
+    duration
+    describe
+    describeMapping {
+      users {
+        text
+        id {
+          _id
+        }
+      }
+    }
+    viewCount
+    likeCount
+    commentCount
+    shareCount
+    recommend
+    watch
+    allowComment
+    location
+    placeName
+    shareLink
+    interests {
+      _id
+      name
+      priority
+      videoCount
+      userCount
+      followed
+      isSuspended
+    }
+    music {
+      _id
+      title
+    }
+    deleted
+    teaserTitle
+    liveStartAt
+    liked
+    products {
+      product
+      name
+      description
+      images {
+        image
+        key
+      }
+      regularPrice
+      livePrice
+      productType
+      variants {
+        _id
+        name
+        sku
+        quantity
+      }
+    }
+    hasSubscribedLive
+    live {
+      _id
+      coverImage
+      title
+      status
+      scheduleStartAt
+      streamingStatus
+    }
+  }
+}
+
+

@@ -1,0 +1,5 @@
+mutation appChangePhoneNumber($verifyPhoneToken: String!, $changePhoneToken: String!, $newPhoneNumber: String!) {
+    appChangePhoneNumber (verifyPhoneToken: $verifyPhoneToken, changePhoneToken: $changePhoneToken, newPhoneNumber: $newPhoneNumber) {
+        success
+    }
+}

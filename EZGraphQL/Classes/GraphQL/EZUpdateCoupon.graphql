@@ -1,0 +1,6 @@
+mutation updateCoupon($_id: ID!, $update: UpdateCouponInput!) {
+	updateCoupon (_id: $_id, update: $update) {
+		success
+	}
+}
+

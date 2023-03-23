@@ -1,0 +1,5 @@
+mutation scoreLive($live: ID!, $score: Int!) {
+    scoreLive(live: $live,score: $score) {
+        success
+    }
+}

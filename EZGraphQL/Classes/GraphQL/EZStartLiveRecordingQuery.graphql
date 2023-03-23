@@ -1,0 +1,5 @@
+query startLiveRecording($liveId: ID!) {
+	startLiveRecording (liveId: $liveId) {
+		resourceId
+	}
+}

@@ -1,0 +1,132 @@
+query MePage (
+  $userID: ID
+  $username: String
+  $users: [ID]
+  $page: Int
+  $pageSize: Int
+) {
+  findUsers(_id: $userID, username: $username) {
+    _id
+    uid
+    hasBlocked
+    avatar
+    name
+    username
+    followCount
+    fansCount
+    likeCount
+    bio
+    website
+    facebook {
+      id
+      username
+      homePage
+    }
+    newOrdersCount {
+      selling
+      buying
+      ticket
+    }
+    instagram {
+      id
+      username
+      homePage
+    }
+    followed
+    liveStatus
+    liveId
+    store {
+      _id
+      storeName
+      storePicture {
+        image
+        key
+      }
+      deleted
+    }
+    role
+    recentSellerRequest {
+      reviewStatus
+    }
+  }
+
+  findFollowInterests(users: $users, page: 1, pageSize: 100) {
+    interest {
+      name
+      _id
+      followed
+      hashtags {
+        _id
+        name
+        userCount
+        followed
+      }
+    }
+  }
+
+  findVideos(
+    page: $page
+    pageSize: $pageSize
+    users: $users
+    sort: [{field: createdAt, value: DESC}]
+  ) {
+    _id
+    video
+    viewCount
+    describe
+    describeMapping {
+      users {
+        text
+        id {
+          _id
+        }
+      }
+    }
+    watch
+    coverImage
+    liked
+    duration
+    likeCount
+    commentCount
+    shareCount
+    allowComment
+    teaserTitle
+    liveStartAt
+    videoType
+    shareLink
+    location
+    placeId
+    placeName
+    placeAddress
+    interests {
+      name
+      _id
+      hashtags {
+        _id
+        name
+      }
+    }
+
+    music {
+      _id
+      title
+    }
+    user {
+      username
+      _id
+      avatar
+      followed
+      role
+    }
+    hasSubscribedLive
+    live {
+      _id
+      coverImage
+      title
+      status
+      streamingStatus
+      scheduleStartAt
+    }
+  }
+}
+

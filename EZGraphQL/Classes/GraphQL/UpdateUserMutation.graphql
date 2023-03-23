@@ -1,0 +1,5 @@
+mutation updateUser($_id: ID!, $update: inputUpdateUser!) {
+	updateUser(_id: $_id, update: $update) {
+		success
+	}
+}

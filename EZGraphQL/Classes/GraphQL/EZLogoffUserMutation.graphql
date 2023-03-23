@@ -1,0 +1,6 @@
+mutation logoffUser($_id: ID!, $password: String!,$logoffedReason:enum_logoffedReason!) {
+	logoffUser(_id: $_id, password: $password,logoffedReason:$logoffedReason) {
+		success
+		logoffedAt
+	}
+}

@@ -1,0 +1,40 @@
+mutation login($phoneNumber: String!, $password: String!) {
+	login(phoneNumber: $phoneNumber,
+			  password: $password) {
+		sessionToken
+	 user {
+		  _id
+		  avatar
+		  gender
+		  deviceType
+		  deviceId
+		  username
+		  birthday
+		  phoneNumber
+		  email
+		  website
+		  bio
+		  uid
+		  createdAt
+		  updatedAt
+		  instagram {
+			  id
+			  username
+			  homePage
+		  }
+		  facebook {
+			  id
+			  username
+			  homePage
+		  }
+		  userType
+		  imPassword
+		  pushNotifications {
+			  interactions
+			  live
+			  video
+			  order
+		  }
+	  }
+	}
+}

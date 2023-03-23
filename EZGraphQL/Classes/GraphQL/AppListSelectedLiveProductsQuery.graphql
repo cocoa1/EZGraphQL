@@ -1,0 +1,56 @@
+query AppListSelectedLiveProducts($live: ID) {
+    appListSelectedLiveProducts(live: $live) {
+        totalCount
+        edges {
+            _id
+            name
+            description
+            images {
+                image
+                key
+            }
+            stock
+            regularPrice
+            livePrice
+            status
+            isFreeShipping
+            productType
+            shippingInfo {
+                companyName
+                method
+                price
+            }
+            variants {
+                _id
+                name
+                shopifyProductVariantId
+                quantity
+            }
+            liveHost {
+                _id
+                avatar
+                deviceType
+            }
+            createdAt
+            updatedAt
+            edited
+            product {
+                _id
+                variants {
+                    _id
+                    quantity
+                }
+            }
+          auctionPrice
+          auctionSetting {
+            duration
+            extendTime
+            auctionStartedAt
+          }
+          auctionStatus
+        }
+        pageInfo {
+            hashNextPage
+        }
+    }
+}

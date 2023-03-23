@@ -1,0 +1,5 @@
+mutation deletePaymentMethod($_ids:[ID!]!){
+    deletePaymentMethod(_ids:$_ids) {
+        success
+    }
+}

@@ -1,0 +1,7 @@
+mutation CreateTicketOrder($tickets: [OrderTicketsInput!]!, $holders: [TicketHolderInput!]!, $contactPhoneNumber: String) {
+  createTicketOrder(tickets: $tickets, holders: $holders, contactPhoneNumber: $contactPhoneNumber) {
+	_id
+	orderCode
+	status
+  }
+}

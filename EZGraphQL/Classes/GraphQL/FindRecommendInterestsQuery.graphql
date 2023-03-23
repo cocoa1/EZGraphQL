@@ -1,0 +1,14 @@
+query FindRecommendInterests {
+  findRecommendInterests {
+    _id
+    name
+    priority
+    userCount
+    hashtags {
+      _id
+      name
+      userCount
+      followed
+    }
+  }
+}

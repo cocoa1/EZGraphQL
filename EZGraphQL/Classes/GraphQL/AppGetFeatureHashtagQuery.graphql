@@ -1,0 +1,55 @@
+query AppGetFeatureHashtag(
+  $hashtag: ID
+  $hashtagName: String
+  $page: Int
+  $pageSize: Int
+) {
+  appGetFeatureHashtag(hashtag: $hashtag, hashtagName: $hashtagName) {
+    _id
+    name
+    viewCount
+    videos(page: $page, pageSize: $pageSize) {
+      edges {
+        _id
+        videoType
+        coverImage
+        video
+        duration
+        describe
+        music {
+          _id
+          title
+        }
+        user {
+          _id
+          avatar
+          username
+          followed
+          uid
+          role
+        }
+        teaserTitle
+        liveStartAt
+        viewCount
+        likeCount
+        commentCount
+        shareCount
+        shareLink
+        liked
+        hasSubscribedLive
+        live {
+          _id
+          coverImage
+          title
+          status
+          scheduleStartAt
+          streamingStatus
+        }
+        allowComment
+      }
+      pageInfo {
+        hashNextPage
+      }
+    }
+  }
+}

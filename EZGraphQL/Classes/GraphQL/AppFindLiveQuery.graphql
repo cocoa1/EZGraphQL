@@ -1,0 +1,105 @@
+query AppFindLive($_id: ID) {
+  appFindLive(_id: $_id) {
+    scheduleStartAt
+    streamingStatus
+    status
+    _id
+    chatroomId
+    ivsLiveAddress
+    viewCount
+    newFansCount
+    user {
+      username
+      _id
+      uid
+      avatar
+      followed
+    }
+    likeCount
+    orderCount
+    coverImage
+    title
+    hasShownCoupon
+    collaboratingUser
+    coupons {
+      _id
+      discountType
+      value
+      quantity
+      receiveCount
+    }
+    products {
+      _id
+      productType
+    }
+    moments {
+      video
+      coverImage
+    }
+    shareLink
+    teaserVideo {
+      _id
+    }
+    startRecords {
+      endAt
+      startAt
+    }
+    startAt
+    endAt
+    explainProductDetail {
+      _id
+      live {
+        _id
+      }
+      status
+      productType
+      name
+      description
+      images {
+        image
+        key
+      }
+      labels
+      stock
+      regularPrice
+      livePrice
+      variants {
+        _id
+        name
+        quantity
+      }
+      isFreeShipping
+      shippingInfo {
+        companyName
+        method
+        price
+      }
+      shopifyProductId
+      auctionPrice
+      auctionSetting {
+        duration
+        extendTime
+        auctionStartedAt
+      }
+      auctionStatus
+      auctionBidInfo {
+        auctionStatus
+        endBidTime
+        extendBidTime
+        latestBidPrice
+        recommendBidPrice
+        bidsCount
+        latestBidder {
+          _id
+          avatar
+          username
+          name
+          uid
+        }
+      }
+      edited
+    }
+  }
+}
+
+

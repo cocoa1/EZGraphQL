@@ -1,0 +1,6 @@
+query getUserOfflineMsgCount{
+    getUserOfflineMsgCount{
+        count
+    }
+}
+

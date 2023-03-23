@@ -1,0 +1,104 @@
+query FindUsers(
+  $page: Int
+  $pageSize: Int
+  $id: ID
+  $ids: [ID!]
+  $username: String
+) {
+  findUsers(
+    page: $page
+    pageSize: $pageSize
+    _id: $id
+    _ids: $ids
+    username: $username
+  ) {
+    _id
+    uid
+    hasBlocked
+    avatar
+    name
+    username
+    followCount
+    fansCount
+    likeCount
+    liveStatus
+    liveId
+    bio
+    website
+    role
+    facebook {
+      id
+      username
+      homePage
+    }
+    instagram {
+      id
+      username
+      homePage
+    }
+    followed
+    newOrdersCount {
+      selling
+      buying
+      ticket
+    }
+    store {
+      _id
+      storeName
+      storePicture {
+        image
+        key
+      }
+      deleted
+    }
+    userSetting {
+      acceptAgreement {
+        auction
+      }
+      auctionPaymentInfo {
+        appPaymentMethod: paymentMethod {
+          _id
+          paymentMethod
+          stripePaymentMethodId
+          card {
+            _id
+            firstName
+            lastName
+            expiryDate
+            cvvCode
+            stripePaymentMethodId
+            last4
+            isDefaultCard
+            brand
+            brandIcon
+            invalidCard
+            invalidFields
+          }
+        }
+        shippingAddress {
+          _id
+          user {
+            _id
+            avatar
+            username
+          }
+          firstName
+          lastName
+          phoneNumber
+          addressLine1
+          addressLine2
+          city
+          state
+          country
+          zipCode
+          addressType
+          isDefaultAddress
+          card
+        }
+      }
+    }
+    recentSellerRequest {
+      reviewStatus
+    }
+  }
+}

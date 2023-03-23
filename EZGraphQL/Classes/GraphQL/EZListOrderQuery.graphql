@@ -1,0 +1,75 @@
+query ListOrder(
+  $page: Int
+  $pageSize: Int
+  $sort: [findOrders_sort]
+  $target: enum__listOrderAction!
+  $status: [OrderStatus]
+) {
+  listOrder(
+    page: $page
+    pageSize: $pageSize
+    sort: $sort
+    target: $target
+    status: $status
+  ) {
+    ... on SellingOrderModel {
+      _id
+      status
+      buyer {
+        _id
+        username
+        avatar
+      }
+      products {
+        product
+        name
+        regularPrice
+        livePrice
+        images {
+          image
+          key
+        }
+        quantity
+      }
+      paidPrice
+      fulfilledAt
+      createdAt
+      orderSource
+      live {
+        title
+      }
+      store {
+        storeName
+      }
+      purchasePrice
+    }
+    ... on BuyingOrderModel {
+      _id
+      status
+      seller {
+        _id
+        username
+      }
+      products {
+        product
+        name
+        images {
+          image
+          key
+        }
+        quantity
+      }
+      paidPrice
+      fulfilledAt
+      createdAt
+      orderSource
+      live {
+        title
+      }
+      store {
+        storeName
+      }
+      purchasePrice
+    }
+  }
+}

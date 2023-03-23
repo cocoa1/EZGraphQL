@@ -1,0 +1,5 @@
+mutation deleteAddress($_id:ID!){
+    deleteAddress(_id:$_id) {
+        success
+    }
+}

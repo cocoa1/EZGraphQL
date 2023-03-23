@@ -1,0 +1,5 @@
+mutation AppUpdateStore($input: appUpdateStoreInput!) {
+  appUpdateStore(input: $input) {
+    success
+  }
+}

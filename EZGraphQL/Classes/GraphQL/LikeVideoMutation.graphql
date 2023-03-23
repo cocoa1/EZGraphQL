@@ -1,0 +1,5 @@
+mutation likeVideo ($video: ID!,$status: Boolean!) {
+	likeVideo(video: $video, status: $status) {
+		success
+	}
+}

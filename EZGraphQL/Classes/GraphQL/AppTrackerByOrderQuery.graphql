@@ -1,0 +1,27 @@
+query AppTrackerByOrder($order: ID) {
+  appTrackerByOrder(order: $order) {
+    _id
+    order
+    trackingNumber
+    carrier
+    status
+    statusDetail
+    trackerCreatedAt
+    trackerUpdatedAt
+    carrier
+    publicUrl
+    trackingDetails {
+      message
+      description
+      status
+      statusDetail
+      datetime
+      trackingLocation {
+        city
+        state
+        country
+        zip
+      }
+    }
+  }
+}

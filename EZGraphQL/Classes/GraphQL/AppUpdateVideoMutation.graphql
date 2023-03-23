@@ -1,0 +1,5 @@
+mutation AppUpdateVideo($id: ID!, $update: AppUpdateVideoInput) {
+  appUpdateVideo(_id: $id, update: $update) {
+    success
+  }
+}

@@ -1,0 +1,6 @@
+#带货直播中修改商品
+mutation AppUpdateLiveProduct($id: ID!, $update: AppUpdateLiveProductInput!) {
+  appUpdateLiveProduct(_id: $id, update: $update) {
+	success
+  }
+}

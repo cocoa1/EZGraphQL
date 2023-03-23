@@ -1,0 +1,41 @@
+mutation createAddress(
+  $firstName: String!
+  $lastName: String!
+  $phoneNumber: String
+  $addressLine1: String!
+  $addressLine2: String
+  $city: String!
+  $state: String!
+  $country: String!
+  $zipCode: String!
+  $addressType: enum__addressType!
+  $isDefaultAddress: Boolean
+) {
+  createAddress(
+    firstName: $firstName
+    lastName: $lastName
+    phoneNumber: $phoneNumber
+    addressLine1: $addressLine1
+    addressLine2: $addressLine2
+    city: $city
+    state: $state
+    country: $country
+    zipCode: $zipCode
+    addressType: $addressType
+    isDefaultAddress: $isDefaultAddress
+  ) {
+    _id
+    firstName
+    lastName
+    addressLine1
+    addressLine2
+    city
+    country
+    zipCode
+    state
+    addressType
+    isDefaultAddress
+    phoneNumber
+  }
+}
+

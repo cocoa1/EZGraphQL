@@ -1,0 +1,57 @@
+query findLikeVideos(
+  $page: Int
+  $pageSize: Int
+  $users: [ID]
+  $status: Boolean
+) {
+  findLikeVideos(
+    page: $page
+    pageSize: $pageSize
+    users: $users
+    status: $status
+    sort: [{ field: createdAt, value: DESC }]
+  ) {
+    _id
+    video {
+      _id
+      coverImage
+      teaserTitle
+      video
+      viewCount
+      likeCount
+      commentCount
+      duration
+      shareCount
+      recommend
+      allowComment
+      liveStartAt
+      liked
+      updatedAt
+      describe
+      music {
+        _id
+        title
+      }
+
+      user {
+        _id
+        avatar
+        username
+        followed
+        role
+      }
+
+      shareLink
+      hasSubscribedLive
+      videoType
+      live {
+        _id
+        coverImage
+        title
+        status
+        scheduleStartAt
+        streamingStatus
+      }
+    }
+  }
+}

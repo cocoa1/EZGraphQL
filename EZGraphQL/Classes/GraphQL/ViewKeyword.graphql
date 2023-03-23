@@ -1,0 +1,5 @@
+mutation viewKeyword($name: String!) {
+    viewKeyword(name: $name) {
+        success
+    }
+}

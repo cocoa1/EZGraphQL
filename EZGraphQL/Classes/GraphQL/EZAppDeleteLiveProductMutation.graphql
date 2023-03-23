@@ -1,0 +1,5 @@
+mutation AppDeleteLiveProduct($_id: ID!) {
+  appDeleteLiveProduct(_id: $_id) {
+	success
+  }
+}

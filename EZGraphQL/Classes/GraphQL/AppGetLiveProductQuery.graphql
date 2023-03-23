@@ -1,0 +1,59 @@
+query AppGetLiveProduct($id: ID!) {
+  appGetLiveProduct(_id: $id) {
+    _id
+    live {
+      _id
+    }
+    status
+    productType
+    name
+    description
+    images {
+      image
+      key
+    }
+    labels
+    stock
+    regularPrice
+    livePrice
+    variants {
+      _id
+      name
+      quantity
+    }
+    isFreeShipping
+    shippingInfo {
+      companyName
+      method
+      price
+    }
+    shopifyProductId
+    auctionPrice
+    auctionSetting {
+      duration
+      extendTime
+      auctionStartedAt
+    }
+    auctionStatus
+    auctionBidInfo {
+      auctionStatus
+      endBidTime
+      extendBidTime
+      latestBidPrice
+      recommendBidPrice
+      bidsCount
+      latestBidder {
+        _id
+        avatar
+        username
+        name
+        uid
+      }
+    }
+    edited
+  }
+  getServerTime {
+    time
+  }
+}
+

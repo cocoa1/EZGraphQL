@@ -1,0 +1,37 @@
+query AppListInboxNotifications($page: Int, $pageSize: Int, $category: InboxNotificationCategory, $isSubNotice: Boolean, $parentNotice: ID) {
+  appListInboxNotifications(page: $page, pageSize: $pageSize, category: $category, isSubNotice: $isSubNotice, parentNotice: $parentNotice) {
+    edges {
+      sender {
+        _id
+        avatar
+        username
+        name
+        uid
+        role
+        userType
+        phoneNumber
+        email
+      }
+      isAggregateNotice
+      aggregateCount
+      content
+      contentElements {
+        start
+        end
+        type
+      }
+      jumpType
+      jumpPage
+      isSubNotice
+      hasRead
+      createdAt
+      jumpButton {
+        type
+        followStatus
+        thumbnailImage
+      }
+      category
+      _id
+    }
+  }
+}

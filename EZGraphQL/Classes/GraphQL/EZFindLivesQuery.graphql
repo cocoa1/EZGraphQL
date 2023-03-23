@@ -1,0 +1,68 @@
+query findLives($page: Int, $pageSize: Int, $status: Boolean) {
+  findLives(
+    page: $page
+    pageSize: $pageSize
+    status: $status
+    sort: [{ field: createdAt, value: DESC }]
+  ) {
+    status
+    _id
+    chatroomId
+    ivsLiveAddress
+    startAt
+    endAt
+    viewCount
+    newFansCount
+    user {
+      username
+      _id
+      uid
+      avatar
+      followed
+    }
+    likeCount
+    orderCount
+    coverImage
+    title
+    hasShownCoupon
+    collaboratingUser
+    explainProduct
+    coupons {
+      _id
+      discountType
+      value
+      quantity
+      receiveCount
+    }
+    shareLink
+    products {
+      _id
+      name
+      description
+      images {
+        image
+        key
+      }
+      stock
+      regularPrice
+      livePrice
+      variants {
+        _id
+        name
+        sku
+        quantity
+      }
+      isFreeShipping
+      shippingInfo {
+        companyName
+        price
+        method
+      }
+    }
+    moments {
+      video
+      coverImage
+    }
+  }
+}
+

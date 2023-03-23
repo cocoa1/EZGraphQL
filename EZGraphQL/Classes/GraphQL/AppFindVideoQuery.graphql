@@ -1,0 +1,77 @@
+query AppFindVideo($id: ID!) {
+  appFindVideo(_id: $id) {
+    _id
+    videoType
+    user {
+      avatar
+      _id
+      username
+      role
+    }
+    coverImage
+    video
+    duration
+    describe
+    describeMapping {
+      users {
+        id {
+          _id
+        }
+        text
+      }
+    }
+    viewCount
+    likeCount
+    commentCount
+    shareCount
+    watch
+    allowComment
+    location
+    placeName
+    shareLink
+    interests {
+      _id
+      name
+      priority
+      videoCount
+      userCount
+      followed
+      isSuspended
+    }
+    music {
+      _id
+      title
+    }
+    teaserTitle
+    deleted
+    liveStartAt
+    liked
+    products {
+      product
+      name
+      description
+      images {
+        image
+        key
+      }
+      regularPrice
+      livePrice
+      productType
+      variants {
+        _id
+        name
+        sku
+        quantity
+      }
+    }
+    hasSubscribedLive
+    live {
+      _id
+      coverImage
+      title
+      status
+      scheduleStartAt
+      streamingStatus
+    }
+  }
+}

@@ -1,0 +1,6 @@
+framework module EZGraphQL {
+  umbrella header "EZGraphQL-umbrella.h"
+
+  export *
+  module * { export * }
+}

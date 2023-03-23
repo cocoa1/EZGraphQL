@@ -1,0 +1,61 @@
+mutation AppSetupLiveResources($id: ID!) {
+  appSetupLiveResources(_id: $id) {
+    agoraLiveToken {
+      expireAt
+      token
+    }
+    _id
+    chatroomId
+    collaboratingUser
+    ivsLiveAddress
+    ivsStreamingAddress
+    scheduleStartAt
+    streamingStatus
+    status
+    _id
+    chatroomId
+    ivsLiveAddress
+    viewCount
+    newFansCount
+    user {
+      username
+      _id
+      uid
+      avatar
+      followed
+    }
+    likeCount
+    orderCount
+    coverImage
+    title
+    hasShownCoupon
+    collaboratingUser
+    coupons {
+      _id
+      discountType
+      value
+      quantity
+      receiveCount
+    }
+    products {
+      _id
+      name
+      productType
+    }
+    moments {
+      video
+      coverImage
+    }
+    shareLink
+    teaserVideo {
+      _id
+    }
+    startRecords {
+      endAt
+      startAt
+    }
+    startAt
+    endAt
+  }
+}
+

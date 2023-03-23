@@ -1,0 +1,5 @@
+mutation viewLive($_id: ID!) {
+    viewLive(_id: $_id) {
+        success
+    }
+}

@@ -1,0 +1,199 @@
+query appSearchMediaResource(
+  $page: Int!
+  $pageSize: Int!
+  $query: String
+  $type: MediaResourceSearchType!
+) {
+  appSearchMediaResource(
+    page: $page
+    pageSize: $pageSize
+    query: $query
+    type: $type
+  ) {
+    edges {
+      _id
+      createdAt
+      live {
+        title
+        _id
+        status
+        coverImage
+        ivsLiveAddress
+        viewCount
+        likeCount
+        chatroomId
+        newFansCount
+        startAt
+        endAt
+        shareLink
+        collaboratingUser
+        user {
+          username
+          _id
+          uid
+          avatar
+          followed
+          role
+        }
+      }
+      updatedAt
+      video {
+        _id
+        videoType
+        coverImage
+        teaserTitle
+        video
+        viewCount
+        likeCount
+        commentCount
+        duration
+        shareCount
+        allowComment
+        liveStartAt
+        liked
+        updatedAt
+        describe
+        liveStartAt
+        createdAt
+        updatedAt
+        deleted
+        hasSubscribedLive
+        live {
+          _id
+          status
+          title
+          scheduleStartAt
+          streamingStatus
+        }
+        products {
+          product
+          name
+          description
+          images {
+            image
+            key
+          }
+          regularPrice
+          livePrice
+          productType
+          variants {
+            _id
+            name
+            sku
+            quantity
+          }
+        }
+        music {
+          _id
+          title
+        }
+        user {
+          _id
+          avatar
+          username
+          followed
+          role
+        }
+        shareLink
+        hasSubscribedLive
+        liveTitle
+      }
+      user {
+        _id
+        hasBlocked
+        avatar
+        name
+        username
+        followCount
+        fansCount
+        likeCount
+        liveStatus
+        liveId
+        bio
+        website
+        role
+        facebook {
+          id
+          username
+          homePage
+        }
+        instagram {
+          id
+          username
+          homePage
+        }
+        followed
+        newOrdersCount {
+          selling
+          buying
+          ticket
+        }
+        store {
+          _id
+          storeName
+          storePicture {
+            image
+            key
+          }
+          deleted
+        }
+        userSetting {
+          acceptAgreement {
+            auction
+          }
+          auctionPaymentInfo {
+            appPaymentMethod: paymentMethod {
+              _id
+              paymentMethod
+              stripePaymentMethodId
+              card {
+                _id
+                firstName
+                lastName
+                expiryDate
+                cvvCode
+                stripePaymentMethodId
+                last4
+                isDefaultCard
+                brand
+                brandIcon
+                invalidCard
+                invalidFields
+              }
+            }
+            shippingAddress {
+              _id
+              user {
+                _id
+                avatar
+                username
+              }
+              firstName
+              lastName
+              phoneNumber
+              addressLine1
+              addressLine2
+              city
+              state
+              country
+              zipCode
+              addressType
+              isDefaultAddress
+              card
+            }
+          }
+        }
+      }
+      hashtag {
+        _id
+        name
+        userCount
+        viewCount
+      }
+    }
+    pageInfo {
+      hashNextPage
+    }
+    totalCount
+  }
+}

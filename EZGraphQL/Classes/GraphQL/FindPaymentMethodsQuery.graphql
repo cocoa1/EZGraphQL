@@ -1,0 +1,38 @@
+query FindPaymentMethods($isFuturePaymentMethod: Boolean) {
+  findPaymentMethods(isFuturePaymentMethod: $isFuturePaymentMethod) {
+    _id
+    paymentMethod
+    stripePaymentMethodId
+    card {
+      _id
+      brand
+      brandIcon
+      firstName
+      lastName
+      email
+      expiryDate
+      cvvCode
+      stripePaymentMethodId
+      last4
+      isDefaultCard
+      invalidCard
+      invalidFields
+      billingAddress {
+        _id
+        firstName
+        lastName
+        phoneNumber
+        addressLine1
+        addressLine2
+        city
+        state
+        country
+        zipCode
+        addressType
+        isDefaultAddress
+        card
+      }
+    }
+  }
+}
+

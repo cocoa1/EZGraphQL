@@ -1,0 +1,26 @@
+PODS:
+  - Apollo (0.19.1):
+    - Apollo/Core (= 0.19.1)
+  - Apollo/Core (0.19.1)
+  - EZGraphQL (0.1.1):
+    - Apollo
+
+DEPENDENCIES:
+  - Apollo (~> 0.19.0)
+  - EZGraphQL (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Apollo
+
+EXTERNAL SOURCES:
+  EZGraphQL:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Apollo: 0d423f7fd26b24c0acddfe0d41208a9a6ef88dd1
+  EZGraphQL: 87b1de2d8da1c7f12eb9b07ac4735c219eb89a2d
+
+PODFILE CHECKSUM: b59e57bd4fb0766a33d0cd0c4f49e976c113d0ec
+
+COCOAPODS: 1.11.3

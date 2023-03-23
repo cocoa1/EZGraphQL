@@ -1,0 +1,5 @@
+mutation CreateReport($type: reportType!, $objectId: ID!, $objectModel: reportObjectModel!, $content: String, $chatroomCommentContent: String) {
+  createReport(type: $type, objectId: $objectId, objectModel: $objectModel, content: $content, chatroomCommentContent: $chatroomCommentContent) {
+	success
+  }
+}

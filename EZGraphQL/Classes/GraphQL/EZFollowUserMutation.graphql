@@ -1,0 +1,6 @@
+mutation followUser($userId: ID!, $status: Boolean!){
+	followUser(user: $userId,
+			   status: $status) {
+		success
+	}
+}

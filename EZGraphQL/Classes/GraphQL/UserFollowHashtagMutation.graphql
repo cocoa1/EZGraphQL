@@ -1,0 +1,5 @@
+mutation UserFollowHashtag($hashtags:[ID!]!, $status: Boolean!) {
+    followHashtag(hashtags:$hashtags, status: $status) {
+        success
+    }
+}

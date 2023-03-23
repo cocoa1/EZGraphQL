@@ -1,0 +1,5 @@
+mutation AppSetAuctionPaymentInfo($shippingAddress: ID!, $paymentMethod: ID!) {
+    appSetAuctionPaymentInfo(shippingAddress: $shippingAddress, paymentMethod: $paymentMethod) {
+        success
+    }
+}

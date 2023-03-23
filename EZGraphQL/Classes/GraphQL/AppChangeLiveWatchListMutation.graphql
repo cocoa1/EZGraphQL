@@ -1,0 +1,5 @@
+mutation AppChangeLiveWatchList($action: ChangeLiveWatchListAction!, $live: ID!) {
+  appChangeLiveWatchList(action: $action, live: $live) {
+    success
+  }
+}

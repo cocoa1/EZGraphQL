@@ -1,0 +1,66 @@
+query appViewStore(
+  $sellerId: String
+  $page: Int
+  $pageSize: Int
+  $status: [enum__productStatus!]!
+  $productType: [enum__productType!]!
+  $name: String
+) {
+  appViewStore(sellerId: $sellerId) {
+    _id
+    storeName
+    storePicture {
+      image
+      key
+    }
+    storeBackgroundPicture {
+      image
+      key
+    }
+    storeProducts(
+      page: $page
+      pageSize: $pageSize
+      status: $status
+      productType: $productType
+      name: $name
+    ) {
+      edges {
+        _id
+        name
+        description
+        images {
+          image
+          key
+        }
+        stock
+        regularPrice
+        livePrice
+        liveHost {
+          _id
+          avatar
+          deviceType
+        }
+        status
+        productType
+        isFreeShipping
+        shippingInfo {
+          companyName
+          method
+          price
+        }
+        createdAt
+        updatedAt
+        variants {
+          _id
+          name
+          sku
+          quantity
+        }
+      }
+      totalCount
+      pageInfo {
+        hashNextPage
+      }
+    }
+  }
+}

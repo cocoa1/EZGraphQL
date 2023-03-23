@@ -1,0 +1,14 @@
+query CheckSessionToken{
+    self {
+        _id
+        avatar
+        gender
+        deviceType
+        deviceId
+        username
+        birthday
+        phoneNumber
+        email
+        role
+    }
+}

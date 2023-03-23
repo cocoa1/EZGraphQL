@@ -1,0 +1,39 @@
+query findProducts($page: Int, $pageSize: Int, $liveHost: ID) {
+  findProducts(
+    liveHost: $liveHost
+    page: $page
+    pageSize: $pageSize
+    sort: [{ field: createdAt, value: DESC }]
+  ) {
+    _id
+    name
+    description
+    images {
+      image
+      key
+    }
+    variants {
+      _id
+      name
+      sku
+      quantity
+    }
+    regularPrice
+    livePrice
+    liveHost {
+      _id
+      avatar
+      deviceType
+    }
+    status
+    stock
+    isFreeShipping
+    productType
+    shippingInfo {
+      companyName
+      method
+      price
+    }
+  }
+}
+

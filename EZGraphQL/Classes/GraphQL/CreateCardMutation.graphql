@@ -1,0 +1,50 @@
+mutation createCard(
+  $firstName: String!
+  $lastName: String!
+  $email: String!
+  $cardNumber: String!
+  $expiryDate: String!
+  $cvvCode: String!
+  $isDefaultCard: Boolean!
+  $billingAddress: ID!
+) {
+  createCard(
+    firstName: $firstName
+    lastName: $lastName
+    email: $email
+    cardNumber: $cardNumber
+    expiryDate: $expiryDate
+    cvvCode: $cvvCode
+    isDefaultCard: $isDefaultCard
+    billingAddress: $billingAddress
+  ) {
+    _id
+    firstName
+    lastName
+    expiryDate
+    cvvCode
+    email
+    stripePaymentMethodId
+    isDefaultCard
+    last4
+    brand
+    brandIcon
+    invalidCard
+    billingAddress {
+      _id
+      firstName
+      lastName
+      phoneNumber
+      addressLine1
+      addressLine2
+      city
+      state
+      country
+      zipCode
+      addressType
+      isDefaultAddress
+      card
+    }
+  }
+}
+

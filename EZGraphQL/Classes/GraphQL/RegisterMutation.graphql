@@ -1,0 +1,49 @@
+# 注册
+mutation register($token: String!, $username: String!, $password: String!, $birthday: String, $phoneNumber: String!, $deviceType: enum__deviceType) {
+  register(
+		   token: $token
+		   username: $username,
+		   password: $password,
+		   birthday: $birthday,
+		   phoneNumber: $phoneNumber,
+	       deviceType: $deviceType
+		   ) {
+	  sessionToken
+	  user {
+		  _id
+		  avatar
+		  gender
+		  deviceType
+		  deviceId
+		  username
+		  birthday
+		  phoneNumber
+		  email
+		  website
+		  bio
+		  uid
+		  createdAt
+		  updatedAt
+		  instagram {
+			  id
+			  username
+			  homePage
+		  }
+		  facebook {
+			  id
+			  username
+			  homePage
+		  }
+		  imPassword
+		  userType
+		  pushNotifications {
+			  interactions
+			  live
+			  video
+			  order
+		  }
+	  }
+  }
+}
+
+

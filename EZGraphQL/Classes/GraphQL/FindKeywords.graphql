@@ -1,0 +1,9 @@
+query findKeywords($name: String!) {
+    findKeywords(name: $name) {
+        _id
+        name
+        viewCount
+        deleted
+    }
+}
+

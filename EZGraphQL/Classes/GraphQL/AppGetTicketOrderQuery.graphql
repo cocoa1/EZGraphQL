@@ -1,0 +1,66 @@
+query AppGetTicketOrder($id: ID!) {
+  appGetTicketOrder(_id: $id) {
+    _id
+    event {
+      _id
+      name
+      startDate
+      endDate
+      location
+      placeId
+      placeName
+      placeAddress
+      timezoneAbbr
+      organizer {
+        name
+        email
+      }
+    }
+    receipts {
+      _id
+      applePKPass
+      holder {
+        firstName
+        lastName
+        email
+      }
+      qrCodeContent
+      ticket {
+        _id
+        name
+        activateDates {
+            startDate
+            endDate
+        }
+      }
+      activatedAt
+      activateLimit
+      event {
+        name
+        _id
+        startDate
+        endDate
+        openTime
+        closeTime
+        location
+        placeId
+        placeName
+        placeAddress
+        status
+        timezone
+        timezoneAbbr
+        shareLink
+        organizer {
+          name
+          email
+        }
+      }
+      ticketOrder {
+        paidAt
+        orderCode
+      }
+    }
+    paidAt
+    orderCode
+  }
+}

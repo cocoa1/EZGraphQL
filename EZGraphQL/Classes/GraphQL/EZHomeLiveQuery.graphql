@@ -1,0 +1,178 @@
+query homeLivePageData($page: Int, $pageSize: Int) {
+  findBanners: algorithmFindBanners(page: 1, pageSize: 20) {
+    _id
+    cover
+    value
+    position
+    type
+    note
+    startAt
+    endAt
+    createdAt
+    updateAt
+  }
+
+  hotLiveList: algorithmFindLives(
+    page: 1
+    pageSize: 5
+    moduleName: livePage_featureLive
+  ) {
+    title
+    _id
+    status
+    coverImage
+    ivsLiveAddress
+    viewCount
+    likeCount
+    chatroomId
+    newFansCount
+    startAt
+    endAt
+    shareLink
+    collaboratingUser
+    user {
+      username
+      _id
+      uid
+      avatar
+      followed
+    }
+  }
+  upcomingLiveList: findVideos(
+    page: 1
+    pageSize: 20
+    videoTypes: [TEASER]
+    sort: [{ field: createdAt, value: DESC }]
+  ) {
+    _id
+    coverImage
+    teaserTitle
+    video
+    viewCount
+    likeCount
+    commentCount
+    duration
+    shareCount
+    allowComment
+    liveStartAt
+    liked
+    updatedAt
+    describe
+    music {
+      _id
+      title
+    }
+    user {
+      _id
+      avatar
+      username
+      followed
+    }
+    shareLink
+    hasSubscribedLive
+    videoType
+    live {
+      _id
+      coverImage
+      status
+      title
+      scheduleStartAt
+      streamingStatus
+    }
+  }
+
+  liveList: algorithmFindLives(
+    page: 1
+    pageSize: 20
+    moduleName: livePage_live
+  ) {
+    _id
+    title
+    status
+    coverImage
+    ivsLiveAddress
+    viewCount
+    likeCount
+    chatroomId
+    newFansCount
+    startAt
+    endAt
+    user {
+      username
+      avatar
+      _id
+      followed
+    }
+  }
+
+  postList: findVideos(
+    page: $page
+    pageSize: $pageSize
+    videoTypes: [PAST_SHOW]
+    sort: [{ field: createdAt, value: DESC }]
+  ) {
+    _id
+    videoType
+    coverImage
+    teaserTitle
+    video
+    viewCount
+    likeCount
+    commentCount
+    duration
+    shareCount
+    allowComment
+    liveStartAt
+    liked
+    updatedAt
+    describe
+    liveStartAt
+    createdAt
+    updatedAt
+    deleted
+    live {
+      _id
+      status
+      title
+    }
+    products {
+      product
+      name
+      description
+      images {
+        image
+        key
+      }
+      regularPrice
+      livePrice
+      productType
+      variants {
+        _id
+        name
+        sku
+        quantity
+      }
+    }
+    music {
+      _id
+      title
+    }
+    user {
+      _id
+      avatar
+      username
+      followed
+      role
+    }
+    shareLink
+    hasSubscribedLive
+    live {
+      _id
+      coverImage
+      title
+      status
+      scheduleStartAt
+      streamingStatus
+    }
+  }
+}

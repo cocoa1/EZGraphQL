@@ -1,0 +1,10 @@
+query appFindFriends($page:Int, $pageSize:Int, $username:String,$name: String){
+    appFindFriends(page:$page, pageSize:$pageSize, username:$username,name:$name) {
+        _id
+        avatar
+        username
+        name
+        uid
+    }
+
+}

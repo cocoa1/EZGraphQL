@@ -1,0 +1,6 @@
+mutation UpdateComment($_id: ID) {
+  updateComment(_id: $_id, update: { deleted: true }) {
+    success
+  }
+}
+

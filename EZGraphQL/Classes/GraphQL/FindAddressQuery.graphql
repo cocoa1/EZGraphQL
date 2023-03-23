@@ -1,0 +1,27 @@
+query FindAddress(
+  $page: Int
+  $pageSize: Int
+  $addressType: enum__addressType
+  $isDefaultAddress: Boolean
+) {
+  findAddress(
+    page: $page
+    pageSize: $pageSize
+    addressType: $addressType
+    isDefaultAddress: $isDefaultAddress
+  ) {
+    _id
+    firstName
+    lastName
+    phoneNumber
+    addressLine1
+    addressLine2
+    city
+    state
+    country
+    zipCode
+    addressType
+    isDefaultAddress
+  }
+}
+

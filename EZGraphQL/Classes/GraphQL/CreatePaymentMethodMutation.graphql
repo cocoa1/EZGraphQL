@@ -1,0 +1,15 @@
+mutation CreatePaymentMethod(
+  $paymentMethod: PaymentMethodCreateChoice!
+  $isFuturePaymentMethod: Boolean
+) {
+  createPaymentMethod(
+	paymentMethod: $paymentMethod
+	isFuturePaymentMethod: $isFuturePaymentMethod
+  ) {
+	_id
+	paymentMethod
+	stripePaymentMethodId
+	createdAt
+	updateAt
+  }
+}

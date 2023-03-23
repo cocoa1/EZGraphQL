@@ -1,0 +1,30 @@
+mutation createVideo(
+  $coverImage: String!
+  $video: String!
+  $duration: Float!
+  $describe: String!
+  $music: ID
+  $watch: enumWatch
+  $allowComment: Boolean
+  $interests: [ID]
+  $placeId: String
+  $videoType: VideoTypeUserCreate
+  $live: ID
+) {
+  createVideo(
+    coverImage: $coverImage
+    video: $video
+    duration: $duration
+    describe: $describe
+    music: $music
+    watch: $watch
+    allowComment: $allowComment
+    interests: $interests
+    placeId: $placeId
+    videoType: $videoType
+    live: $live
+  ) {
+    _id
+  }
+}
+

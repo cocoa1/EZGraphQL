@@ -1,0 +1,14 @@
+query validateAddress($addressLine1:String!, $addressLine2:String, $city:String!, $state:String!, $country:String!, $zipCode:String!){
+    validateAddress(addressLine1:$addressLine1, addressLine2:$addressLine2, city:$city, state:$state, country:$country, zipCode:$zipCode) {
+        isValidAddress
+        newAddress{
+            addressLine1
+            addressLine2
+            city
+            state
+            country
+            zipCode
+        }
+
+    }
+}

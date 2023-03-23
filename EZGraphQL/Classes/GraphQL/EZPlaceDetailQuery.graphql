@@ -1,0 +1,13 @@
+query placeDetails($place_id: String!) {
+  placeDetails (place_id: $place_id) {
+	  name
+	  vicinity
+	  place_id
+	  geometry {
+		  location {
+			  lat
+			  lng
+		  }
+	  }
+  }
+}

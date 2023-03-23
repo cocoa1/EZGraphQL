@@ -1,0 +1,11 @@
+query appGetVersion {
+	appGetVersion {
+		_id
+		newBuild
+		minBuild
+		updateTitle
+		updateDescription
+		url
+		target
+	}
+}

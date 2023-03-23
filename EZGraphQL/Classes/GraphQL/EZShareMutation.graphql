@@ -1,0 +1,5 @@
+mutation share($objectId: ID!, $type: shareType!) {
+	share (objectId: $objectId, type: $type) {
+		success
+	}
+}

@@ -1,0 +1,6 @@
+mutation createIvsChanel($liveId: ID!) {
+    createIVSChannel(liveId: $liveId) {
+        rtmpsUrl
+        chatroomId
+    }
+}

@@ -1,0 +1,45 @@
+#客户端创建直播商品
+mutation AppCreateLiveProduct($productType: enum__productType!, $name: String!, $images: [String]!, $regularPrice: Int, $livePrice: Int, $variants: [VariantInput!], $isFreeShipping: Boolean, $shippingInfo: ShippingInfoInput, $live: ID, $description: String, $auctionPrice: Int, $auctionSetting: AuctionSettingInput) {
+  appCreateLiveProduct(productType: $productType, name: $name, images: $images, regularPrice: $regularPrice, livePrice: $livePrice, variants: $variants, isFreeShipping: $isFreeShipping, shippingInfo: $shippingInfo, live: $live, description: $description, auctionPrice: $auctionPrice, auctionSetting: $auctionSetting) {
+	_id
+	name
+	description
+	images {
+	  image
+	  key
+	}
+	regularPrice
+	livePrice
+	variants {
+	  _id
+	  name
+	  quantity
+	  shopifyProductVariantId
+	}
+	status
+	productType
+	isFreeShipping
+	shippingInfo {
+	  companyName
+	  method
+	  price
+	}
+	edited
+    product {
+        _id
+        variants {
+            _id
+            quantity
+        }
+    }
+	stock
+	shopifyProductId
+	auctionPrice
+	auctionSetting {
+	  duration
+	  extendTime
+	  auctionStartedAt
+	}
+	auctionStatus
+  }
+}

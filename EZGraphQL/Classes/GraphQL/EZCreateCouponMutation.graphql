@@ -1,0 +1,5 @@
+mutation createCoupon($discountType: enum__discountType!, $value: Int!, $quantity: Int!, $live: ID) {
+    createCoupon (discountType: $discountType, value: $value, quantity: $quantity, live: $live) {
+        _id
+    }
+}

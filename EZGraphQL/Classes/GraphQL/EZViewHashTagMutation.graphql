@@ -1,0 +1,5 @@
+mutation viewHashtag($_id: ID!) {
+    viewHashtag (_id: $_id) {
+        success
+    }
+}

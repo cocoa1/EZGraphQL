@@ -1,0 +1,19 @@
+query AppListAuctionBidRecords($productId: ID!, $page: Int, $pageSize: Int) {
+  appListAuctionBidRecords(productId: $productId, page: $page, pageSize: $pageSize) {
+    pageInfo {
+      hashNextPage
+    }
+    totalCount
+    edges {
+      bidder {
+        avatar
+        name
+      }
+      bidPrice
+      bidAt
+      product {
+        auctionStatus
+      }
+    }
+  }
+}

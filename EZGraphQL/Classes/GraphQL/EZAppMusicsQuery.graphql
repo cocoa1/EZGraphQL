@@ -1,0 +1,25 @@
+query appMusics($page: Int, $pageSize: Int) {
+	appMusics (page: $page, pageSize: $pageSize) {
+		_id
+		title
+		artist
+		assets {
+			s_15:_15 {
+				_id
+				music
+			}
+			s_30:_30 {
+				_id
+				music
+			}
+			s_90:_90 {
+				_id
+				music
+			}
+			s_300:_300 {
+				_id
+				music
+			}
+		}
+	}
+}

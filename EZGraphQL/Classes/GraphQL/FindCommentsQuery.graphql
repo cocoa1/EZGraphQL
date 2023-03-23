@@ -1,0 +1,17 @@
+query findComments($video: ID,$page: Int,$pageSize:Int,$sort:[commentSort]) {
+	findComments(video: $video, page: $page,pageSize: $pageSize,sort: $sort) {
+		_id
+		user{
+			_id
+			avatar
+			username
+		}
+		video
+		content
+		likeCount
+		liked
+		deleted
+		createdAt
+		updatedAt
+	}
+}

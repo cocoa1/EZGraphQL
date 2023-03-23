@@ -1,0 +1,9 @@
+mutation createKeyword($name: String!) {
+    createKeyword(name: $name) {
+        _id
+        name
+        viewCount
+        recommend
+        deleted
+    }
+}

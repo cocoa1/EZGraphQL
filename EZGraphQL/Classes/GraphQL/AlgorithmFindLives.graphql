@@ -1,0 +1,32 @@
+query AlgorithmFindLives(
+  $page: Int
+  $pageSize: Int
+  $moduleName: enumModuleName
+) {
+  algorithmFindLives(
+    page: $page
+    pageSize: $pageSize
+    moduleName: $moduleName
+  ) {
+    title
+    _id
+    status
+    coverImage
+    ivsLiveAddress
+    viewCount
+    likeCount
+    chatroomId
+    newFansCount
+    startAt
+    endAt
+    shareLink
+    collaboratingUser
+    user {
+      username
+      _id
+      uid
+      avatar
+      followed
+    }
+  }
+}

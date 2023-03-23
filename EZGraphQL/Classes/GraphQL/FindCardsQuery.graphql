@@ -1,0 +1,16 @@
+query findCards($page:Int,$pageSize:Int,$isDefaultCard:Boolean){
+    findCards(page:$page,pageSize:$pageSize,isDefaultCard:$isDefaultCard) {
+        _id
+        brand
+        brandIcon
+        firstName
+        lastName
+        expiryDate
+        cvvCode
+        stripePaymentMethodId
+        last4
+        isDefaultCard
+        invalidCard
+        invalidFields
+    }
+}

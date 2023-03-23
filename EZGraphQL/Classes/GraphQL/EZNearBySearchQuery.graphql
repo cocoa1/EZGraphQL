@@ -1,0 +1,21 @@
+query nearBySearch($location: String!, $radius: Int!, $keyword:String) {
+	nearBySearch (location: $location, radius: $radius, keyword: $keyword) {
+	results {
+	  geometry {
+		location {
+		  lng
+		  lat
+		}
+	  }
+	  name
+	  place_id
+	  reference
+	  types
+	  vicinity
+	  opening_hours {
+		open_now
+	  }
+	  icon
+	}
+  }
+}

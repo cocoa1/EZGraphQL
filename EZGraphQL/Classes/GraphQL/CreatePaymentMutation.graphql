@@ -1,0 +1,19 @@
+mutation CreatePayment(
+  $order: ID!
+  $paymentMethod: PaymentMethod!
+  $paymentMethodId: String!
+  $source: PaymentSource
+) {
+  createPayment(
+    order: $order
+    paymentMethod: $paymentMethod
+    paymentMethodId: $paymentMethodId
+    source: $source
+  ) {
+    _id
+    paymentIntentsId
+    paymentIntentsClientSecret
+    status
+  }
+}
+

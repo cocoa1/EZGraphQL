@@ -1,0 +1,18 @@
+query self {
+    self  {
+        _id
+        username
+        imPassword
+        phoneNumber
+        email
+        avatar
+        userType
+        uid
+        pushNotifications {
+            interactions
+            live
+            video
+            order
+        }
+    }
+}

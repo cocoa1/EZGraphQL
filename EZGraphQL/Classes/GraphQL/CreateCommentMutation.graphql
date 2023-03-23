@@ -1,0 +1,17 @@
+mutation createComment($video: ID!,$content:String!) {
+	createComment(video: $video, content: $content) {
+		_id
+		user{
+			_id
+			avatar
+			username
+		}
+		video
+		content
+		likeCount
+		liked
+		deleted
+		createdAt
+		updatedAt
+	}
+}

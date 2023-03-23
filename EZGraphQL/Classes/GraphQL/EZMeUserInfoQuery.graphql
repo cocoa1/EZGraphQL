@@ -1,0 +1,49 @@
+query userInfo($_id: ID!,$users: [ID] ) {
+    findUsers(_id:$_id) {
+        _id
+        name,
+        avatar
+        gender
+        deviceType
+        deviceId
+        username
+        birthday
+        phoneNumber
+        email
+        website
+        bio
+        createdAt
+        updatedAt
+        followCount
+        fansCount
+        likeCount
+        instagram {
+            id
+            username
+            homePage
+        }
+        facebook {
+            id
+            username
+            homePage
+        }
+        followed
+        hasBlocked
+        liveId
+        shareLink
+    }
+    findFollowInterests(users: $users, page: 1, pageSize: 100) {
+        interest {
+            _id
+            name
+            followed
+            hashtags {
+                _id
+                name
+                userCount
+                followed
+            }
+        }
+    }
+
+}

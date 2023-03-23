@@ -1,0 +1,6 @@
+query getFindFollowUsers($users:[ID]) {
+    findFollowUsers(users:$users){
+        _id
+    }
+
+}

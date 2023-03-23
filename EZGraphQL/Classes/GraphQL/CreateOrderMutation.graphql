@@ -1,0 +1,15 @@
+mutation createOrder($live:ID!, $shippingAddressId:ID!, $products:[OrderProductInput!]!) {
+    createOrder(live:$live, shippingAddressId:$shippingAddressId, products:$products) {
+        _id
+        orderCode
+        taxTotalPrice
+        shippingTotalPrice
+        discountTotalPrice
+        status
+        paidPrice
+        paidAt
+        deliverStartAt
+        deliverEndAt
+        fulfilledAt
+    }
+}

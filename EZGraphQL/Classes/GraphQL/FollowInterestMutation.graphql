@@ -1,0 +1,5 @@
+mutation followInterest($interests:[ID]!,$status:Boolean!) {
+    followInterest(interests:$interests,status:$status) {
+        success
+    }
+}

@@ -1,0 +1,27 @@
+query appFindProduct($_id: ID!) {
+    appFindProduct (_id: $_id) {
+        _id
+        name
+        description
+        images {
+            image
+            key
+        }
+        stock
+        regularPrice
+        livePrice
+        variants {
+            _id
+            name
+            quantity
+        }
+        status
+        isFreeShipping
+        productType
+        shippingInfo {
+            companyName
+            method
+            price
+        }
+    }
+}

@@ -1,0 +1,5 @@
+mutation AppDeleteLiveSchedule($id: ID!) {
+  appDeleteLiveSchedule(_id: $id) {
+    success
+  }
+}

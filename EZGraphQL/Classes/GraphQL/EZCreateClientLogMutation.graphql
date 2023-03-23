@@ -1,0 +1,5 @@
+mutation CreateClientLog($fileKey: String!, $logTime: String!, $reportTime: Float!, $deviceType: enum__deviceType!) {
+  createClientLog(fileKey: $fileKey, logTime: $logTime, reportTime: $reportTime, deviceType: $deviceType) {
+    _id
+  }
+}

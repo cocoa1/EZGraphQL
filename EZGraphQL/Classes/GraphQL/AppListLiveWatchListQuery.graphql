@@ -1,0 +1,169 @@
+query appListLiveWatchList($page: Int!, $pageSize: Int!) {
+  appListLiveWatchList(page: $page, pageSize: $pageSize) {
+    totalCount
+    pageInfo {
+      hashNextPage
+    }
+    edges {
+      _id
+      liveStatus
+      subscribedAt
+      updatedAt
+      user {
+        _id
+        avatar
+        bio
+        name
+        username
+        createdAt
+        role
+      }
+      createdAt
+      live {
+        scheduleStartAt
+        streamingStatus
+        status
+        _id
+        chatroomId
+        ivsLiveAddress
+        viewCount
+        newFansCount
+        user {
+          username
+          _id
+          uid
+          avatar
+          followed
+          role
+        }
+        likeCount
+        orderCount
+        coverImage
+        title
+        hasShownCoupon
+        collaboratingUser
+        explainProduct
+        coupons {
+          _id
+          discountType
+          value
+          quantity
+          receiveCount
+        }
+        products {
+          _id
+          name
+          description
+          images {
+            image
+            key
+          }
+          stock
+          regularPrice
+          livePrice
+          variants {
+            _id
+            name
+            sku
+            quantity
+          }
+          isFreeShipping
+          shippingInfo {
+            companyName
+            price
+            method
+          }
+          productType
+        }
+        moments {
+          video
+          coverImage
+        }
+        shareLink
+        teaserVideo {
+          _id
+          videoType
+          user {
+            username
+            _id
+            avatar
+            role
+          }
+          coverImage
+          video
+          duration
+          describe
+          describeMapping {
+            users {
+              text
+              id {
+                _id
+              }
+            }
+          }
+          viewCount
+          likeCount
+          commentCount
+          shareCount
+          watch
+          allowComment
+          location
+          placeName
+          shareLink
+          interests {
+            _id
+            name
+            priority
+            videoCount
+            userCount
+            followed
+            isSuspended
+          }
+          music {
+            _id
+            title
+          }
+          deleted
+          teaserTitle
+          liveStartAt
+          liked
+          products {
+            product
+            name
+            description
+            images {
+              image
+              key
+            }
+            regularPrice
+            livePrice
+            productType
+            variants {
+              _id
+              name
+              sku
+              quantity
+            }
+          }
+          hasSubscribedLive
+          live {
+            _id
+            coverImage
+            title
+            status
+            scheduleStartAt
+            streamingStatus
+          }
+        }
+        startRecords {
+          endAt
+          startAt
+        }
+        startAt
+        endAt
+      }
+    }
+  }
+}
+
+

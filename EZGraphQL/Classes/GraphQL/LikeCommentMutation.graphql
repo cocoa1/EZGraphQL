@@ -1,0 +1,5 @@
+mutation likeComment ($comment: ID!,$status: Boolean!) {
+	likeComment(comment: $comment, status: $status) {
+		success
+	}
+}

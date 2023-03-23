@@ -1,0 +1,205 @@
+query getOrder($_id: ID!, $target: enum__listOrderAction!) {
+  getOrder(_id: $_id, target: $target) {
+    ... on SellingOrderModel {
+      _id
+      orderCode
+      orderSource
+      status
+      buyer {
+        _id
+        username
+        avatar
+      }
+      products {
+        product
+        name
+        description
+        images {
+          image
+          key
+        }
+        regularPrice
+        livePrice
+        isFreeShipping
+        shippingInfo {
+          companyName
+          method
+          price
+        }
+        quantity
+        chosenTag
+      }
+      userCoupons {
+        _id
+        live {
+          _id
+          title
+        }
+        coupon {
+          _id
+          quantity
+        }
+        discountType
+        value
+        used
+        usedAt
+        createdAt
+        updatedAt
+        deleted
+      }
+      salePrice
+      transactionFeeRate
+      transactionFeeTotalPrice
+      purchasePrice
+      paidPrice
+      isFreeShipping
+      taxTotalPrice
+      shippingTotalPrice
+      liveDiscount
+      discountTotalPrice
+      shippingAddressSnapshot {
+        _id
+        firstName
+        lastName
+        phoneNumber
+        addressLine1
+        addressLine2
+        city
+        state
+        country
+        zipCode
+        addressType
+        isDefaultAddress
+      }
+      payment {
+        status
+        paymentMethodType
+        paymentMethodDetail {
+          card {
+            last4
+            brand
+            brandIcon
+            stripePaymentMethodId
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      paidAt
+      deliverStartAt
+      deliverEndAt
+      fulfilledAt
+      createdAt
+      updatedAt
+      trackingNumber
+      shippingCarrier
+      tracker {
+        _id
+      }
+    }
+    ... on BuyingOrderModel {
+      _id
+      orderCode
+      orderSource
+      status
+      seller {
+        _id
+        username
+      }
+      products {
+        product
+        name
+        description
+        images {
+          image
+          key
+        }
+        regularPrice
+        livePrice
+        variants {
+          _id
+          name
+          sku
+          quantity
+        }
+        isFreeShipping
+        shippingInfo {
+          companyName
+          method
+          price
+        }
+        quantity
+        chosenTag
+      }
+      userCoupons {
+        _id
+        live {
+          _id
+          title
+        }
+        coupon {
+          _id
+          quantity
+        }
+        discountType
+        value
+        used
+        usedAt
+        createdAt
+        updatedAt
+        deleted
+      }
+      purchasePrice
+      paidPrice
+      isFreeShipping
+      taxTotalPrice
+      shippingTotalPrice
+      liveDiscount
+      discountTotalPrice
+      shippingAddressSnapshot {
+        _id
+        firstName
+        lastName
+        phoneNumber
+        addressLine1
+        addressLine2
+        city
+        state
+        country
+        zipCode
+        addressType
+        isDefaultAddress
+      }
+      payment {
+        status
+        paymentMethodType
+        paymentMethodDetail {
+          card {
+            last4
+            brand
+            brandIcon
+            stripePaymentMethodId
+          }
+        }
+        paymentIntentsId
+        paymentIntentsClientSecret
+        lastPaymentErrorCode
+        lastPaymentErrorMessage
+        createdAt
+        updatedAt
+      }
+      paidAt
+      deliverStartAt
+      deliverEndAt
+      fulfilledAt
+      createdAt
+      updatedAt
+      trackingNumber
+      shippingCarrier
+      tracker {
+        _id
+      }
+    }
+  }
+}
+

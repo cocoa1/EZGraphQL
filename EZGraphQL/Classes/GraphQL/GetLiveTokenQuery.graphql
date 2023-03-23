@@ -1,0 +1,5 @@
+query getLiveToken($liveId: ID!) {
+    getLiveToken(liveId: $liveId) {
+        token
+    }
+}

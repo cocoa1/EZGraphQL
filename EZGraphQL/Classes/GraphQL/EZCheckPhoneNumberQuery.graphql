@@ -1,0 +1,6 @@
+# 查询手机号是否已经注册
+query checkPhoneNumber($phoneNumber: String!){
+    checkPhoneNumber (phoneNumber: $phoneNumber) {
+        phoneNumberDuplicate
+    }
+}

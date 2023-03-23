@@ -1,0 +1,7 @@
+query findChatroomUsers($chatroomId: String!, $page: Int, $pageSize: Int) {
+	findChatroomUsers (chatroomId: $chatroomId, page: $page, pageSize: $pageSize) {
+		_id
+		username
+		avatar
+	}
+}

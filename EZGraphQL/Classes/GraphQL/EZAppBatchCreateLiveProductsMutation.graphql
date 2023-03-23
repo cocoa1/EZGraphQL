@@ -1,0 +1,29 @@
+mutation AppBatchCreateLiveProducts($products: [ID!]!, $live: ID) {
+  appBatchCreateLiveProducts(products: $products, live: $live) {
+      _id
+      name
+      description
+      images {
+        image
+        key
+      }
+      regularPrice
+      livePrice
+      variants {
+        _id
+        name
+        quantity
+        shopifyProductVariantId
+      }
+      status
+      productType
+      isFreeShipping
+      shippingInfo {
+        companyName
+        method
+        price
+      }
+      shopifyProductId
+  }
+}
+

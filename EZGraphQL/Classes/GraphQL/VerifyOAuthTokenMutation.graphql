@@ -1,0 +1,5 @@
+mutation verifyOAuthToken($provider:enum__oauthProvider!,$idToken: String!){
+    verifyOAuthToken(provider:$provider,idToken:$idToken) {
+        isNew
+    }
+}

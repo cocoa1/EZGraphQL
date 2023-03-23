@@ -1,0 +1,5 @@
+query checkUsername ($name:String!){
+    checkUsername(username:$name){
+        usernameDuplicate
+    }
+}

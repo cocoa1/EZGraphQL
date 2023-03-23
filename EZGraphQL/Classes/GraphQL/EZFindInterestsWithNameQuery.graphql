@@ -1,0 +1,71 @@
+query findInterestsWithName($name: String, $page: Int, $pageSize: Int) {
+  findInterests(name: $name, page: $page, pageSize: $pageSize) {
+    videoCount
+    videos {
+      edges {
+        _id
+        videoType
+        coverImage
+        teaserTitle
+        video
+        viewCount
+        likeCount
+        commentCount
+        duration
+        shareCount
+        allowComment
+        liveStartAt
+        liked
+        updatedAt
+        describe
+        liveStartAt
+        createdAt
+        updatedAt
+        deleted
+        live {
+          _id
+          status
+          title
+          scheduleStartAt
+          streamingStatus
+        }
+        products {
+          product
+          name
+          description
+          images {
+            image
+            key
+          }
+          regularPrice
+          livePrice
+          productType
+          variants {
+            _id
+            name
+            sku
+            quantity
+          }
+        }
+        music {
+          _id
+          title
+        }
+        user {
+          _id
+          avatar
+          username
+          followed
+          role
+        }
+        shareLink
+        hasSubscribedLive
+      }
+      pageInfo {
+        hashNextPage
+      }
+      totalCount
+    }
+  }
+}
+

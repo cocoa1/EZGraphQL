@@ -1,0 +1,89 @@
+mutation CreateLive(
+  $title: String!
+  $coverImage: String!
+  $scheduleStartAt: Timestamp
+  $teaserVideo: ID
+  $coupons: [ID]
+  $products: [ID]
+) {
+  createLive(
+    title: $title
+    coverImage: $coverImage
+    scheduleStartAt: $scheduleStartAt
+    teaserVideo: $teaserVideo
+    coupons: $coupons
+    products: $products
+  ) {
+    agoraLiveToken {
+      token
+      expireAt
+    }
+    ivsStreamingAddress
+    scheduleStartAt
+    streamingStatus
+    status
+    _id
+    chatroomId
+    ivsLiveAddress
+    viewCount
+    newFansCount
+    user {
+      username
+      _id
+      uid
+      avatar
+      followed
+    }
+    likeCount
+    orderCount
+    coverImage
+    title
+    hasShownCoupon
+    collaboratingUser
+    explainProduct
+    coupons {
+      _id
+      discountType
+      value
+      quantity
+      receiveCount
+    }
+    products {
+      _id
+      name
+      description
+      images {
+        image
+        key
+      }
+      stock
+      regularPrice
+      livePrice
+      variants {
+        _id
+        name
+        sku
+        quantity
+      }
+      isFreeShipping
+      shippingInfo {
+        companyName
+        price
+        method
+      }
+      productType
+    }
+    moments {
+      video
+      coverImage
+    }
+    shareLink
+    startRecords {
+      endAt
+      startAt
+    }
+    startAt
+    endAt
+  }
+}
+

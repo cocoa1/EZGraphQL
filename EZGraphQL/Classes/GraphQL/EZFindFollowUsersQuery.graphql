@@ -1,0 +1,27 @@
+query findFollowUsers($page: Int, $pageSize: Int, $users: [ID], $followUsers: [ID], $status: Boolean) {
+	findFollowUsers(page: $page,
+					pageSize: $pageSize
+					users: $users
+                    followUsers: $followUsers
+					status: $status) {
+		_id
+		status
+		deleted
+		user {
+			_id
+			avatar
+			username
+            name
+            bio
+            followed
+		}
+		followUser {
+			_id
+			avatar
+			username
+            name
+            bio
+            followed
+		}
+	}
+}

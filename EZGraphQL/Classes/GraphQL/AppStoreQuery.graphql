@@ -1,0 +1,58 @@
+query AppStore($page: Int!, $pageSize: Int!) {
+  appStore {
+    _id
+    storeName
+    storePicture {
+      image
+      key
+    }
+    storeBackgroundPicture {
+      image
+      key
+    }
+    storeProducts(
+      page: $page
+      pageSize: $pageSize
+      status: [ON_SALE]
+      productType: [NORMAL]
+    ) {
+      edges {
+        _id
+        name
+        description
+        displayInStore
+        images {
+          image
+          key
+        }
+        stock
+        regularPrice
+        livePrice
+        variants {
+          _id
+          name
+          sku
+          quantity
+        }
+        liveHost {
+          _id
+          avatar
+          deviceType
+        }
+        status
+        isFreeShipping
+        shippingInfo {
+          companyName
+          method
+          price
+        }
+        createdAt
+        updatedAt
+      }
+      totalCount
+      pageInfo {
+        hashNextPage
+      }
+    }
+  }
+}

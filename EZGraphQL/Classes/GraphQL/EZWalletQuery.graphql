@@ -1,0 +1,35 @@
+query wallet($users: [ID]!) {
+  appStore {
+    totalBalance
+    nextPayoutDate
+    storeBalanceHistory {
+      startAt
+      endAt
+      amount
+    }
+  }
+  findLives(page: 1, pageSize: 7, users: $users) {
+    _id
+    totalRevenue
+    title
+  }
+  appListTransfers(page: 1, pageSize: 4) {
+    edges {
+      _id
+      createdAt
+      transferCode
+      status
+      amount
+    }
+  }
+  appListTicketOrders(
+    pageSize: 7
+    target: Selling
+    status: [CONFIRMED, PARTIALLY_ACTIVATED, ACTIVATED, COMPLETED]
+  ) {
+    edges {
+      orderCode
+      paidPrice
+    }
+  }
+}

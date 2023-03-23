@@ -1,0 +1,5 @@
+mutation viewVideo($id: ID!) {
+	viewVideo (_id: $id) {
+		success
+	}
+}

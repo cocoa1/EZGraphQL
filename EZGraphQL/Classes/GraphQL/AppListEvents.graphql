@@ -1,0 +1,18 @@
+query AppListEvents($page: Int, $pageSize: Int, $startDate: input__conditionalOperation, $endDate: input__conditionalOperation) {
+  appListEvents(page: $page, pageSize: $pageSize, sort: [{field: createdAt, value: DESC}], startDate: $startDate, endDate: $endDate) {
+    edges {
+      _id
+      coverImages {
+        image
+        key
+      }
+      name
+      description
+    }
+    pageInfo {
+      hashNextPage
+    }
+    totalCount
+  }
+}
+

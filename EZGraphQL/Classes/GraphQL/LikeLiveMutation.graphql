@@ -1,0 +1,5 @@
+mutation likeLive ($_id: ID!) {
+	likeLive(_id: $_id) {
+		success
+	}
+}

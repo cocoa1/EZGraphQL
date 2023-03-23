@@ -1,0 +1,5 @@
+query GetAppConfig {
+  getAppConfig {
+    becomeSellerURL
+  }
+}

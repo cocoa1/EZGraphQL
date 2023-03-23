@@ -1,0 +1,50 @@
+subscription LiveInfo($liveId: ID!) {
+  liveInfo(liveId: $liveId) {
+    explainProduct {
+      eventId
+      liveId
+      productId
+    }
+    productChange {
+      eventId
+      liveId
+      _id
+      productType
+      stock
+      livePrice
+      variants {
+        _id
+        name
+        quantity
+        shopifyProductVariantId
+      }
+    }
+    productAdded {
+      eventId
+      liveId
+      productId
+    }
+    auctionProduct {
+      live
+      productId
+      auctionStatus
+      endBidTime
+      extendBidTime
+      latestBidPrice
+      recommendBidPrice
+      bidsCount
+      latestBidder {
+        _id
+        avatar
+        username
+        name
+        uid
+        role
+        userType
+        phoneNumber
+        email
+      }
+    }
+  }
+}
+

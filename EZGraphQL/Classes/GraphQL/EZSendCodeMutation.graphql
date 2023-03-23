@@ -1,0 +1,7 @@
+# 发送验证码
+mutation sendCode ($phoneNumber: String!,$action: enum__msmAction!) {
+    sendCode (phoneNumber: $phoneNumber,action: $action) {
+      success
+      verifyCode
+    }
+}

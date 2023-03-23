@@ -1,0 +1,45 @@
+#第三方登录
+mutation loginByOAuth($provider: enum__oauthProvider!, $username: String!, $id_token: String!, $birthday: String, $code: String) {
+	loginByOAuth(
+				 username: $username,
+				 provider: $provider,
+				 idToken: $id_token,
+		         birthday: $birthday,
+				 code: $code
+				 ) {
+		sessionToken
+		user {
+			_id
+			avatar
+			gender
+			deviceType
+			deviceId
+			username
+			birthday
+			phoneNumber
+			email
+			bio
+			uid
+            imPassword
+			createdAt
+			updatedAt
+			instagram {
+				id
+				username
+				homePage
+			}
+			facebook {
+				id
+				username
+				homePage
+			}
+			userType
+			pushNotifications {
+				interactions
+				live
+				video
+				order
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+query AppGetMultiUploadURL($type: String!, $quantity: Int!) {
+  appGetMultiUploadURL(type: $type, quantity: $quantity) {
+    uploadURL
+    key
+    url
+  }
+}

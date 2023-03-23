@@ -1,0 +1,34 @@
+mutation createProduct($name: String!, $description: String!, $images: [String]!, $variants: [VariantInput!]!, $regularPrice: Int!, $livePrice: Int, $isFreeShipping: Boolean, $displayInStore: Boolean, $shippingInfo: ShippingInfoInput, $productType: enum__productType!,$live:ID) {
+	createProduct (name: $name, description: $description, images: $images, variants: $variants, regularPrice: $regularPrice, livePrice: $livePrice, isFreeShipping: $isFreeShipping, displayInStore: $displayInStore, shippingInfo: $shippingInfo, productType: $productType, live:$live) {
+		_id
+		name
+		description
+		images {
+			image
+			key
+		}
+		regularPrice
+		livePrice
+		variants {
+            _id
+            name
+            sku
+            quantity
+        }
+		liveHost {
+			_id
+			avatar
+			deviceType
+		}
+		status
+        productType
+		isFreeShipping
+		shippingInfo {
+			companyName
+			method
+			price
+		}
+		stock
+		displayInStore
+	}
+}

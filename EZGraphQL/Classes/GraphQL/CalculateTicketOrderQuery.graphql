@@ -1,0 +1,33 @@
+query CalculateTicketOrder($tickets: [OrderTicketsInput!]!) {
+  calculateTicketOrder(tickets: $tickets) {
+    tickets {
+      ticket {
+        _id
+        event {
+          _id
+		  name
+		  coverImages {
+			image
+			key
+		  }
+        }
+        name
+        quantity
+        price
+        saleDate {
+          startDate
+          endDate
+        }
+        activateDates {
+          startDate
+          endDate
+        }
+      }
+      quantity
+    }
+	taxTotalPrice
+	serviceFeeTotalPrice
+	processFeeTotalPrice
+	paidPrice
+  }
+}

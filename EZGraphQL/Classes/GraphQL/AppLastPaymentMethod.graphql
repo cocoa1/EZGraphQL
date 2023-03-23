@@ -1,0 +1,23 @@
+query appLastPaymentMethod {
+    appLastPaymentMethod{
+        _id
+        paymentMethod
+        stripePaymentMethodId
+        card {
+            _id
+            brand
+            brandIcon
+            firstName
+            lastName
+            expiryDate
+            cvvCode
+            email
+            stripePaymentMethodId
+            last4
+            isDefaultCard
+            invalidCard
+            invalidFields
+        }
+    }
+}
+

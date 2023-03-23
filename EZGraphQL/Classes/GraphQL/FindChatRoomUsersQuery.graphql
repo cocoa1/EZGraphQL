@@ -1,0 +1,7 @@
+query findChatroomUsersByRoomId($chatroomId: String!) {
+	findChatroomUsers (chatroomId: $chatroomId) {
+		_id
+		username
+		avatar
+	}
+}

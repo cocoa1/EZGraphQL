@@ -1,0 +1,284 @@
+query HomePageData($page: Int, $pageSize: Int) {
+  algorithmFindBanners(page: $page, pageSize: $pageSize) {
+    _id
+    cover
+    value
+    type
+    valueObject {
+      ... on BannerVideoObject {
+        _id
+        videoType
+        hasSubscribedLive
+        user {
+          _id
+          role
+        }
+        live {
+          _id
+          coverImage
+          title
+          status
+          scheduleStartAt
+          streamingStatus
+        }
+      }
+      ... on BannerLiveObject {
+        _id
+        status
+      }
+      ... on BannerEventObject {
+        _id
+      }
+    }
+  }
+
+  algorithmFindLives(moduleName: whatsLiveRightNow, page: 1, pageSize: 11) {
+    title
+    _id
+    status
+    coverImage
+    ivsLiveAddress
+    viewCount
+    likeCount
+    chatroomId
+    newFansCount
+    startAt
+    endAt
+    shareLink
+    collaboratingUser
+    user {
+      username
+      _id
+      uid
+      avatar
+      followed
+      role
+    }
+  }
+
+  algorithmFindUsers(
+    page: $page
+    pageSize: $pageSize
+    moduleName: topCreatorsForYou
+  ) {
+    _id
+    avatar
+    name
+    username
+    followCount
+    fansCount
+    likeCount
+    bio
+    website
+    facebook {
+      id
+      username
+      homePage
+    }
+    instagram {
+      id
+      username
+      homePage
+    }
+    followed
+    liveId
+    liveStatus
+  }
+
+  UpcomingLiveShow: algorithmFindVideos(
+    page: 1
+    pageSize: 21
+    moduleName: teaser
+  ) {
+    _id
+    coverImage
+    teaserTitle
+    video
+    viewCount
+    describe
+    likeCount
+    commentCount
+    duration
+    shareCount
+    allowComment
+    liveStartAt
+    liked
+    updatedAt
+    shareLink
+    music {
+      _id
+      title
+    }
+    user {
+      _id
+      uid
+      avatar
+      username
+      followed
+      role
+    }
+    videoType
+    hasSubscribedLive
+    live {
+      _id
+      coverImage
+      title
+      status
+      scheduleStartAt
+      streamingStatus
+    }
+  }
+
+  algorithmFindEvents(page: $page, pageSize: $pageSize) {
+    edges {
+      _id
+      coverImages {
+        image
+      }
+      name
+    }
+    pageInfo {
+      hashNextPage
+    }
+  }
+
+  pastLiveShowsTop: algorithmFindVideos(
+    page: 1
+    pageSize: 21
+    moduleName: pastshow
+  ) {
+    __typename
+    _id
+    coverImage
+    teaserTitle
+    video
+    viewCount
+    describe
+    likeCount
+    commentCount
+    duration
+    shareCount
+    allowComment
+    liveStartAt
+    liked
+    updatedAt
+    shareLink
+    music {
+      __typename
+      _id
+      title
+    }
+    user {
+      __typename
+      _id
+      avatar
+      username
+      followed
+      role
+    }
+    videoType
+    hasSubscribedLive
+    live {
+      _id
+      coverImage
+      title
+      status
+      scheduleStartAt
+      streamingStatus
+    }
+  }
+
+  appFindFeatureHashtags {
+    _id
+    name
+    viewCount
+    videos(page: 1, pageSize: 21) {
+      edges {
+        _id
+        coverImage
+        teaserTitle
+        video
+        viewCount
+        describe
+        likeCount
+        commentCount
+        duration
+        shareCount
+        allowComment
+        liveStartAt
+        liked
+        shareLink
+        updatedAt
+        music {
+          _id
+          title
+        }
+        user {
+          _id
+          uid
+          avatar
+          username
+          followed
+          role
+        }
+        videoType
+        hasSubscribedLive
+        live {
+          _id
+          coverImage
+          title
+          status
+          scheduleStartAt
+          streamingStatus
+        }
+      }
+      pageInfo {
+        hashNextPage
+      }
+    }
+  }
+
+  algorithmFindVideos(
+    page: $page
+    pageSize: $pageSize
+    moduleName: highlights
+  ) {
+    _id
+    coverImage
+    teaserTitle
+    video
+    viewCount
+    describe
+    likeCount
+    commentCount
+    duration
+    shareCount
+    allowComment
+    liveStartAt
+    liked
+    shareLink
+    updatedAt
+    music {
+      _id
+      title
+    }
+    user {
+      _id
+      uid
+      avatar
+      username
+      followed
+      role
+    }
+    videoType
+    hasSubscribedLive
+    live {
+      _id
+      coverImage
+      title
+      status
+      scheduleStartAt
+      streamingStatus
+    }
+  }
+}

@@ -1,0 +1,5 @@
+mutation appPlaceBid($productId: ID!, $bidPrice: Int!) {
+  appPlaceBid(productId: $productId, bidPrice: $bidPrice) {
+	success
+  }
+}
